@@ -1,0 +1,16 @@
+@mixin breakpoint($class) 
+  @if $class == ns 
+    @media (min-width: 30em)   
+      @content
+
+  @else if $class == m 
+    @media (min-width: 48em) and (max-width: 60em)  
+      @content
+  
+
+  @else if $class == l 
+    @media (min-width: 60em)
+      @content
+
+  @else 
+    @warn "Breakpoint mixin supports: ns, m, l"
