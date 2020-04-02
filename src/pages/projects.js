@@ -1,14 +1,20 @@
 import React from "react"
 import { graphql } from 'gatsby'
+import Helmet from "react-helmet"
 
 import Layout from "../layout"
 import Intro from "../components/Intro"
 import Project from '../components/Project';
+import SEO from '../components/SEO';
+
+import config from '../../data/SiteConfig'
 
 const Projects = ({ data }) =>{
   const projects = data.allMarkdownRemark.edges;
   return ( 
     <Layout>
+      <Helmet title={`Projects - ${config.siteTitle}`} />
+      <SEO />
       <Intro
           title="Projects"
           text={`

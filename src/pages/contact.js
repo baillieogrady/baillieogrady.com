@@ -1,11 +1,18 @@
 import React from "react"
+import Helmet from "react-helmet"
 
 import Layout from "../layout"
 import Intro from "../components/Intro"
+import SEO from "../components/SEO"
+
+import config from '../../data/SiteConfig'
+
 
 const Contact = () =>{
   return (
     <Layout>
+      <Helmet title={`Contact - ${config.siteTitle}`} />
+      <SEO />
       <Intro
           title="Contact"
           text={`<p><span style="color: #3fc380;"><strong>Available</strong></span> for new projects</p>`}

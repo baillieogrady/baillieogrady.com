@@ -3,9 +3,9 @@ import { Link, StaticQuery } from "gatsby"
 import Helmet from 'react-helmet'
 
 import instagram from "../images/instagram.svg"
-import linkedin from "../images/linkedin.svg"
+// import linkedin from "../images/linkedin.svg"
 import github from "../images/github.svg"
-import codepen from "../images/codepen.svg"
+// import codepen from "../images/codepen.svg"
 import youtube from "../images/youtube.svg"
 
 import icon from '../images/icon.png'

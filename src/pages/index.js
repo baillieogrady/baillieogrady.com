@@ -1,17 +1,22 @@
 import React from "react"
+import Helmet from "react-helmet"
 import { Link } from "gatsby"
 
 import Layout from "../layout"
 import Intro from "../components/Intro"
 import Project from "../components/Project"
+import SEO from "../components/SEO"
 
+import config from '../../data/SiteConfig'
 
 const Index = ({ data }) =>{
   const projects = data.projects;
   const posts = data.posts;
   return (
     <Layout>
-    <Intro 
+      <Helmet title={`${config.siteTitle} – Freelance WordPress Developer`} />
+      <SEO />
+      <Intro 
         title="Baillie O'Grady"
         text={`
           <div>

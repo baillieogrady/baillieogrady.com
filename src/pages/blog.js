@@ -1,9 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../layout"
 import Intro from "../components/Intro"
+import SEO from "../components/SEO"
 
+import config from '../../data/SiteConfig'
 
 const Index = ({data}) =>{
     const posts = data.allMarkdownRemark.edges.filter(item => item.node.frontmatter.template === "post");
@@ -12,6 +15,8 @@ const Index = ({data}) =>{
     <Intro 
         title="Blog"
     />
+    <Helmet title={`Blog - ${config.siteTitle}`} />
+    <SEO />
     <div className="posts mw7 center ph3 flex flex-wrap justify-between">
         {posts.map((post, i) => (
             <article key={i} className="mb4 m5-ns">
