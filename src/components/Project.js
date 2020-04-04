@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image";
 import Button from '../components/Button';
 
-const Project = ({ data, button }) =>{
+const Project = ({ data, button }) => {
   return (
     <article key={data.id}>
       <a href={data.frontmatter.url} target="_blank" rel="noreferrer">
@@ -15,10 +15,19 @@ const Project = ({ data, button }) =>{
         <div dangerouslySetInnerHTML={{ __html: data.html }} />
       </div>
       <div>
-        {button != false ? 
-        <Button link={data.frontmatter.url} text="VISIT" />
-        :
-        null}
+        {button != false && data.frontmatter.type != 'theme' ?
+          <Button link={data.frontmatter.url} text="VISIT" />
+          :
+          null}
+        {button != false && data.frontmatter.type === 'theme' ?
+          <div>
+            <Button link={data.frontmatter.demo} text="DEMO" classes="mr2 bg-blue " />
+            <Button link={data.frontmatter.code} text="CODE" classes="mr2 bg-dark-gray" />
+            <Button link={`../${data.frontmatter.download}`} download text="DOWNLOAD" classes="bg-red" />
+          </div>
+          :
+          null
+        }
       </div>
     </article>
   )

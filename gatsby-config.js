@@ -24,18 +24,22 @@ module.exports = {
     },
     description: `Freelance WordPress developer located in Manchester, England.`,
     siteUrl: `https://baillieogrady.com/`,
-    menuLinks:[
+    menuLinks: [
       {
-        name:'projects',
-        link:'/projects'
+        name: 'projects',
+        link: '/projects'
       },
       {
-        name:'blog',
-        link:'/blog'
+        name: 'themes',
+        link: '/themes'
       },
       {
-          name:'contact',
-          link:'/contact'
+        name: 'blog',
+        link: '/blog'
+      },
+      {
+        name: 'contact',
+        link: '/contact'
       },
     ],
     social: {
