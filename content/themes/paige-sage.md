@@ -1,6 +1,6 @@
 ---
 date: 2020-04-04
-title: 'Page sage'
+title: 'Paige sage'
 type: 'theme'
 demo: 'https://paigenicole.uk/'
 code: 'https://github.com/baillieogrady/paige-sage'
