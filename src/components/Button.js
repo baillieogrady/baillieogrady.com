@@ -11,7 +11,7 @@ class Button extends React.Component {
     return (
       <a
         href={link}
-        class={`f7 fw7 pv2  ph3 ttu white tracked br2 box-shadow-none dim ${classes}`}
+        className={`f7 fw7 pv2  ph3 ttu white tracked br2 box-shadow-none dim ${classes}`}
         {...opts}
       >
         {text}

@@ -15,11 +15,11 @@ const Project = ({ data, button }) => {
         <div dangerouslySetInnerHTML={{ __html: data.html }} />
       </div>
       <div>
-        {button != false && data.frontmatter.type != 'theme' ?
-          <Button link={data.frontmatter.url} text="VISIT" />
+        {data.frontmatter.type === 'project' ?
+          <Button link={data.frontmatter.url} text="VISIT" classes="bg-blue" />
           :
           null}
-        {button != false && data.frontmatter.type === 'theme' ?
+        {data.frontmatter.type === 'theme' ?
           <div>
             <Button link={data.frontmatter.demo} text="DEMO" classes="mr2 bg-blue " />
             <Button link={data.frontmatter.code} text="CODE" classes="mr2 bg-dark-gray" />

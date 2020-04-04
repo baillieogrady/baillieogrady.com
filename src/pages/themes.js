@@ -19,12 +19,12 @@ const Themes = ({ data }) => {
         title="Themes"
         page="themes"
         text={`
-          <p><strong>Note:</strong> all my themes are built with <a href="https://roots.io/sage/">Roots Sage</a>, so once you've downloaded the theme, you have to upload it via FTP rather than through the WordPress GUI.</p>
+          <p><strong>Note:</strong> themes containing the word 'sage', once downloaded, please upload the theme via FTP rather than the WordPress GUI.</p>
           `}
       />
       <div className="mw7 center ph3 flex flex-wrap justify-between">
         {themes.map((theme, i) => (
-          <div className={`mb4 mb5-ns w-100 w-50-ns  ${i === 0 || i % 2 === 0 ? 'pr3-m pr3-l' : 'pl3-m pl3-l'}`}>
+          <div key={i} className={`mb4 mb5-ns w-100 w-50-ns  ${i === 0 || i % 2 === 0 ? 'pr3-m pr3-l' : 'pl3-m pl3-l'}`}>
             <Project data={theme.node} />
           </div>
         ))}

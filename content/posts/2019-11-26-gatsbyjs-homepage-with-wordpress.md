@@ -8,7 +8,6 @@ categories:
 tags:
   - 'wordpress'
   - 'gatsbyjs'
-  - 'es6'
   - 'javascript'
   - 'graphql'
 ---

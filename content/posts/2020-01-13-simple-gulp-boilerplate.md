@@ -7,7 +7,7 @@ categories:
   - 'code'
 tags:
   - 'gulp'
-  - 'es6'
+  - 'javascript'
 ---
 <div>
 

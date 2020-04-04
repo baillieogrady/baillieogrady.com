@@ -36,17 +36,18 @@ const Layout = ({ children }) => (
       <div className="flex flex-column min-vh-100" role="document">
         <Helmet>
           <meta name="description" content={data.site.siteMetadata.description} />
-          <link rel="shortcut icon" type="image/png" href={icon} />
+          <link rel="icon" href={icon} />
         </Helmet>
         <header className="w-100 f7 bg-white sticky top-0 z-1 mt0 mt4-ns">
           <div className="mw7 center ph3 flex flex-wrap justify-between items-center">
             <Link
               to="/"
-              className="near-black no-underline b lh-solid pv3 box-shadow-none tracked f5"
+              className="near-black no-underline b lh-solid pv3 box-shadow-none tracked f3"
             >
-              <img src={icon} alt="logo" className="h2 w2" />
+              {/* <img src={icon} alt="logo" className="h2 w2" /> */}
+              🥯
             </Link>
-            <nav> 
+            <nav>
               <ul className="ma0 pa0">
                 {data.site.siteMetadata.menuLinks.map((link, i) => (
                   <li
@@ -54,7 +55,7 @@ const Layout = ({ children }) => (
                     className={`dib mb0 ${i > 0 ? "ml3 ml4-ns" : ""}`}
                   >
                     <Link
-                      className="no-underline dark-gray fw4 f5 box-shadow-none"
+                      className="no-underline dark-gray fw4 f6 box-shadow-none"
                       to={`${link.link}`}
                     >
                       {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
@@ -68,7 +69,7 @@ const Layout = ({ children }) => (
         <main className="pt4 pt5-ns flex-auto">{children}</main>
         <footer className="pv4 pv5-l">
           <div className="mw7 center flex justify-between items-center">
-            <ul className="pa0 ma0 lh-solid list ph3">
+            <ul className="pa0 ma0 lh-solid list ph3 f6">
               <li className="dib mr4 w-auto-ns">
                 <a
                   className="box-shadow-none"
