@@ -55,7 +55,7 @@ const Layout = ({ children }) => (
                     className={`dib mb0 ${i > 0 ? "ml3 ml4-ns" : ""}`}
                   >
                     <Link
-                      className="no-underline dark-gray fw4 f6 box-shadow-none"
+                      className="no-underline dark-gray f7 f6-ns box-shadow-none"
                       to={`${link.link}`}
                     >
                       {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
@@ -69,7 +69,7 @@ const Layout = ({ children }) => (
         <main className="pt4 pt5-ns flex-auto">{children}</main>
         <footer className="pv4 pv5-l">
           <div className="mw7 center flex justify-between items-center">
-            <ul className="pa0 ma0 lh-solid list ph3 f6">
+            <ul className="pa0 ma0 lh-solid list ph3 f7 f6-ns">
               <li className="dib mr4 w-auto-ns">
                 <a
                   className="box-shadow-none"
