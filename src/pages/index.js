@@ -38,7 +38,7 @@ const Index = ({ data }) => {
               </div>
             ))}
           </div>
-          <p className="gatsby-link">
+          <p className="gatsby-link mt4 mt0-ns">
             <Link to="/projects">VIEW MORE</Link>
           </p>
         </div>
@@ -56,7 +56,7 @@ const Index = ({ data }) => {
               <span className="silver f7 db">{post.node.frontmatter.date}</span>
             </article>
           ))}
-          <p className="gatsby-link mt5-ns">
+          <p className="gatsby-link mt4 mt0-ns">
             <Link to="/blog">VIEW MORE</Link>
           </p>
         </div>

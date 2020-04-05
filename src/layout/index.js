@@ -38,7 +38,7 @@ const Layout = ({ children }) => (
           <meta name="description" content={data.site.siteMetadata.description} />
           <link rel="icon" href={icon} />
         </Helmet>
-        <header className="w-100 f7 bg-white sticky top-0 z-1 mt0 mt4-ns">
+        <header className="w-100 bg-white sticky top-0 z-1 mt0 mt4-ns">
           <div className="mw7 center ph3 flex flex-wrap justify-between items-center">
             <Link
               to="/"
@@ -55,7 +55,7 @@ const Layout = ({ children }) => (
                     className={`dib mb0 ${i > 0 ? "ml3 ml4-ns" : ""}`}
                   >
                     <Link
-                      className="no-underline dark-gray f7 f6-ns box-shadow-none"
+                      className="no-underline dark-gray box-shadow-none"
                       to={`${link.link}`}
                     >
                       {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
