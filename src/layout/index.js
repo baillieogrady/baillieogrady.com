@@ -55,7 +55,7 @@ const Layout = ({ children }) => (
                     className={`dib mb0 ${i > 0 ? "ml3 ml4-ns" : ""}`}
                   >
                     <Link
-                      className="no-underline dark-gray box-shadow-none"
+                      className="no-underline dark-gray box-shadow-none f6 f5-ns"
                       to={`${link.link}`}
                     >
                       {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
