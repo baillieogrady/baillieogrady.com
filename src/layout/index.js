@@ -45,7 +45,7 @@ const Layout = ({ children }) => (
               className="near-black no-underline b lh-solid pv3 box-shadow-none tracked f3"
             >
               {/* <img src={icon} alt="logo" className="h2 w2" /> */}
-              🥯
+              🧑🏼‍💻
             </Link>
             <nav>
               <ul className="ma0 pa0">
