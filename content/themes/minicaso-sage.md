@@ -4,7 +4,7 @@ title: 'Minicaso Sage'
 type: 'theme'
 demo: 'https://minicaso.com/'
 code: 'https://github.com/baillieogrady/minicaso-sage'
-download: '/downloads/minicaso.zip'
+download: '/downloads/minicaso-sage.zip'
 thumbnail: '../images/minicaso.jpg'
 ---
 

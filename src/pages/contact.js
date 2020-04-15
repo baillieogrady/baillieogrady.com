@@ -8,14 +8,14 @@ import SEO from "../components/SEO"
 import config from '../../data/SiteConfig'
 
 
-const Contact = () =>{
+const Contact = () => {
   return (
     <Layout>
       <Helmet title={`Contact - ${config.siteTitle}`} />
       <SEO />
       <Intro
-          title="Contact"
-          text={`<p><span style="color: #3fc380;"><strong>Available</strong></span> for new projects</p>`}
+        title="Contact"
+        text={`<p><span style="color: #3fc380;"><strong>Available</strong></span> for new projects</p>`}
       />
       <section class="mb4 mb5-ns">
         <div class="mw7 center ph3">
@@ -30,7 +30,7 @@ const Contact = () =>{
           </ul>
         </div>
       </section>
-      <section class="mb4 mb5-ns">
+      {/* <section class="mb4 mb5-ns">
         <div class="mw7 center ph3">
         <h2 className="f4 f3-ns fw6">Crypto</h2>
         <ul className="ma0">
@@ -39,7 +39,7 @@ const Contact = () =>{
             <li><strong>LTC:</strong> LafofH2bt4kZu95szSQic9cz4VTWXk8kEZ</li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }

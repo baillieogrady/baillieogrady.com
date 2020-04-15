@@ -21,8 +21,10 @@ const Index = ({ data }) => {
         text={`
           <div>
           <p>I'm a freelance WordPress Developer from <a href="https://en.wikipedia.org/wiki/Manchester"  rel="noopener">Manchester</a>, with over 4 years experience in web development.</p>
-          <p>I specialise in converting custom designs to optimised, responsive and accessible websites. I frequently build bespoke <a href="/themes" rel="noopener">WordPress themes</a> and experiment with <a href="https://www.gatsbyjs.org/" rel="noopener">GatsbyJS</a>.</p>
-          <p>Visit my <a href="https://www.instagram.com/baillieogrady/">Instagram</a> for a daily documentation of my coding process.</p>
+          <p>I specialise in converting custom designs to optimised, responsive and accessible websites. Ensuring I <strong>always</strong> use the right tool for the job.
+          </p>
+          <p>
+          Also, I frequently build bespoke open source <a href="/themes" rel="noopener">WordPress themes</a> and document my coding process on <a href="https://www.instagram.com/baillieogrady/">Instagram</a>.</p>
         `}
         page="index"
       />
