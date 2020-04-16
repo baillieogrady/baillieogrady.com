@@ -24,7 +24,7 @@ const Index = ({ data }) => {
           <p>I specialise in converting custom designs to optimised, responsive and accessible websites. Ensuring I <strong>always</strong> use the right tool for the job.
           </p>
           <p>
-          Also, I frequently build bespoke open source <a href="/themes" rel="noopener">WordPress themes</a> and document my coding process on <a href="https://www.instagram.com/baillieogrady/">Instagram</a>.</p>
+          Also, I frequently build open source <a href="/themes" rel="noopener">WordPress themes</a> and document my coding process on <a href="https://www.instagram.com/baillieogrady/">Instagram</a>.</p>
         `}
         page="index"
       />
@@ -36,7 +36,7 @@ const Index = ({ data }) => {
           <div className="flex-ns justify-between flex-wrap">
             {projects.edges.map((project, i) => (
               <div key={i} className={`w-100 w-50-m w-50-l pb4 pb5-ns ${i === 0 || i % 2 === 0 ? 'pr3-ns' : 'pl3-ns'}`}>
-                <Project data={project.node} button={false} />
+                <Project data={project.node} button={false} page="index" />
               </div>
             ))}
           </div>
@@ -50,14 +50,16 @@ const Index = ({ data }) => {
           <div className="mb3 mb4-ns">
             <h2 className="mt0">Posts</h2>
           </div>
-          {posts.edges.map((post, i) => (
-            <article key={i} className="mb3 mb4-ns">
-              <h3 className="ma0 mb2 mt4">
-                <Link to={`/${post.node.frontmatter.slug}`} >{post.node.frontmatter.title}</Link>
-              </h3>
-              <span className="silver f7 db">{post.node.frontmatter.date}</span>
-            </article>
-          ))}
+          <div className="pb4 pb5-ns">
+            {posts.edges.map((post, i) => (
+              <article key={i} className="mt3 mt4-ns">
+                <h3 className="ma0 mb2 mt4">
+                  <Link to={`/${post.node.frontmatter.slug}`} >{post.node.frontmatter.title}</Link>
+                </h3>
+                <span className="silver f7 db">{post.node.frontmatter.date}</span>
+              </article>
+            ))}
+          </div>
           <p className="gatsby-link mt4 mt0-ns">
             <Link to="/blog">VIEW MORE</Link>
           </p>

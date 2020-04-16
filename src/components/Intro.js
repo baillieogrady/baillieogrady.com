@@ -10,7 +10,7 @@ class Intro extends React.Component {
         <div className="mw7 center ph3">
           <h1 dangerouslySetInnerHTML={{ __html: title }} className="mt0" />
           {(text) != null ?
-            <div dangerouslySetInnerHTML={{ __html: text }} className={`${page === 'themes' ? 'bg-lightest-blue pa3 br2 nm' : null}`} />
+            <div dangerouslySetInnerHTML={{ __html: text }} />
             : null
           }
           {/* {page === 'index' ?

@@ -17,9 +17,8 @@ const Themes = ({ data }) => {
       <SEO />
       <Intro
         title="Themes"
-        page="themes"
         text={`
-          <p><strong>Note:</strong> themes containing the word 'sage', once downloaded, please upload the theme via FTP rather than the WordPress GUI.</p>
+          <p>Custom open source WordPress Themes I've built in my spare time. Most are based on genuine designs I've found on sites like <a href="https://dribbble.com">dribble</a>.</p>
           `}
       />
       <div className="mw7 center ph3 flex flex-wrap justify-between">
