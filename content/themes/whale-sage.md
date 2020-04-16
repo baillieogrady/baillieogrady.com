@@ -4,7 +4,7 @@ title: 'Whale Sage'
 type: 'theme'
 demo: 'https://minecraft.baillieogrady.com/'
 code: 'https://github.com/baillieogrady/whale-sage'
-download: '/downloads/whale-sage.zip'
+download: 'downloads/whale-sage.zip'
 thumbnail: '../images/whale.jpg'
 ---
 

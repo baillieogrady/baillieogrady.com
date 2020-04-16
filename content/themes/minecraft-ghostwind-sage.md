@@ -4,7 +4,7 @@ title: 'Minecraft Ghostwind Sage'
 type: 'theme'
 demo: 'https://minecraft.baillieogrady.com/'
 code: 'https://github.com/baillieogrady/minecraft-ghostwind-sage'
-download: '/downloads/minecraft-ghostwind-sage.zip'
+download: 'downloads/minecraft-ghostwind-sage.zip'
 thumbnail: '../images/minecraft.jpg'
 ---
 
