@@ -8,30 +8,31 @@ import SEO from "../components/SEO"
 
 import config from '../../data/SiteConfig'
 
-const Index = ({data}) =>{
-    const posts = data.allMarkdownRemark.edges.filter(item => item.node.frontmatter.template === "post");
+const Index = ({ data }) => {
+  const posts = data.allMarkdownRemark.edges.filter(item => item.node.frontmatter.template === "post");
   return (
     <Layout>
-    <Intro 
+      <Intro
         title="Blog"
-    />
-    <Helmet title={`Blog - ${config.siteTitle}`} />
-    <SEO />
-    <div className="posts mw7 center ph3 flex flex-wrap justify-between">
+        text="A collection of blogs about my discoveries in web development."
+      />
+      <Helmet title={`Blog - ${config.siteTitle}`} />
+      <SEO />
+      <div className="posts mw7 center ph3 flex flex-wrap justify-between">
         {posts.map((post, i) => (
-            <article key={i} className="mb4 m5-ns">
-                {console.log(post)}
-                <h2 className="f5 f4-ns ma0 mb2">
-                    <Link to={`/${post.node.frontmatter.slug}`}>{post.node.frontmatter.title}</Link>
-                </h2>
-                <span className="silver f7 db">{post.node.frontmatter.date}</span>
-                <p>
-                    {post.node.excerpt}
-                </p>
-            </article>
+          <article key={i} className="mb4 m5-ns">
+            {console.log(post)}
+            <h2 className="f5 f4-ns ma0 mb2">
+              <Link to={`/${post.node.frontmatter.slug}`}>{post.node.frontmatter.title}</Link>
+            </h2>
+            <span className="silver f7 db">{post.node.frontmatter.date}</span>
+            <p>
+              {post.node.excerpt}
+            </p>
+          </article>
         ))}
-    </div>
-  </Layout>
+      </div>
+    </Layout>
   )
 }
 
