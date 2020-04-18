@@ -20,90 +20,93 @@ Firstly, copy the query creating the WordPress pages and paste it after this que
 
 ## JS
 
-        // home page
-        .then(() => {
-          return graphql(`
-            {
-              allWordpressPage(filter: {wordpress_id: {in: 1107}}) {
-                edges {
-                  node {
-                    id
-                    slug
-                    status
-                  }
-                }
-              }
-            }
-          `)
-        })
-        .then(result => {
-          if (result.errors) {
-            result.errors.forEach(e => console.error(e.toString()))
-            return Promise.reject(result.errors)
+```javascript
+// home page
+.then(() => {
+  return graphql(`
+    {
+      allWordpressPage(filter: {wordpress_id: {in: 1107}}) {
+        edges {
+          node {
+            id
+            slug
+            status
           }
+        }
+      }
+    }
+  `)
+})
+.then(result => {
+  if (result.errors) {
+    result.errors.forEach(e => console.error(e.toString()))
+    return Promise.reject(result.errors)
+  }
 
-          const pageTemplate = path.resolve(`./src/templates/page.js`)
+  const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-          // Create a Gatsby page for each WordPress page
-          _.each(result.data.allWordpressPage.edges, ({ node: page }) => {
-            createPage({
-              path: `/`,
-              component: pageTemplate,
-              context: {
-                id: page.id,
-              },
-            })
-          })
-        })
+  // Create a Gatsby page for each WordPress page
+  _.each(result.data.allWordpressPage.edges, ({ node: page }) => {
+    createPage({
+      path: `/`,
+      component: pageTemplate,
+      context: {
+        id: page.id,
+      },
+    })
+  })
+})
+```
 
 Next, as you’ve already created your homepage to be index page ‘ / ‘, you want to remove the ‘ /home ‘ page from being created. This can be accomplished by again including a filter on the initial query thats creating the remaining pages, like so:
 
 ## JS
-
-    exports.createPages = ({ actions, graphql }) => {
-      const { createPage } = actions
-        // pages
-      return graphql(`
-        {
-          allWordpressPage (filter: {wordpress_id: {nin: 1107}}) {
-            edges {
-              node {
-                id
-                slug
-                status
-              }
-            }
-          }
+```javascript
+exports.createPages = ({ actions, graphql }) => {
+const { createPage } = actions
+  // pages
+return graphql(`
+  {
+    allWordpressPage (filter: {wordpress_id: {nin: 1107}}) {
+      edges {
+        node {
+          id
+          slug
+          status
         }
-      `)
-        .then(result => {
-          if (result.errors) {
-            result.errors.forEach(e => console.error(e.toString()))
-            return Promise.reject(result.errors)
-          }
+      }
+    }
+  }
+`)
+  .then(result => {
+    if (result.errors) {
+      result.errors.forEach(e => console.error(e.toString()))
+      return Promise.reject(result.errors)
+    }
 
-          const pageTemplate = path.resolve(`./src/templates/page.js`)
+    const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-          // Only publish pages with a `status === 'publish'` in production. This
-          // excludes drafts, future posts, etc. They will appear in development,
-          // but not in a production build.
+    // Only publish pages with a `status === 'publish'` in production. This
+    // excludes drafts, future posts, etc. They will appear in development,
+    // but not in a production build.
 
-          const allPages = result.data.allWordpressPage.edges
-          const pages =
-            process.env.NODE_ENV === 'production'
-              ? getOnlyPublished(allPages)
-              : allPages
+    const allPages = result.data.allWordpressPage.edges
+    const pages =
+      process.env.NODE_ENV === 'production'
+        ? getOnlyPublished(allPages)
+        : allPages
 
-          // Call `createPage()` once per WordPress page
-          _.each(pages, ({ node: page }) => {
-            createPage({
-              path: `/${page.slug}/`,
-              component: pageTemplate,
-              context: {
-                id: page.id,
-              },
-            })
-          })
-        })
+    // Call `createPage()` once per WordPress page
+    _.each(pages, ({ node: page }) => {
+      createPage({
+        path: `/${page.slug}/`,
+        component: pageTemplate,
+        context: {
+          id: page.id,
+        },
+      })
+    })
+  })
+```
 
 This may not be a bulletproof solution but even if your client say changes the WordPress page name, the post ID will still remain the same. Also, with creating a separate query, you can pass in a separate template argument to the component, just for your home page. In my case, my homepage uses the same template as all other pages, but the option’s there if you need it.

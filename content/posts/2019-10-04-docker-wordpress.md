@@ -24,46 +24,48 @@ Whether you’re using WAMP, MAMP or LAMP for your local WordPress development, 
 
 ### docker-compose.yml
 
-    version: "3"
+```yaml
+version: "3"
 
-    services:
-      db:
-        image: mysql:5.7
-        volumes:
-          - db_data:/var/lib/mysql
-        restart: always
-        environment:
-          MYSQL_ROOT_PASSWORD: wp
-          MYSQL_DATABASE: wordpress
-          MYSQL_USER: wp
-          MYSQL_PASSWORD: wp
-      phpmyadmin:
-        depends_on:
-          - db
-        image: phpmyadmin/phpmyadmin
-        restart: always
-        ports:
-          - "8080:80"
-        environment:
-          PMA_HOST: db
-          MYSQL_ROOT_PASSWORD: wp
-      wordpress:
-        depends_on:
-          - db
-        image: wordpress:latest
-        ports:
-          - "8000:80"
-        restart: always
-        environment:
-          WORDPRESS_DB_HOST: db:3306
-          WORDPRESS_DB_USER: wp
-          WORDPRESS_DB_PASSWORD: wp
-        working_dir: /var/www/html
-        volumes:
-          - ./:/var/www/html
-          - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+services:
+  db:
+    image: mysql:5.7
     volumes:
-      db_data:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: wp
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wp
+      MYSQL_PASSWORD: wp
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: wp
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wp
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+volumes:
+  db_data:
+```
 
 ## Increase upload limit
 

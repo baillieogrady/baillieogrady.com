@@ -79,23 +79,41 @@ code
   @extend .f6
 
   font-family: monospace !important
-  border-radius: 30px
-  background-color: #f4f4f4
-  padding: 0.3rem 0.7rem
+  border-radius: 6px !important
+  // background-color: #f4f4f4
+  padding: 0.3rem 0.7rem !important
+  color: #fff !important
 
 pre
-  background-color: #f4f4f4 !important
-  padding: 1rem !important
-  overflow-x: scroll
-  margin-bottom: 1rem
-  font-family: monospace !important
-  border-left: 3px solid $blue
+  // background-color: #f4f4f4 !important
+  // padding: 1rem !important
+  // overflow-x: scroll
+  // margin-bottom: 1rem
+  // font-family: monospace !important
+  // border-left: 3px solid $blue
 
-  @extend .ma0
-  @extend .mb4
+  // @extend .ma0
+  // @extend .mb4
+
+  border-radius: 6px !important
+  ::-moz-selection
+  background: rgba(0,0,0,0.7)
+  box-shadow: 2px 4px 25px rgba(0,0,0,.15)
+  margin-bottom: 2rem !important
+
+  ::selection
+    background: rgba(0,0,0,0.7)
 
   code 
-    border-radius: none
+    padding: 0 !important
+    display: inline-block
+    background-color: #333
+    ::-moz-selection
+      background: rgba(0,0,0,0.7)
+
+    ::selection
+      background: rgba(0,0,0,0.7)
+    // margin-left: -3em
 
 iframe 
   width: 100%
@@ -117,12 +135,3 @@ strong
 
 ::selection
   background: rgba(255,235,20,.7)
-
-// .gatsby-highlight-code-line 
-//   background-color: #feb
-//   display: block
-//   margin-right: -1em
-//   margin-left: -1em
-//   padding-right: 1em
-//   padding-left: 0.75em
-//   border-left: 0.25em solid #f99
