@@ -8,4 +8,4 @@ download: 'downloads/cloudbudget-gulp.zip'
 thumbnail: '../images/cloudbudget.jpg'
 ---
 
-Cloudbudget Gulp is a custom landing page WordPress theme. I built it based on a design I discovered [online](https://dribbble.com/shots/8449132-CloudBudget-Business-Landing-Page-Figma-Freebie). The main reason I built this was the orange to red gradient overlay on the hero block, I love a good gradient. <mark>Check docs for requirements & installation instructions</mark>.
+Cloudbudget Gulp is a custom landing page WordPress theme. I built it based on a design I discovered [online](https://dribbble.com/shots/8449132-CloudBudget-Business-Landing-Page-Figma-Freebie). The main reason I built this was the orange to red gradient overlay on the hero block, I love a good gradient. <mark>Check docs for requirements</mark>.
