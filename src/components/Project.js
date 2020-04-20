@@ -22,7 +22,7 @@ const Project = ({ data, page }) => {
         {data.frontmatter.type === 'theme' ?
           <div>
             <Button link={data.frontmatter.demo} text="DEMO" classes="mr2 bg-blue " />
-            <Button link={data.frontmatter.code} text="CODE" classes="mr2 bg-dark-gray" />
+            <Button link={data.frontmatter.code} text="DOCS" classes="mr2 bg-dark-gray" />
             <Button link={`../${data.frontmatter.download}`} download text="DOWNLOAD" classes="bg-red" />
           </div>
           :

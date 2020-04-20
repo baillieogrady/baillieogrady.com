@@ -8,4 +8,4 @@ download: 'downloads/whale-sage.zip'
 thumbnail: '../images/whale.jpg'
 ---
 
-A full screen vertical scrolling slider created as a landing page. Features an animating dot navigation. <mark>Please click the code button to see plugin requirements.</mark>
+A full screen vertical scrolling slider created as a landing page. Features an animating dot navigation. <mark>Check docs for requirements.</mark>

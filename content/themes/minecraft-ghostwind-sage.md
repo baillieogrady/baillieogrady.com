@@ -8,4 +8,4 @@ download: 'downloads/minecraft-ghostwind-sage.zip'
 thumbnail: '../images/minecraft.jpg'
 ---
 
-Minecraft Ghostwind Sage is a fork of [Ghostwind Sage](https://github.com/baillieogrady/ghostwind-sage) with a few additions to make it exclusive to Minecraft. The heading elements now display the Minecraft font and I've used the minecraft color palette throughout.
+Minecraft Ghostwind Sage is a fork of [Ghostwind Sage](https://github.com/baillieogrady/ghostwind-sage) with a few alterations to make it exclusive for Minecraft content. The heading elements now display the Minecraft font and I've used the minecraft color palette throughout the website elements.

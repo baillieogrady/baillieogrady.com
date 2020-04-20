@@ -8,4 +8,4 @@ download: 'downloads/minicaso-sage.zip'
 thumbnail: '../images/minicaso.jpg'
 ---
 
-Minicaso Sage is a minimal e-commerce theme built with the WooCommerce plugin. <mark>Please click the code button to see plugin requirements.</mark>
+Minicaso Sage is a minimal e-commerce theme built with the WooCommerce plugin. IT has a simple black and white theme with the occasional splash of blue. <mark>Check docs for requirements.</mark>
