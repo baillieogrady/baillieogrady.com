@@ -88,7 +88,7 @@ function defaultTask() {
   watch("src/fonts/*", { ignoreInitial: false }, fonts);
   watch("src/img/*.{png,gif,jpg}", { ignoreInitial: false }, img);
   watch("src/img/svg/*", { ignoreInitial: false }, svg);
-  browserSync.init({ proxy: "https://qeown.baillieogrady.com/" });
+  browserSync.init({ proxy: "https://localhost:8000" });
 }
 
 // Exports
