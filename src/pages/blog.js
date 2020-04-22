@@ -7,6 +7,7 @@ import Intro from "../components/Intro"
 import SEO from "../components/SEO"
 
 import config from '../../data/SiteConfig'
+import { formatDate } from '../utils/global'
 
 const Index = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.filter(item => item.node.frontmatter.template === "post");
@@ -18,17 +19,13 @@ const Index = ({ data }) => {
       />
       <Helmet title={`Blog - ${config.siteTitle}`} />
       <SEO />
-      <div className="posts mw7 center ph3 flex flex-wrap justify-between">
+      <div className="posts mw7 center ph3 flex flex-wrap flex-column justify-between">
         {posts.map((post, i) => (
-          <article key={i} className="mb4 m5-ns">
-            {console.log(post)}
-            <h2 className="f5 f4-ns ma0 mb2">
-              <Link to={`/${post.node.frontmatter.slug}`}>{post.node.frontmatter.title}</Link>
-            </h2>
-            <span className="silver f7 db">{post.node.frontmatter.date}</span>
-            <p>
-              {post.node.excerpt}
-            </p>
+          <article key={i} className="mb4 mb5-ns">
+            <h3 className="ma0 mb2">
+              <Link to={`/${post.node.frontmatter.slug}`} className="dark-gray hover-blue">{post.node.frontmatter.title}</Link>
+            </h3>
+            <time className="updated dib f7 ttu tracked silver">{formatDate(post.node.frontmatter.date)}</time>
           </article>
         ))}
       </div>
@@ -48,14 +45,13 @@ export const query = graphql`
       edges {
         node {
           html
-          excerpt
           frontmatter {
             title
             url
             template
             slug
             tags
-            date(formatString: "DD/MM/YYYY")
+            date
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 800){

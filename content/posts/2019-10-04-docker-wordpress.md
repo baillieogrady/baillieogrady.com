@@ -73,10 +73,12 @@ Paste the below into the **uploads.ini** file in your WordPress root directory. 
 
 ### uploads.ini
 
-    file_uploads = On
-    memory_limit = 750M
-    upload_max_filesize = 750M
-    post_max_size = 750M
-    max_execution_time = 600
+```ini
+file_uploads = On
+memory_limit = 750M
+upload_max_filesize = 750M
+post_max_size = 750M
+max_execution_time = 600
+```
 
 **Inspiration** [david yeiser](https://davidyeiser.com/tutorial/docker-wordpress-theme-setup)

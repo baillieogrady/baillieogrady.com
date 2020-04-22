@@ -7,11 +7,13 @@ import Intro from "../components/Intro"
 import Project from "../components/Project"
 import SEO from "../components/SEO"
 
+import { formatDate } from '../utils/global'
 import config from '../../data/SiteConfig'
 
 const Index = ({ data }) => {
   const projects = data.projects;
   const posts = data.posts;
+
   return (
     <Layout>
       <Helmet title={`${config.siteTitle} – Freelance WordPress Developer`} />
@@ -30,8 +32,8 @@ const Index = ({ data }) => {
       />
       <section className="projects pv4 pv5-ns bg-dark-gray white">
         <div className="mw7 center ph3">
-          <div className="mb3 mb4-ns">
-            <h2 className="mt0">Projects</h2>
+          <div className="mb4 mb5-ns">
+            <h2 className="ma0">Projects</h2>
           </div>
           <div className="flex-ns justify-between flex-wrap">
             {projects.edges.map((project, i) => (
@@ -40,29 +42,23 @@ const Index = ({ data }) => {
               </div>
             ))}
           </div>
-          <p className="gatsby-link mt4 mt0-ns">
-            <Link to="/projects">VIEW MORE</Link>
-          </p>
+          <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/projects">VIEW MORE</Link>
         </div>
       </section>
       <section className="posts pv4 pv5-ns">
         <div className="mw7 center ph3">
-          <div className="mb3 mb4-ns">
-            <h2 className="mt0">Posts</h2>
+          <div className="mb4 mb5-ns">
+            <h2 className="ma0">Posts</h2>
           </div>
-          <div className="pb4 pb5-ns">
-            {posts.edges.map((post, i) => (
-              <article key={i} className="mt3 mt4-ns">
-                <h3 className="ma0 mb2 mt4">
-                  <Link to={`/${post.node.frontmatter.slug}`} >{post.node.frontmatter.title}</Link>
-                </h3>
-                <span className="silver f7 db">{post.node.frontmatter.date}</span>
-              </article>
-            ))}
-          </div>
-          <p className="gatsby-link mt4 mt0-ns">
-            <Link to="/blog">VIEW MORE</Link>
-          </p>
+          {posts.edges.map((post, i) => (
+            <article key={i} className="mb4 mb5-ns">
+              <h3 className="ma0 mb2">
+                <Link to={`/${post.node.frontmatter.slug}`} className="hover-blue dark-gray">{post.node.frontmatter.title}</Link>
+              </h3>
+              <time className="updated dib f7 ttu tracked silver">{formatDate(post.node.frontmatter.date)}</time>
+            </article>
+          ))}
+          <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/blog">VIEW MORE</Link>
         </div>
       </section>
     </Layout>
@@ -87,7 +83,7 @@ export const query = graphql`
             type
             template
             slug
-            date(formatString: "DD/MM/YYYY")
+            date
           }
         }
       }
@@ -105,7 +101,7 @@ export const query = graphql`
             url
             type
             slug
-            date(formatString: "DD/MM/YYYY")
+            date
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 800){

@@ -34,7 +34,7 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
-            date(formatString: "DD/MM/YYYY")
+            date
           }
           excerpt
           timeToRead
@@ -42,7 +42,7 @@ export const pageQuery = graphql`
             title
             tags
             categories
-            date(formatString: "DD/MM/YYYY")
+            date
             template
           }
         }

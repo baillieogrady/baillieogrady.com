@@ -30,10 +30,10 @@ Composer library that allows you to create your ACF fields via php as opposed to
 
 Now we’ve installed both the composer packages lets move onto the code. For this example we’ll be adding an intro block, consisting of two ACF fields, a heading and a WYSIWYG.
 
-Code
-----
+##Code
 
-**app/fields/blocks/intro.php**
+
+###app/fields/blocks/intro.php
 
 ```php
 <?php
@@ -54,7 +54,7 @@ return $intro;
 ```
 
 
-**app/setup.php**
+###app/setup.php
 
 Include the StoutLogic namespace below the other namespaces included at the top of this file.
 
@@ -92,7 +92,7 @@ add_action('init', function () {
 });
 ```
 
-**resources/views/blocks/intro.php**
+###resources/views/blocks/intro.php
 
 ```php
 {{--

@@ -10,7 +10,7 @@ body
   font-family: "Roboto", Arial, Helvetica, sans-serif
   color: $dark-gray
   font-weight: 400
-  line-height: 1.7
+  line-height: $line-height-copy
 
 h1
   font-size: $font-size-2
@@ -18,7 +18,7 @@ h1
     font-size: $font-size-1
 
 h2
-  font-size: $font-size-3
+  font-size: 1.7rem
   @include breakpoint(l) 
     font-size: $font-size-2
 
@@ -26,9 +26,9 @@ h3,
 h4,
 h5,
 h6
-  font-size: $font-size-5
+  font-size: $font-size-4
   @include breakpoint(l) 
-    font-size: $font-size-4
+    font-size: $font-size-3
 
 h1,
 h2,
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6
-  font-weight: 600
+  font-weight: 700
   line-height: $line-height-title
   margin-bottom: $spacing-medium
   margin-top: $spacing-extra-large
@@ -48,24 +48,18 @@ p
     margin-bottom: $spacing-large
 
 a 
-  color: $dark-gray
+  color: $blue
+  font-weight: 500
   text-decoration: none
   transition: all 0.2s ease
-  box-shadow: 0px -3px 0px 0px lighten($blue, 30%) inset
   &:hover
-    box-shadow: 0px -19px 0px 0px lighten($blue, 30%) inset
+    opacity: 0.7
 
 li
   margin: 0
   margin-bottom: $spacing-small
   @include breakpoint(l) 
     margin-bottom: $spacing-medium
-
-.anchor
-  box-shadow: none
-  &:hover
-    box-shadow: none
-  
 
 img 
   height: auto
@@ -75,63 +69,54 @@ input
   -webkit-appearance: none
   border-radius: none
 
-code 
-  @extend .f6
+code
+  font-family: $code !important
+  border-radius: $border-radius-2 !important
+  padding: $spacing-extra-small $spacing-small !important
+  font-size: $font-size-6 !important
+  background-color: $near-white !important
+  color: $dark-gray !important
 
-  font-family: monospace !important
-  border-radius: 6px !important
-  // background-color: #f4f4f4
-  padding: 0.3rem 0.7rem !important
-  color: #fff !important
-
-pre
-  // background-color: #f4f4f4 !important
-  // padding: 1rem !important
-  // overflow-x: scroll
-  // margin-bottom: 1rem
-  // font-family: monospace !important
-  // border-left: 3px solid $blue
-
-  // @extend .ma0
-  // @extend .mb4
-
-  border-radius: 6px !important
-  ::-moz-selection
-  background: rgba(0,0,0,0.7)
+pre[class*="language-"]
+  overflow-x: scroll
+  border-radius: $border-radius-2 !important
   box-shadow: 2px 4px 25px rgba(0,0,0,.15)
-  margin-bottom: 2rem !important
-
-  ::selection
-    background: rgba(0,0,0,0.7)
+  margin-bottom: $spacing-extra-large
 
   code 
     padding: 0 !important
     display: inline-block
-    background-color: #333
-    ::-moz-selection
-      background: rgba(0,0,0,0.7)
-
+    background-color: transparent !important
+    color: #fff !important
+    ::-moz-selection,
     ::selection
-      background: rgba(0,0,0,0.7)
-    // margin-left: -3em
+      background: $yellow
 
 iframe 
   width: 100%
   border: none !important
-  margin-bottom: 1em
 
 figure 
   margin: 0
-  margin-bottom: .5em
 
 strong 
   font-weight: 600
 
+::-moz-selection
+  background: $yellow
+
+::selection
+  background: $yellow
+
 [aria-current="page"]
   color: $blue
 
-::-moz-selection
-  background: rgba(255,235,20,.7)
+.anchor
+  box-shadow: none
+  &:hover
+    box-shadow: none
 
-::selection
-  background: rgba(255,235,20,.7)
+ul,
+ol
+  margin: 0
+  padding: 0 1rem

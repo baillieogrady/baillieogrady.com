@@ -61,6 +61,7 @@ Firstly, copy the query creating the WordPress pages and paste it after this que
 Next, as you’ve already created your homepage to be index page ‘ / ‘, you want to remove the ‘ /home ‘ page from being created. This can be accomplished by again including a filter on the initial query thats creating the remaining pages, like so:
 
 ## JS
+
 ```javascript
 exports.createPages = ({ actions, graphql }) => {
 const { createPage } = actions

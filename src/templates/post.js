@@ -43,33 +43,29 @@ export default class PostTemplate extends Component {
         <div className="mw7 ph3 center flex items-start">
           <article className="w-100">
             <header className="mb4 mb5-ns">
-              <h1 className="ma0" dangerouslySetInnerHTML={{ __html: post.title }} />
-              <time className="updated dib f7 mb2">{date}</time>
+              <h1 className="ma0 mb3" dangerouslySetInnerHTML={{ __html: post.title }} />
+              <time className="updated dib f7 mb3 ttu tracked mb4 silver">{date}</time>
               {post.tags != undefined ? (
-                  <div>
-                    <ul className="list pa0 ma0">
-                      {post.tags.map(tag => (
-                        <li key={`${tag}`} className="dib bg-light-grey ma0 mr2">
-                          <Link to={`/tags/${tag}/`} className="dark-gray box-shadow-none dib pv1 ph2 bg-near-white br1 f7 dim">
-                            {tag}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : null}
+                <ul className="list pa0 ma0">
+                  {post.tags.map(tag => (
+                    <li key={`${tag}`} className="dib bg-light-grey ma0 mr2">
+                      <Link to={`/tags/${tag}/`} className="dark-gray fw5 dib pv1 ph2 bg-near-white br1 f7 dim mid-gray">
+                        {tag}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </header>
-            <div>
-              <div className="flex flex-column relative">
-                <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-              </div>
+            <div className="flex flex-column relative wysiwyg">
+              <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             </div>
           </article>
         </div>
         <div className="mw7 ph3 center">
           <hr style={{ borderBottom: "1px solid #999" }} className="bn mv4 mv5-ns" />
           <h3>Helpful?</h3>
-          <p>I really enjoy writing these articles and any support will only fuel me to create more. You can support me <a href="https://ko-fi.com/baillieogrady">here</a>.</p> 
+          <p>I really enjoy writing these articles and any support will only fuel me to create more. You can support me <a href="https://ko-fi.com/baillieogrady">here</a>.</p>
         </div>
       </Layout>
     )

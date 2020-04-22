@@ -15,7 +15,7 @@ class Intro extends React.Component {
           }
           {/* {page === 'index' ?
             <div className="mt4 mt0-ns">
-              <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg" target="_blank" rel="noopener noreferrer" className="white br2 tracked f7 fw7 ph3 pv2 no-underline box-shadow-none dim dib bg-red ttu">YouTube</a>
+              <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg" target="_blank" rel="noopener noreferrer" className="white br2 tracked f7 fw7 ph3 pv2 no-underline  dim dib bg-red ttu">YouTube</a>
             </div>
             : null
           } */}

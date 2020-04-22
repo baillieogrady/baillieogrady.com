@@ -42,9 +42,8 @@ const Layout = ({ children }) => (
           <div className="mw7 center ph3 flex flex-wrap justify-between items-center">
             <Link
               to="/"
-              className="near-black no-underline b lh-solid pv3 box-shadow-none tracked f3"
+              className="no-underline lh-solid pv3  tracked f3"
             >
-              {/* <img src={icon} alt="logo" className="h2 w2" /> */}
               🧑🏼‍💻
             </Link>
             <nav>
@@ -55,7 +54,7 @@ const Layout = ({ children }) => (
                     className={`dib mb0 ${i > 0 ? "ml3 ml4-ns" : ""}`}
                   >
                     <Link
-                      className="no-underline dark-gray box-shadow-none f6 f5-ns"
+                      className="no-underline dark-gray f6 f5-ns fw4"
                       to={`${link.link}`}
                     >
                       {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
@@ -69,10 +68,10 @@ const Layout = ({ children }) => (
         <main className="pt4 pt5-ns flex-auto">{children}</main>
         <footer className="pv4 pv5-l">
           <div className="mw7 center flex justify-between items-center">
-            <ul className="pa0 ma0 lh-solid list ph3 f7 f6-ns">
+            <ul className="list pa0 ma0 ph3 f6">
               <li className="dib mr4 w-auto-ns">
                 <a
-                  className="box-shadow-none"
+                  className="dark-gray fw4"
                   href="https://ko-fi.com/baillieogrady"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -82,7 +81,7 @@ const Layout = ({ children }) => (
               </li>
               <li className="dib mr4 w-auto-ns">
                 <Link
-                  className="box-shadow-none"
+                  className="dark-gray fw4"
                   to="/contact"
                 >
                   Contact
@@ -92,7 +91,7 @@ const Layout = ({ children }) => (
             <ul className="pa0 ma0 lh-solid list ph3">
               <li className="dib mr4 w-auto-ns">
                 <a
-                  className="relative flex items-center justify-center box-shadow-none hover-blue hover-pink"
+                  className="relative flex items-center justify-center  hover-blue hover-pink"
                   href={`https://instagram.com/${data.site.siteMetadata.social.handle}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -100,19 +99,9 @@ const Layout = ({ children }) => (
                   <img src={instagram} alt="Instagram" className="h1 w1" />
                 </a>
               </li>
-              {/* <li className="dib mr4 w-auto-ns">
-                <a
-                  className="relative flex items-center justify-center box-shadow-none hover-blue"
-                  href={`https://www.linkedin.com/in/${data.site.siteMetadata.social.handle}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={linkedin} alt="LinkedIn" className="h1 w1" />
-                </a>
-              </li> */}
               <li className="dib mr4 w-auto-ns">
                 <a
-                  className="relative flex items-center justify-center box-shadow-none hover-blue"
+                  className="relative flex items-center justify-center  hover-blue"
                   href={`https://github.com/${data.site.siteMetadata.social.handle}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -120,19 +109,9 @@ const Layout = ({ children }) => (
                   <img src={github} alt="GitHub" className="h1 w1" />
                 </a>
               </li>
-              {/* <li className="dib mr4 w-auto-ns">
-                <a
-                  className="relative flex items-center justify-center box-shadow-none hover-blue"
-                  href={`https://codepen.io/${data.site.siteMetadata.social.handle}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={codepen} alt="codepen" className="h1 w1" />
-                </a>
-              </li> */}
               <li className="dib w-auto-ns">
                 <a
-                  className="relative flex items-center justify-center box-shadow-none hover-red"
+                  className="relative flex items-center justify-center hover-red"
                   href={`https://www.youtube.com/channel/${data.site.siteMetadata.social.youtube}`}
                   target="_blank"
                   rel="noopener noreferrer"

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import { formatDate } from '../utils/global'
+
 class PostListing extends React.Component {
   getPostList() {
     const postList = [];
@@ -21,17 +23,13 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div className="posts mw7 center ph3 flex flex-wrap justify-between">
-        {postList.map(post => (
-          <article key={post.title} className="mb4 m5-ns">
-              {console.log(post)}
-              <h2 className="f5 f4-ns ma0 mb2">
-                  <Link to={post.path}>{post.title}</Link>
-              </h2>
-              <span className="silver f7 db">{post.date}</span>
-              <p>
-                  {post.excerpt}
-              </p>
+      <div className="posts mw7 center ph3 flex flex-wrap flex-column justify-between">
+        {postList.map((post, i) => (
+          <article key={i} className="mt3 mt4-ns">
+            <h3 className="ma0 mb2">
+              <Link to={`/${post.slug}`} className="hover-blue dark-gray">{post.title}</Link>
+            </h3>
+            <time className="updated dib f7 ttu tracked silver">{formatDate(post.date)}</time>
           </article>
         ))}
       </div>

@@ -27,7 +27,7 @@ The internet has a lot of ambiguity, books have consolidated well defined inform
 
 Probably one of the most visually appealing books I’ve ever read. It’s the type of book you’d buy regardless of the content. John Duckett doesn’t fall short in providing a grand insight into the fundamentals of HTML & CSS with this beauty. Also, his vast experience of design shines through in this [series](https://www.amazon.co.uk/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=baillieogrady-21&keywords=jon duckett&index=aps&camp=1634&creative=6738&linkCode=ur2&linkId=434e3305888a870632ba70c828735950) of books by Jon, with consistent graphic illustrations to help you properly understand, couldn’t recommend it more.
 
-<a href="https://amzn.to/2NpZsU5" class="bg-blue f7 fw7 pv2  ph3 ttu white tracked br2 box-shadow-none dim">Grab a copy</a>
+<a href="https://amzn.to/2NpZsU5" class="bg-blue f7 fw7 pv2  ph3 ttu white tracked br2  dim">Grab a copy</a>
 
 2\. **HTML & CSS: A Beginner’s Guide** _by Mitesh_ Dabhi
 
@@ -35,4 +35,4 @@ Probably one of the most visually appealing books I’ve ever read. It’s the t
 
 Much less verbose than Jon Duckett’s HTML & CSS guide but nevertheless gets straight to the point and teaches you the fundamentals to help you construct your very first website. I recall buying this the first day I started o learn HTML & CSS, I went through it in one sitting. It’s a great guide to refer back to in case you forget the basics.
 
-<a href="https://amzn.to/2WRuZ4A" class="bg-blue f7 fw7 pv2  ph3 ttu white tracked br2 box-shadow-none dim">Grab a copy</a>
+<a href="https://amzn.to/2WRuZ4A" class="bg-blue f7 fw7 pv2  ph3 ttu white tracked br2  dim">Grab a copy</a>
