@@ -9,7 +9,7 @@ const Project = ({ data, page }) => {
         <Img fluid={data.frontmatter.thumbnail.childImageSharp.fluid} />
       </a>
       <header>
-        <h3 className="mt3">{data.frontmatter.title}</h3>
+        <h2 className="mt3">{data.frontmatter.title}</h2>
       </header>
       <div className="mt3">
         <div dangerouslySetInnerHTML={{ __html: data.html }} />
