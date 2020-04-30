@@ -8,7 +8,7 @@ class PostListing extends React.Component {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
       postList.push({
-        path: postEdge.node.fields.slug,
+        slug: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
@@ -27,7 +27,7 @@ class PostListing extends React.Component {
         {postList.map((post, i) => (
           <article key={i} className="mt3 mt4-ns">
             <h3 className="ma0 mb2">
-              <Link to={`/${post.path}`} className="hover-blue dark-gray">{post.title}</Link>
+              <Link to={`/${post.slug}`} className="hover-blue dark-gray">{post.title}</Link>
             </h3>
             <time className="updated dib f7 ttu tracked silver">{formatDate(post.date)}</time>
           </article>
