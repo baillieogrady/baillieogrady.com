@@ -27,7 +27,7 @@ class PostListing extends React.Component {
         {postList.map((post, i) => (
           <article key={i} className="mt3 mt4-ns">
             <h3 className="ma0 mb2">
-              <Link to={`/${post.slug}`} className="hover-blue dark-gray">{post.title}</Link>
+              <Link to={`/${post.path}`} className="hover-blue dark-gray">{post.title}</Link>
             </h3>
             <time className="updated dib f7 ttu tracked silver">{formatDate(post.date)}</time>
           </article>
