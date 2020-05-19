@@ -23,10 +23,10 @@ const Index = ({ data }) => {
         text={`
           <div>
           <p>I'm a freelance WordPress Developer from <a href="https://en.wikipedia.org/wiki/Manchester"  rel="noopener">Manchester</a>, with over 4 years experience in web development.</p>
-          <p>I specialise in converting custom designs to optimised, responsive and accessible websites. I mostly build bespoke WordPress themes utilising <a href="https://www.advancedcustomfields.com/">ACF</a> but also starting to delve more into GatsbyJS for more minimal builds, such as this <a href="https://github.com/baillieogrady/baillieogrady.com">portfolio</a> website.
+          <p>I specialise in converting custom designs to optimised, responsive and accessible websites. I mostly build bespoke WordPress themes with <a href="https://www.advancedcustomfields.com/">ACF</a> but I've also started experimenting with GatsbyJS, this <a href="https://github.com/baillieogrady/baillieogrady.com">portfolio</a> being my first experiment 🧪.
           </p>
           <p>
-          Also, I frequently build open source projects and document my coding process on <a href="https://www.instagram.com/baillieogrady/">Instagram</a>.</p>
+          Also, I've started documenting my code on <a href="https://www.instagram.com/baillieogrady/">Instagram</a>; creating coding carousels, landing pages and open source <a href="/themes">WordPress themes.</a></p>
         `}
         page="index"
       />
