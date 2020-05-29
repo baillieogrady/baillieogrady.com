@@ -19,7 +19,7 @@ const Contact = () => {
       />
       <section class="mb4 mb5-ns">
         <div class="mw7 center ph3">
-          <h2>Take your pick</h2>
+          {/* <h2>Take your pick</h2> */}
           <ul className="ma0">
             {/* <li><a href="tel:07939818296">07939818296</a></li> */}
             <li><a href="mailto:hello@baillieogrady.com">hello@baillieogrady.com</a></li>
@@ -30,7 +30,7 @@ const Contact = () => {
           </ul>
         </div>
       </section>
-      <section class="dn db-ns mb4 mb5-ns">
+      {/* <section class="dn db-ns mb4 mb5-ns">
         <div class="mw7 center ph3">
           <h2>Crypto</h2>
           <ul className="ma0">
@@ -39,7 +39,7 @@ const Contact = () => {
             <li><strong>LTC:</strong> LafofH2bt4kZu95szSQic9cz4VTWXk8kEZ</li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }

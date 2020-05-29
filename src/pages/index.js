@@ -19,14 +19,13 @@ const Index = ({ data }) => {
       <Helmet title={`${config.siteTitle} – Freelance WordPress Developer`} />
       <SEO />
       <Intro
-        title="Baillie O'Grady"
+        title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">@baillieogrady</a>`}
         text={`
           <div>
-          <p>I'm a freelance WordPress Developer from <a href="https://en.wikipedia.org/wiki/Manchester"  rel="noopener">Manchester</a>, with over 4 years experience in web development.</p>
-          <p>I specialise in converting custom designs to optimised, responsive and accessible websites. I mostly build bespoke WordPress themes with <a href="https://www.advancedcustomfields.com/">ACF</a> but I've also started delving into GatsbyJS, this <a href="https://github.com/baillieogrady/baillieogrady.com">portfolio</a> being my first experiment 🧪.
+          <p>A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom designs to optimised, responsive and accessible WordPress websites.
           </p>
           <p>
-          Also, I've started documenting my code on <a href="https://www.instagram.com/baillieogrady/">Instagram</a>; creating coding carousels, landing pages and open source <a href="/themes">WordPress themes.</a></p>
+          I enjoy documenting my code through <a href="https://www.instagram.com/baillieogrady/">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a>, <a href="/blogs">blogs</a> and <a href="/themes">themes.</a></p>
         `}
         page="index"
       />

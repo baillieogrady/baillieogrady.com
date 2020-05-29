@@ -40,7 +40,7 @@ export default class PostTemplate extends Component {
           <title>{`${post.title} – ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} />
-        <div className="mw7 ph3 center flex items-start">
+        <div className="mw7 ph3 center flex items-start mb3 mb5-ns">
           <article className="w-100">
             <header className="mb4 mb5-ns">
               <h1 className="ma0 mb3" dangerouslySetInnerHTML={{ __html: post.title }} />
@@ -62,11 +62,11 @@ export default class PostTemplate extends Component {
             </div>
           </article>
         </div>
-        <div className="mw7 ph3 center">
+        {/* <div className="mw7 ph3 center">
           <hr style={{ borderBottom: "1px solid #999" }} className="bn mv4 mv5-ns" />
           <h3>Helpful?</h3>
           <p>I really enjoy writing these articles and any support will only fuel me to create more. You can support me <a href="https://ko-fi.com/baillieogrady">here</a>.</p>
-        </div>
+        </div> */}
       </Layout>
     )
   }

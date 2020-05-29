@@ -8,4 +8,4 @@ download: 'downloads/whale-sage.zip'
 thumbnail: '../images/whale.jpg'
 ---
 
-A full screen vertical scrolling slider created as a landing page. Features an animating dot navigation. <mark>Check docs for requirements.</mark>
+A WordPress theme featuring a full screen vertical slider. This was a Dribbble design I converted by [Sakin Kumar](https://dribbble.com/sakinkumar). <mark>Check docs for requirements.</mark>

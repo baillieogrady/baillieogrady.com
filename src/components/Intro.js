@@ -9,8 +9,8 @@ class Intro extends React.Component {
 
     return (
       <section className="mb4 mb5-ns">
-        <div className="mw7 center ph3">
-          <h1 dangerouslySetInnerHTML={{ __html: title }} className="mt0" />
+        <div className="mw7 center pl3 pr6-ns">
+          <h1 dangerouslySetInnerHTML={{ __html: title }} className="mt0 fw6" />
           {(text) != null ?
             <div dangerouslySetInnerHTML={{ __html: text }} />
             : null

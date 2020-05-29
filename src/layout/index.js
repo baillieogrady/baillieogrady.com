@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
           <div className="mw7 center ph3 flex flex-wrap justify-between items-center">
             <Link
               to="/"
-              className="no-underline lh-solid pv3  tracked f3"
+              className="no-underline lh-solid pv3 f3"
             >
               🧑🏼‍💻
             </Link>
@@ -54,7 +54,7 @@ const Layout = ({ children }) => (
                     className={`dib mb0 ${i > 0 ? "ml3 ml4-ns" : ""}`}
                   >
                     <Link
-                      className="no-underline dark-gray f6 f5-ns fw4"
+                      className="no-underline f7 fw4 ttu gray tracked fw5"
                       to={`${link.link}`}
                     >
                       {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
@@ -66,9 +66,9 @@ const Layout = ({ children }) => (
           </div>
         </header>
         <main className="pt4 pt5-ns flex-auto">{children}</main>
-        <footer className="pv4 pv5-l">
-          <div className="mw7 center flex justify-between items-center">
-            <ul className="list pa0 ma0 ph3 f6">
+        <footer className="pv3">
+          <div className="mw7 center flex justify-between items-center ph3">
+            <ul className="list pa0 ma0 f6">
               <li className="dib mr4 w-auto-ns">
                 <a
                   className="dark-gray fw4"
@@ -88,7 +88,7 @@ const Layout = ({ children }) => (
                 </Link>
               </li>
             </ul>
-            <ul className="pa0 ma0 lh-solid list ph3">
+            <ul className="pa0 ma0 lh-solid list">
               <li className="dib mr4 w-auto-ns">
                 <a
                   className="relative flex items-center justify-center  hover-blue hover-pink"
