@@ -19,20 +19,20 @@ const Index = ({ data }) => {
       <Helmet title={`${config.siteTitle} – Freelance WordPress Developer`} />
       <SEO />
       <Intro
-        title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">@baillieogrady</a>`}
+        title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">Baillie O'Grady</a>`}
         text={`
           <div>
           <p>A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom designs to optimised, responsive and accessible WordPress websites.
           </p>
           <p>
-          I enjoy documenting my code through <a href="https://www.instagram.com/baillieogrady/">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a>, <a href="/blog">blogs</a> and <a href="/themes">themes.</a></p>
+          I enjoy documenting my code through <a href="https://www.instagram.com/baillieogrady/">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a>, <a href="/blog">posts</a> and <a href="/themes">themes.</a></p>
         `}
         page="index"
       />
-      <section className="projects pv4 pv5-ns bg-dark-gray white">
+      <section className="projects mb5 mb6-ns">
         <div className="mw7 center ph3">
-          <div className="mb4 mb5-ns">
-            <h2 className="ma0">Projects</h2>
+          <div className="mb4">
+            <h2 className="ma0">Recent Projects</h2>
           </div>
           <div className="flex-ns justify-between flex-wrap">
             {projects.edges.map((project, i) => (
@@ -44,23 +44,25 @@ const Index = ({ data }) => {
           <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/projects">VIEW MORE</Link>
         </div>
       </section>
-      <section className="posts pv4 pv5-ns">
+      <section className="posts mb5 mb6-ns">
         <div className="mw7 center ph3">
-          <div className="mb4 mb5-ns">
-            <h2 className="ma0">Posts</h2>
+          <div className="mb4">
+            <h2 className="ma0">Recent Posts</h2>
           </div>
           {posts.edges.map((post, i) => (
-            <article key={i} className="mb4 mb5-ns">
-              <h3 className="ma0 mb2">
+            <article key={i} className="mb4">
+              <h3 className="ma0 mb1">
                 <Link to={`/${post.node.frontmatter.slug}`} className="hover-blue dark-gray">{post.node.frontmatter.title}</Link>
               </h3>
               <time className="updated dib f7 ttu tracked silver">{formatDate(post.node.frontmatter.date)}</time>
             </article>
           ))}
-          <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/blog">VIEW MORE</Link>
+          <div className="mt5">
+            <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/blog">VIEW MORE</Link>
+          </div>
         </div>
       </section>
-    </Layout>
+    </Layout >
   )
 }
 

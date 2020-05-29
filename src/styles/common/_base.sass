@@ -7,19 +7,19 @@ html
   box-sizing: inherit
 
 body 
-  font-family: "Roboto", Arial, Helvetica, sans-serif
+  font-family: $sans-serif
   color: $dark-gray
   font-weight: 400
-  line-height: 1.6
+  line-height: 1.8
 
 h1
   font-size: $font-size-2
-  @include breakpoint(l) 
+  @include breakpoint(l)
     font-size: $font-size-1
 
 h2
-  font-size: 1.7rem
-  @include breakpoint(l) 
+  font-size: $font-size-3
+  @include breakpoint(l)
     font-size: $font-size-2
 
 h3,
@@ -27,8 +27,8 @@ h4,
 h5,
 h6
   font-size: $font-size-4
-  @include breakpoint(l) 
-    font-size: $font-size-3
+  // @include breakpoint(l) 
+  //   font-size: $font-size-4
 
 h1,
 h2,
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6
-  font-weight: 700
+  font-weight: 600
   line-height: $line-height-title
   margin-bottom: $spacing-medium
   margin-top: $spacing-extra-large
@@ -47,7 +47,6 @@ p
 
 a 
   color: $blue
-  font-weight: 500
   text-decoration: none
   transition: all 0.2s ease
   &:hover

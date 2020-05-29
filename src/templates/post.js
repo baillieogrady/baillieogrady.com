@@ -40,7 +40,7 @@ export default class PostTemplate extends Component {
           <title>{`${post.title} – ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} />
-        <div className="mw7 ph3 center flex items-start mb3 mb5-ns">
+        <div className="mw7 ph3 center flex items-start mb3 mb5-ns pt5">
           <article className="w-100">
             <header className="mb4 mb5-ns">
               <h1 className="ma0 mb3" dangerouslySetInnerHTML={{ __html: post.title }} />

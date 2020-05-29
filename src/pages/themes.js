@@ -18,7 +18,7 @@ const Themes = ({ data }) => {
       <Intro
         title="Themes"
         text={`
-          <p>Custom open source WordPress Themes I've built in my spare time. Some are based on genuine designs I  discovered on <a href="https://dribbble.com">dribbble</a>.</p>
+          <p>Open source WordPress Themes I've built in my spare time. Some are based on genuine designs I  discovered on <a href="https://dribbble.com">dribbble</a>.</p>
           `}
       />
       <div className="mw7 center ph3 flex flex-wrap justify-between">

@@ -11,6 +11,7 @@ import youtube from "../images/youtube.svg"
 import icon from '../images/icon.png'
 
 import "../styles/main.sass"
+// import "../styles/main.css"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -34,6 +35,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div className="flex flex-column min-vh-100" role="document">
+        {console.log(data)}
         <Helmet>
           <meta name="description" content={data.site.siteMetadata.description} />
           <link rel="icon" href={icon} />
@@ -65,13 +67,13 @@ const Layout = ({ children }) => (
             </nav>
           </div>
         </header>
-        <main className="pt4 pt5-ns flex-auto">{children}</main>
+        <main className="flex-auto">{children}</main>
         <footer className="pv3">
           <div className="mw7 center flex justify-between items-center ph3">
             <ul className="list pa0 ma0 f6">
               <li className="dib mr4 w-auto-ns">
                 <a
-                  className="dark-gray fw4"
+                  className="no-underline f7 fw4 ttu gray tracked fw5"
                   href="https://ko-fi.com/baillieogrady"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -81,7 +83,7 @@ const Layout = ({ children }) => (
               </li>
               <li className="dib mr4 w-auto-ns">
                 <Link
-                  className="dark-gray fw4"
+                  className="no-underline f7 fw4 ttu gray tracked fw5"
                   to="/contact"
                 >
                   Contact
