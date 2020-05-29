@@ -25,7 +25,7 @@ const Index = ({ data }) => {
           <p>A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom designs to optimised, responsive and accessible WordPress websites.
           </p>
           <p>
-          I enjoy documenting my code through <a href="https://www.instagram.com/baillieogrady/">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a>, <a href="/blogs">blogs</a> and <a href="/themes">themes.</a></p>
+          I enjoy documenting my code through <a href="https://www.instagram.com/baillieogrady/">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a>, <a href="/blog">blogs</a> and <a href="/themes">themes.</a></p>
         `}
         page="index"
       />
