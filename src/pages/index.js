@@ -36,7 +36,7 @@ const Index = ({ data }) => {
           </div>
           <div className="flex-ns justify-between flex-wrap">
             {projects.edges.map((project, i) => (
-              <div key={i} className={`w-100 w-50-m w-50-l pb4 pb5-ns ${i === 0 || i % 2 === 0 ? 'pr3-ns' : 'pl3-ns'}`}>
+              <div key={i} className={`w-100 w-50-m w-50-l pb3 pb4-ns ${i === 0 || i % 2 === 0 ? 'pr3-ns' : 'pl3-ns'}`}>
                 <Project data={project.node} button={false} page="index" />
               </div>
             ))}
@@ -51,7 +51,7 @@ const Index = ({ data }) => {
           </div>
           {posts.edges.map((post, i) => (
             <article key={i} className="mb4">
-              <h3 className="ma0 mb1">
+              <h3 className="ma0 f5 f4-l">
                 <Link to={`/${post.node.frontmatter.slug}`} className="hover-blue dark-gray">{post.node.frontmatter.title}</Link>
               </h3>
               <time className="updated dib f7 ttu tracked silver">{formatDate(post.node.frontmatter.date)}</time>

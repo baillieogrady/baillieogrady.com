@@ -8,7 +8,7 @@ class Intro extends React.Component {
     const { title, text, page } = this.props;
 
     return (
-      <section className="mv5 mb6-ns">
+      <section className={`mv5 ${page === 'index' ? "mb6-ns" : "mb5-ns"}`}>
         <div className="mw7 center ph3">
           <h1 dangerouslySetInnerHTML={{ __html: title }} className="mt0 fw6" />
           {(text) != null ?

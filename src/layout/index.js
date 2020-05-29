@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
           <meta name="description" content={data.site.siteMetadata.description} />
           <link rel="icon" href={icon} />
         </Helmet>
-        <header className="w-100 bg-white sticky top-0 z-1 mt0 mt4-ns">
+        <header className="w-100 bg-white sticky top-0 z-1 mt0 mt4-ns pb3 pb0-ns">
           <div className="mw7 center ph3 flex flex-wrap justify-between items-center">
             <Link
               to="/"
@@ -48,12 +48,12 @@ const Layout = ({ children }) => (
             >
               🧑🏼‍💻
             </Link>
-            <nav>
+            <nav className="w-100 space-y-0 w-auto-ns">
               <ul className="ma0 pa0">
                 {data.site.siteMetadata.menuLinks.map((link, i) => (
                   <li
                     key={link.name}
-                    className={`dib mb0 ${i > 0 ? "ml3 ml4-ns" : ""}`}
+                    className={`dib mb0 ${i > 0 ? "ml0 ml4" : ""}`}
                   >
                     <Link
                       className="no-underline f7 fw4 ttu gray tracked fw5"
