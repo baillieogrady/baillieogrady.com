@@ -5,6 +5,7 @@ import Button from '../components/Button';
 const Project = ({ data, page }) => {
   return (
     <article key={data.id}>
+      {console.log(data)}
       <a href={data.frontmatter.url} target="_blank" rel="noreferrer">
         <Img fluid={data.frontmatter.thumbnail.childImageSharp.fluid} />
       </a>
@@ -15,11 +16,15 @@ const Project = ({ data, page }) => {
         <div dangerouslySetInnerHTML={{ __html: data.html }} />
       </div>
       <div>
-        {data.frontmatter.type === 'project' && page !== 'index' ?
+        {page !== 'index' ?
           <Button link={data.frontmatter.url} text="VISIT" classes="bg-blue" />
           :
           null}
-        {data.frontmatter.type === 'theme' ?
+        {page !== 'index' && data.frontmatter.code !== null || undefined ?
+          <Button link={data.frontmatter.code} text="CODE" classes="ml2 bg-dark-gray" />
+          :
+          null}
+        {/* {data.frontmatter.type === 'theme' ?
           <div>
             <Button link={data.frontmatter.demo} text="DEMO" classes="mr2 bg-blue " />
             <Button link={data.frontmatter.code} text="DOCS" classes="mr2 bg-dark-gray" />
@@ -27,7 +32,7 @@ const Project = ({ data, page }) => {
           </div>
           :
           null
-        }
+        } */}
       </div>
     </article>
   )

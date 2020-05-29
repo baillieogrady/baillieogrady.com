@@ -25,7 +25,7 @@ const Index = ({ data }) => {
           <p>A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom designs to optimised, responsive and accessible WordPress websites.
           </p>
           <p>
-          I enjoy documenting my code through <a href="https://www.instagram.com/baillieogrady/">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a>, <a href="/blog">posts</a> and <a href="/themes">themes.</a></p>
+          I enjoy documenting my code through <a href="https://www.instagram.com/baillieogrady/">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a> and <a href="/blog">posts</a>.</p>
         `}
         page="index"
       />
@@ -36,12 +36,12 @@ const Index = ({ data }) => {
           </div>
           <div className="flex-ns justify-between flex-wrap">
             {projects.edges.map((project, i) => (
-              <div key={i} className={`w-100 w-50-m w-50-l pb3 pb4-ns ${i === 0 || i % 2 === 0 ? 'pr3-ns' : 'pl3-ns'}`}>
+              <div key={i} className={`w-100 w-50-m w-50-l pb3 ${i === 0 || i % 2 === 0 ? 'pr3-ns' : 'pl3-ns'}`}>
                 <Project data={project.node} button={false} page="index" />
               </div>
             ))}
           </div>
-          <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/projects">VIEW MORE</Link>
+          <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim bg-blue" to="/projects">VIEW MORE</Link>
         </div>
       </section>
       <section className="posts mb5 mb6-ns">
@@ -57,7 +57,7 @@ const Index = ({ data }) => {
               <time className="updated dib f7 ttu tracked silver">{formatDate(post.node.frontmatter.date)}</time>
             </article>
           ))}
-          <div className="mt5">
+          <div className="mt3">
             <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/blog">VIEW MORE</Link>
           </div>
         </div>

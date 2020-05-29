@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
           <meta name="description" content={data.site.siteMetadata.description} />
           <link rel="icon" href={icon} />
         </Helmet>
-        <header className="w-100 bg-white sticky top-0 z-1 mt0 mt4-ns pb3 pb0-ns">
+        <header className="w-100 bg-white sticky top-0 z-1 mt0 mt4-ns">
           <div className="mw7 center ph3 flex flex-wrap justify-between items-center">
             <Link
               to="/"
@@ -48,7 +48,7 @@ const Layout = ({ children }) => (
             >
               🧑🏼‍💻
             </Link>
-            <nav className="w-100 space-y-0 w-auto-ns">
+            <nav>
               <ul className="ma0 pa0">
                 {data.site.siteMetadata.menuLinks.map((link, i) => (
                   <li
@@ -56,7 +56,7 @@ const Layout = ({ children }) => (
                     className={`dib mb0 ${i > 0 ? "ml0 ml4" : ""}`}
                   >
                     <Link
-                      className="no-underline f7 fw4 ttu gray tracked fw5"
+                      className="no-underline f7 fw6 ttu gray tracked"
                       to={`${link.link}`}
                     >
                       {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
@@ -73,7 +73,7 @@ const Layout = ({ children }) => (
             <ul className="list pa0 ma0 f6">
               <li className="dib mr4 w-auto-ns">
                 <a
-                  className="no-underline f7 fw4 ttu gray tracked fw5"
+                  className="no-underline f7 fw6 fw4 ttu gray tracked fw5"
                   href="https://ko-fi.com/baillieogrady"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -83,7 +83,7 @@ const Layout = ({ children }) => (
               </li>
               <li className="dib mr4 w-auto-ns">
                 <Link
-                  className="no-underline f7 fw4 ttu gray tracked fw5"
+                  className="no-underline f7 fw6 fw4 ttu gray tracked fw5"
                   to="/contact"
                 >
                   Contact

@@ -24,13 +24,13 @@ const Links = () => {
                     <img src={baillie} alt="Baillie O'Grady" className="h4 br-pill" />
                     <ul className="ma0 list mt3">
                         <li className="mb3">
+                            <Link to="/projects" className="pv3 white bg-blue w-100 db">Projects</Link>
+                        </li>
+                        <li className="mb3">
                             <a href="https://codepen.io/collection/nVybwy" class="pv3 white bg-blue w-100 db">CodePen</a>
                         </li>
                         <li className="mb3">
                             <a href="https://github.com/baillieogrady" class="pv3 white bg-blue w-100 db">GitHub</a>
-                        </li>
-                        <li className="mb3">
-                            <Link to="/themes" className="pv3 white bg-blue w-100 db">Themes</Link>
                         </li>
                         <li className="mb3">
                             <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg" class="pv3 white bg-blue w-100 db">YouTube</a>
