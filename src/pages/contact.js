@@ -23,10 +23,10 @@ const Contact = () => {
           <ul className="ma0">
             {/* <li><a href="tel:07939818296">07939818296</a></li> */}
             <li><a href="mailto:hello@baillieogrady.com">hello@baillieogrady.com</a></li>
-            <li><a href="https://www.linkedin.com/in/baillieogrady/" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/baillieogrady/" rel="noopener">Instagram</a></li>
-            <li><a href="https://twitter.com/baillieogrady" rel="noopener">Twitter</a></li>
             <li><a href="https://www.facebook.com/iambaillieogrady" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.instagram.com/baillieogrady/" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/baillieogrady/" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://twitter.com/baillieogrady" rel="noopener">Twitter</a></li>
           </ul>
         </div>
       </section>
