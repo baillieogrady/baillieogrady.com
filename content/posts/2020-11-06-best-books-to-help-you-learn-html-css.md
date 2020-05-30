@@ -1,4 +1,4 @@
----
+<!-- ---
 date: 2019-11-06
 title: 'Best books to help you learn HTML & CSS'
 template: post
@@ -35,4 +35,4 @@ Probably one of the most visually appealing books I’ve ever read. It’s the t
 
 Much less verbose than Jon Duckett’s HTML & CSS guide but nevertheless gets straight to the point and teaches you the fundamentals to help you construct your very first website. I recall buying this the first day I started o learn HTML & CSS, I went through it in one sitting. It’s a great guide to refer back to in case you forget the basics.
 
-<a href="https://amzn.to/2WRuZ4A" class="bg-blue f7 fw7 pv2  ph3 ttu white tracked br2  dim">Grab a copy</a>
+<a href="https://amzn.to/2WRuZ4A" class="bg-blue f7 fw7 pv2  ph3 ttu white tracked br2  dim">Grab a copy</a> -->

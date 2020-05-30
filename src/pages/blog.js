@@ -21,7 +21,7 @@ const Index = ({ data }) => {
       <SEO />
       <div className="posts mw7 center ph3 flex flex-wrap flex-column justify-between">
         {posts.map((post, i) => (
-          <article key={i} className="mb5">
+          <article key={i} className="mb4">
             <h3 className="ma0 f5 f4-l">
               <Link to={`/${post.node.frontmatter.slug}`} className="dark-gray hover-blue">{post.node.frontmatter.title}</Link>
             </h3>

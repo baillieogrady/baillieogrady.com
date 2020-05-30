@@ -8,7 +8,7 @@ html
 
 body 
   font-family: 'Proxima nova', Arial, Helvetica, sans-serif
-  color: $dark-gray
+  color: $mid-gray
   font-weight: 400
   line-height: $line-height-copy
   font-size: 16px
@@ -37,11 +37,15 @@ h3,
 h4,
 h5,
 h6
+  color: $dark-gray
   font-family: 'Proxima nova', Arial, Helvetica, sans-serif
   font-weight: 600
   line-height: $line-height-title
   margin-bottom: $spacing-medium
-  margin-top: $spacing-extra-large
+  margin-top: $spacing-large
+  @include breakpoint(l) 
+    margin-top: $spacing-extra-large
+
 
 p
   margin: 0

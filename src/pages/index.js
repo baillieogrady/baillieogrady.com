@@ -21,18 +21,15 @@ const Index = ({ data }) => {
       <Intro
         title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">Baillie O'Grady</a>`}
         text={`
-          <div>
           <p>A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom designs to optimised, responsive and accessible WordPress websites.
           </p>
-          <p>
-          I enjoy documenting my code through <a href="https://www.instagram.com/baillieogrady/">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a> and <a href="/blog">posts</a>.</p>
         `}
         page="index"
       />
       <section className="projects mb5 mb6-ns">
         <div className="mw7 center ph3">
           <div className="mb4">
-            <h2 className="ma0">Recent Projects</h2>
+            <h2 className="ma0">Projects</h2>
           </div>
           <div className="flex-ns justify-between flex-wrap">
             {projects.edges.map((project, i) => (
@@ -47,7 +44,7 @@ const Index = ({ data }) => {
       <section className="posts mb5 mb6-ns">
         <div className="mw7 center ph3">
           <div className="mb4">
-            <h2 className="ma0">Recent Posts</h2>
+            <h2 className="ma0">Posts</h2>
           </div>
           {posts.edges.map((post, i) => (
             <article key={i} className="mb4">

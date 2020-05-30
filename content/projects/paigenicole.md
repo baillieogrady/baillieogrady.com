@@ -7,4 +7,4 @@ download: 'downloads/paige-sage.zip'
 thumbnail: '../images/paige.png'
 ---
 
-Paige wanted a simple landing page to showcase her passion for writing. This WordPress theme was inspired by [kathrynmcclintock](http://www.kathrynmcclintock.com/)'s portfolio website.
+Paige wanted a simple landing page to showcase her passion for writing. I built her a minimal WordPress theme inspired by [kathrynmcclintock](http://www.kathrynmcclintock.com/)'s portfolio website. 

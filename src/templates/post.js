@@ -49,7 +49,7 @@ export default class PostTemplate extends Component {
                 <ul className="list pa0 ma0">
                   {post.tags.map(tag => (
                     <li key={`${tag}`} className="dib bg-light-grey ma0 mr2">
-                      <Link to={`/tags/${tag}/`} className="dark-gray fw5 dib pv1 ph2 bg-near-white br1 f7 dim mid-gray">
+                      <Link to={`/tags/${tag}/`} className="dark-gray fw5 dib pv1 ph2 bg-near-white br1 f6 dim mid-gray">
                         {tag}
                       </Link>
                     </li>

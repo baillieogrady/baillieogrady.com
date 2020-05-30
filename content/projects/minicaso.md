@@ -7,4 +7,4 @@ url: 'https://minicaso.com'
 thumbnail: '../images/minicaso.jpg'
 ---
 
-Minicaso is a minimal e-commerce theme I designed and developed from scratch. It was built with [Sage](https://roots.io/sage/) and ACF Pro.
+Minicaso is a minimal e-commerce WordPress theme I designed and developed from scratch. It features a minimal UI with carousels.

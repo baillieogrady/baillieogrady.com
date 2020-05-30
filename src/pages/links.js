@@ -21,7 +21,7 @@ const Links = () => {
             /> */}
             <section class="mb4 mb5-ns">
                 <div class="mw7 center ph3 tc">
-                    <img src={baillie} alt="Baillie O'Grady" className="h4 br-pill" />
+                    {/* <img src={baillie} alt="Baillie O'Grady" className="h4 br-pill" /> */}
                     <ul className="ma0 list mt3">
                         <li className="mb3">
                             <Link to="/projects" className="pv3 white bg-blue w-100 db">Projects</Link>

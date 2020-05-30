@@ -12,7 +12,7 @@ class Intro extends React.Component {
         <div className="mw7 center ph3">
           <h1 dangerouslySetInnerHTML={{ __html: title }} className="mt0" />
           {(text) != null ?
-            <div dangerouslySetInnerHTML={{ __html: text }} />
+            <div dangerouslySetInnerHTML={{ __html: text }} className="f4-ns pr7-ns" />
             : null
           }
           {/* {page === 'index' ?
