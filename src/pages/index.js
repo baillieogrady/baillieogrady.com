@@ -21,7 +21,7 @@ const Index = ({ data }) => {
       <Intro
         title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">Baillie O'Grady</a>`}
         text={`
-          <p>A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom designs to optimised, responsive and accessible WordPress websites.
+          <p>A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom designs to optimised, responsive and accessible WordPress themes.
           </p>
         `}
         page="index"
