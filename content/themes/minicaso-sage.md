@@ -1,11 +1,10 @@
 ---
-date: 2020-04-04
-title: 'Minicaso Sage'
+title: 'Minicaso'
 type: 'theme'
-demo: 'https://minicaso.com/'
+url: 'https://minicaso.com'
 code: 'https://github.com/baillieogrady/minicaso-sage'
 download: 'downloads/minicaso-sage.zip'
 thumbnail: '../images/minicaso.jpg'
 ---
 
-Minicaso Sage is a minimal e-commerce theme built with the WooCommerce plugin. It has a simple black and white theme with the occasional splash of blue. <mark>Check docs for requirements.</mark>
+Minicaso is a minimal e-commerce WordPress theme I designed and developed from scratch. It features a minimal UI with carousels.

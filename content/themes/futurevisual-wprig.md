@@ -1,6 +1,6 @@
 ---
 title: 'Futurevisual'
-type: 'project'
+type: 'theme'
 code: null
 url: 'https://futurevisual.com'
 thumbnail: '../images/futurevisual.jpg'

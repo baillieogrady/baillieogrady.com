@@ -26,8 +26,8 @@ module.exports = {
     siteUrl: `https://baillieogrady.com/`,
     menuLinks: [
       {
-        name: 'projects',
-        link: '/projects'
+        name: 'themes',
+        link: '/themes'
       },
       {
         name: 'blog',

@@ -1,8 +1,8 @@
 import React from "react"
 import Img from "gatsby-image";
-import Button from '../components/Button';
+import Button from './Button';
 
-const Project = ({ data, page }) => {
+const Theme = ({ data, page }) => {
   return (
     <article key={data.id}>
       {console.log(data)}
@@ -38,4 +38,4 @@ const Project = ({ data, page }) => {
   )
 }
 
-export default Project
+export default Theme

@@ -4,14 +4,14 @@ import { Link } from "gatsby"
 
 import Layout from "../layout"
 import Intro from "../components/Intro"
-import Project from "../components/Project"
+import Theme from "../components/Theme"
 import SEO from "../components/SEO"
 
 import { formatDate } from '../utils/global'
 import config from '../../data/SiteConfig'
 
 const Index = ({ data }) => {
-  const projects = data.projects;
+  const themes = data.themes;
   const posts = data.posts;
 
   return (
@@ -19,29 +19,29 @@ const Index = ({ data }) => {
       <Helmet title={`${config.siteTitle} – Freelance WordPress Developer`} />
       <SEO />
       <Intro
-        title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">Baillie O'Grady</a>`}
+        title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">Hi, I'm Baillie</a>`}
         text={`
-          <p>A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom designs to optimised, responsive and accessible WordPress themes.
+          <p class="pr4-ns">A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom web designs to WordPress themes.
           </p>
         `}
         page="index"
       />
-      <section className="projects mb5 mb6-ns">
+      <section className="themes mb5 mb6-ns">
         <div className="mw7 center ph3">
           <div className="mb4">
-            <h2 className="ma0">Projects</h2>
+            <h2 className="ma0">Themes</h2>
           </div>
           <div className="flex-ns justify-between flex-wrap">
-            {projects.edges.map((project, i) => (
+            {themes.edges.map((theme, i) => (
               <div key={i} className={`w-100 w-50-m w-50-l pb3 ${i === 0 || i % 2 === 0 ? 'pr3-ns' : 'pl3-ns'}`}>
-                <Project data={project.node} button={false} page="index" />
+                <Theme data={theme.node} button={false} page="index" />
               </div>
             ))}
           </div>
-          <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim bg-blue" to="/projects">VIEW MORE</Link>
+          <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim bg-blue" to="/themes">VIEW MORE</Link>
         </div>
       </section>
-      <section className="posts mb5 mb6-ns">
+      <section className="posts mb5">
         <div className="mw7 center ph3">
           <div className="mb4">
             <h2 className="ma0">Posts</h2>
@@ -86,10 +86,10 @@ export const query = graphql`
         }
       }
     }
-    projects: allMarkdownRemark(
+    themes: allMarkdownRemark(
       limit: 2
       sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { type: { eq: "project" } } }
+      filter: { frontmatter: { type: { eq: "theme" } } }
     ) {
       edges {
         node {

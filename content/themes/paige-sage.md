@@ -1,11 +1,10 @@
 ---
-date: 2020-04-04
-title: 'Paige sage'
+title: 'Paige nicole'
 type: 'theme'
-demo: 'https://paigenicole.uk/'
+url: 'https://paigenicole.uk'
 code: 'https://github.com/baillieogrady/paige-sage'
 download: 'downloads/paige-sage.zip'
 thumbnail: '../images/paige.png'
 ---
 
-Paige Sage is a minimal custom WordPress theme that has a split landing page design. It was inspired by [kathrynmcclintock](http://www.kathrynmcclintock.com/)'s portfolio.
+Paige wanted a simple landing page to showcase her passion for writing. I built her a minimal WordPress theme inspired by [kathrynmcclintock](http://www.kathrynmcclintock.com/)'s portfolio website. 

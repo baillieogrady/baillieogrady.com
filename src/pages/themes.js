@@ -4,13 +4,13 @@ import Helmet from "react-helmet"
 
 import Layout from "../layout"
 import Intro from "../components/Intro"
-import Project from '../components/Project';
+import Theme from '../components/Theme';
 import SEO from '../components/SEO';
 
 import config from '../../data/SiteConfig'
 
 const Themes = ({ data }) => {
-  const themes = data.allMarkdownRemark.edges;
+  const Themes = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <Helmet title={`Themes - ${config.siteTitle}`} />
@@ -18,13 +18,13 @@ const Themes = ({ data }) => {
       <Intro
         title="Themes"
         text={`
-          <p>Open source WordPress Themes I've built in my spare time. Some are based on genuine designs I  discovered on <a href="https://dribbble.com">dribbble</a>.</p>
+          <p>A collection of WordPress themes I've built.</p>
           `}
       />
-      <div className="mw7 center ph3 flex flex-wrap justify-between">
-        {themes.map((theme, i) => (
-          <div key={i} className={`mb4 mb5-ns w-100 w-50-ns  ${i === 0 || i % 2 === 0 ? 'pr3-m pr3-l' : 'pl3-m pl3-l'}`}>
-            <Project data={theme.node} />
+      <div className="posts mw7 center ph3 flex flex-wrap justify-between pb1">
+        {Themes.map((theme, i) => (
+          <div className={`mb4 mb5-ns w-100 w-50-ns  ${i === 0 || i % 2 === 0 ? 'pr3-m pr3-l' : 'pl3-m pl3-l'}`}>
+            <Theme data={theme.node} />
           </div>
         ))}
       </div>
@@ -42,10 +42,9 @@ export const query = graphql`
           html
           frontmatter {
             title
+            url
             type
-            demo
             code
-            download
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 800){
