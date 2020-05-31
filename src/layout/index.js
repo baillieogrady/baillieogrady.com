@@ -35,7 +35,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div className="flex flex-column min-vh-100" role="document">
-        {console.log(data)}
         <Helmet>
           <meta name="description" content={data.site.siteMetadata.description} />
           <link rel="icon" href={icon} />
@@ -67,7 +66,7 @@ const Layout = ({ children }) => (
             </nav>
           </div>
         </header>
-        <main className="flex-auto">{children}</main>
+        <main className={`flex-auto ${window.location.pathname.length <= 1 ? "flex mw7 center flex-column justify-center" : ""}`}>{children}</main>
         <footer className="pv3">
           <div className="mw7 center flex justify-between items-center ph3">
             {/* <ul className="list pa0 ma0 f6">

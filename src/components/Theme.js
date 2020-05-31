@@ -5,7 +5,6 @@ import Button from './Button';
 const Theme = ({ data, page }) => {
   return (
     <article key={data.id}>
-      {console.log(data)}
       <a href={data.frontmatter.url} target="_blank" rel="noreferrer">
         <Img fluid={data.frontmatter.thumbnail.childImageSharp.fluid} />
       </a>

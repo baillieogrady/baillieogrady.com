@@ -17,8 +17,8 @@ const Contact = () => {
         title="Contact"
         text={`<p><span style="color: #3fc380;"><strong>Available</strong></span> for new projects</p>`}
       />
-      <section class="mb4 mb5-ns">
-        <div class="mw7 center ph3">
+      <section className="mb4 mb5-ns">
+        <div className="mw7 center ph3">
           {/* <h2>Take your pick</h2> */}
           <ul className="ma0">
             {/* <li><a href="tel:07939818296">07939818296</a></li> */}
@@ -30,8 +30,8 @@ const Contact = () => {
           </ul>
         </div>
       </section>
-      {/* <section class="dn db-ns mb4 mb5-ns">
-        <div class="mw7 center ph3">
+      {/* <section className="dn db-ns mb4 mb5-ns">
+        <div className="mw7 center ph3">
           <h2>Crypto</h2>
           <ul className="ma0">
             <li><strong>BTC:</strong> 1AK4C5wMKvFmjNXMUdqNw5y5XY9piSNWn8</li>

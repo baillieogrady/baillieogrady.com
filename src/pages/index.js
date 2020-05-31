@@ -4,15 +4,15 @@ import { Link } from "gatsby"
 
 import Layout from "../layout"
 import Intro from "../components/Intro"
-import Theme from "../components/Theme"
+// import Theme from "../components/Theme"
 import SEO from "../components/SEO"
 
-import { formatDate } from '../utils/global'
+// import { formatDate } from '../utils/global'
 import config from '../../data/SiteConfig'
 
 const Index = ({ data }) => {
-  const themes = data.themes;
-  const posts = data.posts;
+  // const themes = data.themes;
+  // const posts = data.posts;
 
   return (
     <Layout>
@@ -21,12 +21,18 @@ const Index = ({ data }) => {
       <Intro
         title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">Hi, I'm Baillie</a>`}
         text={`
-          <p class="pr4-ns">A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom web designs to WordPress themes.
-          </p>
-        `}
+            <p class="pr4-ns">A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom web designs to WordPress <a href="/themes">themes</a>.
+            </p>
+            <p>
+              I document my code through my <a href="https://instagram.com/baillieogrady">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a> and <a href="/blog">blog</a>.
+            </p>
+          `}
         page="index"
       />
-      <section className="themes mb6">
+      <div className="mw7 ph3">
+        <Link to="/contact" className="white br2 tracked f7 fw7 ph3 pv2 no-underline  dim dib bg-green ttu">I'm available</Link>
+      </div>
+      {/* <section className="themes mb6">
         <div className="mw7 center ph3">
           <div className="mb4">
             <h2 className="ma0">Themes</h2>
@@ -40,11 +46,11 @@ const Index = ({ data }) => {
           </div>
           <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim bg-blue" to="/themes">VIEW MORE</Link>
         </div>
-      </section>
+      </section>gatsby
       <section className="posts mb6">
         <div className="mw7 center ph3">
           <div className="mb4">
-            <h2 className="ma0">Posts</h2>
+            <h2 className="ma0">Blog</h2>
           </div>
           {posts.edges.map((post, i) => (
             <article key={i} className="mb4">
@@ -58,8 +64,8 @@ const Index = ({ data }) => {
             <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/blog">VIEW MORE</Link>
           </div>
         </div>
-      </section>
-    </Layout >
+      </section> */}
+    </Layout>
   )
 }
 
