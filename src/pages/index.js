@@ -26,7 +26,7 @@ const Index = ({ data }) => {
         `}
         page="index"
       />
-      <section className="themes mb5 mb6-ns">
+      <section className="themes mb6">
         <div className="mw7 center ph3">
           <div className="mb4">
             <h2 className="ma0">Themes</h2>
@@ -41,7 +41,7 @@ const Index = ({ data }) => {
           <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim bg-blue" to="/themes">VIEW MORE</Link>
         </div>
       </section>
-      <section className="posts mb5">
+      <section className="posts mb6">
         <div className="mw7 center ph3">
           <div className="mb4">
             <h2 className="ma0">Posts</h2>

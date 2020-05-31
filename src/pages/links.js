@@ -3,10 +3,7 @@ import Helmet from "react-helmet"
 import { Link } from "gatsby"
 
 import Layout from "../layout"
-import Intro from "../components/Intro"
 import SEO from "../components/SEO"
-
-import baillie from "../images/baillie.jpg"
 
 import config from '../../data/SiteConfig'
 
@@ -22,9 +19,9 @@ const Links = () => {
             <section class="mb4 mb5-ns">
                 <div class="mw7 center ph3 tc">
                     {/* <img src={baillie} alt="Baillie O'Grady" className="h4 br-pill" /> */}
-                    <ul className="ma0 list mt3">
+                    <ul className="ma0 pa0 list mt5">
                         <li className="mb3">
-                            <Link to="/projects" className="pv3 white bg-blue w-100 db">Projects</Link>
+                            <Link to="/themes" className="pv3 white bg-blue w-100 db">Themes</Link>
                         </li>
                         <li className="mb3">
                             <a href="https://codepen.io/collection/nVybwy" class="pv3 white bg-blue w-100 db">CodePen</a>

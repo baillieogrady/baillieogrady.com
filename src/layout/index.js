@@ -70,7 +70,7 @@ const Layout = ({ children }) => (
         <main className="flex-auto">{children}</main>
         <footer className="pv3">
           <div className="mw7 center flex justify-between items-center ph3">
-            <ul className="list pa0 ma0 f6">
+            {/* <ul className="list pa0 ma0 f6">
               <li className="dib mr4 w-auto-ns">
                 <a
                   className="no-underline f7 fw6 fw4 ttu gray tracked fw5"
@@ -89,7 +89,7 @@ const Layout = ({ children }) => (
                   Contact
                 </Link>
               </li>
-            </ul>
+            </ul> */}
             <ul className="pa0 ma0 lh-solid list">
               <li className="dib mr4 w-auto-ns">
                 <a

@@ -1,14 +1,12 @@
 import React from "react"
 
-import { Link } from "gatsby"
-
 class Intro extends React.Component {
 
   render() {
     const { title, text, page } = this.props;
 
     return (
-      <section className={`mv5 ${page === 'index' ? "mb6-ns" : "mb5-ns"}`}>
+      <section className={`mv5 ${page === 'index' ? "mb6-ns" : ""}`}>
         <div className="mw7 center ph3">
           <h1 dangerouslySetInnerHTML={{ __html: title }} className="mt0" />
           {(text) != null ?
