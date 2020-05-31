@@ -3,9 +3,7 @@ import { Link, StaticQuery } from "gatsby"
 import Helmet from 'react-helmet'
 
 import instagram from "../images/instagram.svg"
-// import linkedin from "../images/linkedin.svg"
 import github from "../images/github.svg"
-// import codepen from "../images/codepen.svg"
 import youtube from "../images/youtube.svg"
 
 import icon from '../images/icon.png'
@@ -66,8 +64,8 @@ const Layout = ({ children }) => (
             </nav>
           </div>
         </header>
-        <main className={`flex-auto ${window.location.pathname.length <= 1 ? "flex mw7 center flex-column justify-center" : ""}`}>{children}</main>
-        <footer className="pv3">
+        <main className="flex-auto relative">{children}</main>
+        <footer className="pv3 pv4-ns">
           <div className="mw7 center flex justify-between items-center ph3">
             {/* <ul className="list pa0 ma0 f6">
               <li className="dib mr4 w-auto-ns">
@@ -90,7 +88,7 @@ const Layout = ({ children }) => (
               </li>
             </ul> */}
             <ul className="pa0 ma0 lh-solid list">
-              <li className="dib mr4 w-auto-ns">
+              <li className="dib ma0 mr4 w-auto-ns">
                 <a
                   className="relative flex items-center justify-center  hover-blue hover-pink"
                   href={`https://instagram.com/${data.site.siteMetadata.social.handle}`}
@@ -100,7 +98,7 @@ const Layout = ({ children }) => (
                   <img src={instagram} alt="Instagram" className="h1 w1" />
                 </a>
               </li>
-              <li className="dib mr4 w-auto-ns">
+              <li className="dib ma0 mr4 w-auto-ns">
                 <a
                   className="relative flex items-center justify-center  hover-blue"
                   href={`https://github.com/${data.site.siteMetadata.social.handle}`}
@@ -110,7 +108,7 @@ const Layout = ({ children }) => (
                   <img src={github} alt="GitHub" className="h1 w1" />
                 </a>
               </li>
-              <li className="dib w-auto-ns">
+              <li className="dib ma0 w-auto-ns">
                 <a
                   className="relative flex items-center justify-center hover-red"
                   href={`https://www.youtube.com/channel/${data.site.siteMetadata.social.youtube}`}
