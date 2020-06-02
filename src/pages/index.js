@@ -22,7 +22,7 @@ const Index = ({ data }) => {
         <Intro
           title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">Hi, I'm Baillie</a>`}
           text={`
-              <p class="pr4-ns">A freelance WordPress developer from <a href="https://en.wikipedia.org/wiki/Manchester" rel="noopener">Manchester</a>. I convert custom web designs to WordPress <a href="/themes">themes</a>.
+              <p class="pr4-ns">A freelance WordPress developer from Manchester, England. I convert custom web designs to <a href="/themes">WordPress themes</a>.
               </p>
               <p>
                 I document my code through my <a href="https://instagram.com/baillieogrady">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a> and <a href="/blog">blog</a>.
