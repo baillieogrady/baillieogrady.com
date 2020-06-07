@@ -24,9 +24,6 @@ const Links = () => {
                             <Link to="/themes" className="pv3 white bg-blue w-100 db">Themes</Link>
                         </li>
                         <li className="mb3">
-                            <a href="https://codepen.io/collection/nVybwy" class="pv3 white bg-blue w-100 db">CodePen</a>
-                        </li>
-                        <li className="mb3">
                             <a href="https://github.com/baillieogrady" class="pv3 white bg-blue w-100 db">GitHub</a>
                         </li>
                         <li className="mb3">
