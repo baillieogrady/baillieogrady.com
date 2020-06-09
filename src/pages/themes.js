@@ -18,7 +18,7 @@ const Themes = ({ data }) => {
       <Intro
         title="Themes"
         text={`
-          <p>A collection of WordPress themes I've built recently based on custom designs.</p>
+          <p>A collection of WordPress themes I've recently built, based on custom designs.</p>
           `}
       />
       <div className="posts mw7 center ph3 flex flex-wrap justify-between pb1">
