@@ -29,6 +29,9 @@ const Links = () => {
                         <li className="mb3">
                             <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg" class="pv3 white bg-blue w-100 db">YouTube</a>
                         </li>
+                        <li className="mb3">
+                            <a href="https://ko-fi.com/baillieogrady" class="pv3 white bg-light-red w-100 db">Support me</a>
+                        </li>
                     </ul>
                 </div>
             </section>
