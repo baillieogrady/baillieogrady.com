@@ -22,11 +22,6 @@ If you see any typos or formatting errors in a post, or any other issue that nee
 
 - Ruben Harutyunyan - [Gatsby Advanced Starter](https://github.com/vagr9k/gatsby-advanced-starter/)
 
-## Author
-
-- [Baillie O'Grady](https://www.baillieogrady.com)
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/baillieogrady)
 
 ## License
 
