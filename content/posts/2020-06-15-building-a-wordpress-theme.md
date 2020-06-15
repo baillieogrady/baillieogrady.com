@@ -13,8 +13,7 @@ Below I've outlined the process I take when converting a custom design to a Word
 
 Recently I made the shift to TailwindCSS for all my CSS and it's dramtically reduced my development time. The great thing about TailwindCSS is that there's no tradeoff in quality, you utilize the same utility classes based on the design system you configure in the tailwind.config.js file. In essence, it saves a lot of repetitive CSS tasks so you can focus on the more vital website aspects like optimisation and responsiveness.
 
-In terms of project Management I usuaslly use trello. This really depedns on the scope of the project, as most of my projects fall in the small - medium catergory, I find managing a trello board unnesseccary as it delays project builds. However, if the client requires a way to gauge the project progress, I normally create a staging website and update it daily throughout the project build.
-
+In terms of project management I usually use Trello. This really depends on the scope of the project, as most of my projects fall in the small - medium catergory, I find managing a trello board unnesseccary as it delays development time. However, if the client requires a way to gauge the project progress, I normally create a staging website and update it daily throughout the project build.
 
 
 ## The process
