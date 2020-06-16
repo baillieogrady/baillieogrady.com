@@ -29,9 +29,6 @@ const Links = () => {
                         <li className="mb3">
                             <a href="/blogs" class="pv3 white bg-blue w-100 db">Blog</a>
                         </li>
-                        <li className="mb3">
-                            <a href="/contact" class="pv3 white bg-green w-100 b  db tracking">AVAILABLE</a>
-                        </li>
                     </ul>
                 </div>
             </section>
