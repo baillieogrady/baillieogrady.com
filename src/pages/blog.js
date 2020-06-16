@@ -15,7 +15,7 @@ const Index = ({ data }) => {
     <Layout>
       <Intro
         title="Blog"
-        text="Generic, fairly recent, web development articles."
+        text="Blogging my journey."
       />
       <Helmet title={`Blog - ${config.siteTitle}`} />
       <SEO />

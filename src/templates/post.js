@@ -43,7 +43,7 @@ export default class PostTemplate extends Component {
         <div className="mw7 ph3 center flex items-start mb3 mb5-ns pt5">
           <article className="w-100">
             <header className="mb4 mb5-ns">
-              <h1 className="ma0 mb3" dangerouslySetInnerHTML={{ __html: post.title }} />
+              <h1 className="ma0" dangerouslySetInnerHTML={{ __html: post.title }} />
               <time className="updated dib f7 mb3 ttu tracked mb4 silver">{date}</time>
               {post.tags != undefined ? (
                 <ul className="list pa0 ma0">

@@ -90,7 +90,7 @@ const Layout = ({ children }) => (
             <ul className="pa0 ma0 lh-solid list">
               <li className="dib ma0 mr4 w-auto-ns">
                 <a
-                  className="relative flex items-center justify-center  hover-blue hover-pink"
+                  className="relative flex items-center justify-center hover-blue hover-pink"
                   href={`https://instagram.com/${data.site.siteMetadata.social.handle}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -108,7 +108,7 @@ const Layout = ({ children }) => (
                   <img src={github} alt="GitHub" className="h1 w1" />
                 </a>
               </li>
-              <li className="dib ma0 w-auto-ns">
+              {/* <li className="dib ma0 w-auto-ns">
                 <a
                   className="relative flex items-center justify-center hover-red"
                   href={`https://www.youtube.com/channel/${data.site.siteMetadata.social.youtube}`}
@@ -117,7 +117,7 @@ const Layout = ({ children }) => (
                 >
                   <img src={youtube} alt="youtube" className="h1 w1" />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </footer>

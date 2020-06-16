@@ -30,13 +30,17 @@ module.exports = {
         link: '/themes'
       },
       {
+        name: 'pricing',
+        link: '/pricing'
+      },
+      {
         name: 'blog',
         link: '/blog'
       },
-      {
-        name: 'contact',
-        link: '/contact'
-      },
+      // {
+      //   name: 'contact',
+      //   link: '/contact'
+      // },
     ],
     social: {
       handle: `baillieogrady`,
