@@ -19,11 +19,12 @@ const Themes = ({ data }) => {
         title="Themes"
         text={`
           <p>A collection of WordPress themes I've built based on custom designs.</p>
+          <p>See my process <a href="/building-a-wordpress-theme/">here</a>.</p>
           `}
       />
-      <div className="posts mw7 center ph3 flex flex-wrap justify-between pb1">
+      <div className="posts mw7 center ph3 flex flex-wrap justify-between pb1 mb4">
         {Themes.map((theme, i) => (
-          <div key={i} className={`mb4 mb5-ns w-100 w-50-ns  ${i === 0 || i % 2 === 0 ? 'pr3-m pr3-l' : 'pl3-m pl3-l'}`}>
+          <div key={i} className={`mb4 mb5-ns w-100 w-50-ns ${i === 0 || i % 2 === 0 ? 'pr3-m pr3-l' : 'pl3-m pl3-l'}`}>
             <Theme data={theme.node} />
           </div>
         ))}

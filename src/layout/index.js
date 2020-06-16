@@ -4,7 +4,8 @@ import Helmet from 'react-helmet'
 
 import instagram from "../images/instagram.svg"
 import github from "../images/github.svg"
-import youtube from "../images/youtube.svg"
+import mail from "../images/mail.svg"
+// import youtube from "../images/youtube.svg"
 
 import icon from '../images/icon.png'
 
@@ -90,7 +91,15 @@ const Layout = ({ children }) => (
             <ul className="pa0 ma0 lh-solid list">
               <li className="dib ma0 mr4 w-auto-ns">
                 <a
-                  className="relative flex items-center justify-center hover-blue hover-pink"
+                  className="relative flex items-center justify-center hover-blue"
+                  href={`mailto:hello@baillieogrady.com`}
+                >
+                  <img src={mail} alt="Instagram" className="h1 w1" />
+                </a>
+              </li>
+              <li className="dib ma0 mr4 w-auto-ns">
+                <a
+                  className="relative flex items-center justify-center hover-blue"
                   href={`https://instagram.com/${data.site.siteMetadata.social.handle}`}
                   target="_blank"
                   rel="noopener noreferrer"
