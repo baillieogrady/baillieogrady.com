@@ -34,4 +34,4 @@ In terms of project management I usually use Trello. This really depends on the 
 10. Setup staging website for the client to experiment with their new theme & provide them with a handover document to give a run down of how the theme was made and how to use it, [example](https://handover.baillieogrady.com).
 
 
-I'm likely to update this post as time goes on but I hope this post provide a a good insight into how one WordPress developer builds themes.
+I'm likely to update this post as time goes on but I hope this post provide a good insight into how one WordPress developer builds themes.
