@@ -26,9 +26,9 @@ const Links = () => {
                         <li className="mb3">
                             <a href="https://github.com/baillieogrady" className="pv3 white bg-blue w-100 db">GitHub</a>
                         </li>
-                        {/* <li className="mb3">
-                            <a href="/blog" class="pv3 white bg-blue w-100 db">Blog</a>
-                        </li> */}
+                        <li className="mb3">
+                            <a href="/pricing" class="pv3 white bg-green w-100 db tracked b">AVAILABLE</a>
+                        </li>
                     </ul>
                 </div>
             </section>

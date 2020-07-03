@@ -15,7 +15,6 @@ const Contact = () => {
       <SEO />
       <Intro
         title="Contact"
-        text={`<p><span style="color: #3fc380;"><strong>Available</strong></span> for new projects</p>`}
       />
       <section className="mb4 mb5-ns">
         <div className="mw7 center ph3">
