@@ -50,11 +50,11 @@ const Layout = ({ children }) => (
               <ul className="ma0 pa0">
                 {data.site.siteMetadata.menuLinks.map((link, i) => (
                   <li
-                    key={link.name}
-                    className={`dib mb0 ${i > 0 ? "ml0 ml4" : ""}`}
+                  key={link.name}
+                  className={`dib mb0 ${i > 0 ? "ml0 ml4" : ""}`}
                   >
                     <Link
-                      className="no-underline f7 fw6 ttu gray tracked"
+                      className={`no-underline f7 fw6 ttu gray tracked`}
                       to={`${link.link}`}
                     >
                       {link.name.charAt(0).toUpperCase() + link.name.slice(1)}

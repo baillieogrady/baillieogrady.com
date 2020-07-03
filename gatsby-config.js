@@ -33,10 +33,10 @@ module.exports = {
         name: 'pricing',
         link: '/pricing'
       },
-      {
-        name: 'blog',
-        link: '/blog'
-      },
+      // {
+      //   name: 'blog',
+      //   link: '/blog'
+      // },
       // {
       //   name: 'contact',
       //   link: '/contact'

@@ -24,10 +24,10 @@ const Links = () => {
                             <Link to="/themes" className="pv3 white bg-blue w-100 db">Themes</Link>
                         </li>
                         <li className="mb3">
-                            <a href="https://github.com/baillieogrady" class="pv3 white bg-blue w-100 db">GitHub</a>
+                            <a href="https://github.com/baillieogrady" className="pv3 white bg-blue w-100 db">GitHub</a>
                         </li>
                         <li className="mb3">
-                            <a href="/blogs" class="pv3 white bg-blue w-100 db">Blog</a>
+                            <a href="/blog" class="pv3 white bg-blue w-100 db">Blog</a>
                         </li>
                     </ul>
                 </div>
