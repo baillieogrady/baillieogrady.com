@@ -27,15 +27,15 @@ module.exports = {
     menuLinks: [
       {
         name: 'themes',
-        link: '/themes'
+        link: '/themes/'
       },
       {
         name: 'blog',
-        link: '/blog'
+        link: '/blog/'
       },
       {
         name: 'contact',
-        link: '/contact'
+        link: '/contact/'
       },
     ],
   },
