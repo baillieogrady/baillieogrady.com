@@ -24,7 +24,7 @@ const ConvertYourDesigns = () => {
                 lineClass="bg-brand-primary-800"
                 lead={{ text: "LET'S BEGIN", class: "text-black" }}
                 heading={{ text: "to a  unique WordPress theme", class: "" }}
-                text="<p class='m-0'>Whichever design programme you use, I love them all. I have extensive exerpience with all modern programmes like Figma, Sketch and XD but also love the nostalgia when converting from Photoshop and Illustrator.</p>"
+                text="<p class='m-0'>Whichever design programme you use, I love them all. I have extensive experience with all modern programmes like Figma, Sketch and XD but I also love the nostalgia when converting from Photoshop and Illustrator.</p>"
                 form="convert"
             />
             <TwoColumn
