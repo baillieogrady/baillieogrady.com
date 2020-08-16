@@ -23,7 +23,7 @@ const About = () => {
                 lineClass="bg-brand-primary-800"
                 lead={{ text: "LITTLE ABOUT ME", class: "text-black" }}
                 heading={{ text: "Hi, I'm Baillie", class: "" }}
-                text="<p>A Freelance WordPress developer from Manchester, England. I started my developer journey 4 years ago after finding no fufillment with a career in finance. I enjoy the entire process of taking a completely fresh design and converting it into a fully functional WordPress website.</p>
+                text="<p>A Freelance WordPress developer from Manchester, England. I started my developer journey in 2016 after finding no fufillment with a career in finance. I enjoy the entire process of taking a completely fresh web design to converting it into a fully functional WordPress website.</p>
                     
                 <p>When not coding away, I enjoy reading, running and generally learning about anything. I recently decided to document my daily coding on my Instagram.</p>
 

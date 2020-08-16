@@ -35,7 +35,6 @@ const Hero = ({ text, page }) => {
                     <Arrow className="mb-16 lg:mb-32 w-4 lg:w-8" />
                     : null
                 }
-                {console.log(file)}
                 {page === 'home' ?
                     <Img fixed={file.childImageSharp.fixed} alt="Swirling gradient" className="absolute right-0 top-0 shadow-brand-3xl hidden lg:block w-1/2" />
                     : null}

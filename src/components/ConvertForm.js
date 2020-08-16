@@ -33,7 +33,7 @@ export default class MyForm extends React.Component {
                     </div>
                     <div className="w-full mt-6">
                         <label className="text-xs" htmlFor="budget">Budget*</label>
-                        <select className="block rounded-lg shadow-brand-xs h-10 pl-2 w-full" required id="budget" name="budget">
+                        <select className="block rounded-lg shadow-brand-xs h-10 pl-2 w-full bg-white appearance-none" required id="budget" name="budget">
                             <option value="£1,500 - £3,000">£2,000 - £4,000</option>
                             <option value="£3,000 - £6,000">£5,000 - £7,000</option>
                             <option value="£7,000 - £10,000">£10,000 +</option>
