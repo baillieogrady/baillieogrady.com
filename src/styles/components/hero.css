@@ -7,7 +7,7 @@
 @screen lg {
     .hero {
         .gatsby-image-wrapper {
-            @apply display-inline !important;
+            @apply inline !important;
         }
     }
     
