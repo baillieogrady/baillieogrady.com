@@ -3,3 +3,12 @@
         @apply absolute hidden lg:display-inline !important;
     }
 }
+
+@screen lg {
+    .hero {
+        .gatsby-image-wrapper {
+            @apply display-inline !important;
+        }
+    }
+    
+}
