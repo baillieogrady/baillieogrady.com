@@ -8,6 +8,7 @@
 @import "tailwindcss/components";
 
 /*! purgecss start ignore  */
+@import "components/hero";
 @import "components/buttons";
 @import "components/header";
 @import "components/twoColumn";

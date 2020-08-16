@@ -1,0 +1,5 @@
+.hero {
+    .gatsby-image-wrapper {
+        @apply absolute !important;
+    }
+}

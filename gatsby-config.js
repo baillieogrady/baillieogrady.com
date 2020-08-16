@@ -43,6 +43,8 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -56,6 +58,13 @@ module.exports = {
         name: "posts",
         path: `${__dirname}/content/`
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -91,8 +100,6 @@ module.exports = {
         color: config.themeColor
       }
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
     "gatsby-plugin-sitemap",

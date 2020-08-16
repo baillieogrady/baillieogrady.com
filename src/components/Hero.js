@@ -1,15 +1,31 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import dream from '../images/dream.jpg'
+// import dream from '../images/dream.jpg'
 import icons_3 from '../images/icons_3.png'
 import Arrow from '../images/svg/arrow.inline.svg'
 
 
 const Hero = ({ text, page }) => {
 
+    const { file } = useStaticQuery(
+        graphql`
+            query {
+                file(relativePath: { eq: "dream.jpg" }) {
+                childImageSharp {
+                    # Specify the image processing specifications right in the query.
+                    # Makes it trivial to update as your page's design changes.
+                    fixed(width: 555, height: 684) {
+                    ...GatsbyImageSharpFixed
+                    }
+                }
+                }
+            }
+        `)
     return (
         <div className="container">
-            <div className="flex flex-col relative">
+            <div className="flex flex-col relative hero">
                 {page === "convert-your-designs" ?
                     <img src={icons_3} alt="Design programme icons" className="absolute right-0 bottom-0 w-1/2 lg:w-4/12" />
                     : null
@@ -19,8 +35,9 @@ const Hero = ({ text, page }) => {
                     <Arrow className="mb-16 lg:mb-32 w-4 lg:w-8" />
                     : null
                 }
+                {console.log(file)}
                 {page === 'home' ?
-                    <img src={dream} alt="Swirling gradient" className="absolute right-0 top-0 shadow-brand-3xl hidden lg:block w-1/2" />
+                    <Img fixed={file.childImageSharp.fixed} alt="Swirling gradient" className="absolute right-0 top-0 shadow-brand-3xl hidden lg:block w-1/2" />
                     : null}
             </div>
         </div>
