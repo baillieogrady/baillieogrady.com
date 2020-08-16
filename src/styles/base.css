@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-    @apply font-bold leading-5 text-black;
+    @apply font-bold leading-tight text-black;
 }
 
 h1 {
