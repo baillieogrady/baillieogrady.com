@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-    @apply font-bold leading-tight text-black;
+    @apply font-bold leading-brand-tight text-black;
 }
 
 h1 {
@@ -104,6 +104,6 @@ img {
     h4,
     h5,
     h6 {
-        @apply font-bold leading-brand-tight text-black;
+        @apply font-bold text-black;
     }
 }
