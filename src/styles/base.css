@@ -8,14 +8,14 @@ h3,
 h4,
 h5,
 h6 {
-    @apply font-bold leading-snug text-black;
+    @apply font-bold leading-5 text-black;
 }
 
 h1 {
     @apply text-brand-4xl py-16;
 }
 
-h2{
+h2 {
     @apply text-3xl;
 }
 
