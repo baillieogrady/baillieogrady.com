@@ -12,7 +12,7 @@ const config = {
   googleAnalyticsID: "UA-130240526-7", // GA tracking ID.
   disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // Disqus shortname.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
-  dateFormat: "DD MMMM, YYYY", // Date format for display.
+  dateFormat: "DD MMMM YYYY", // Date format for display.
   postsPerPage: 4, // Amount of posts displayed per listing page.
   userName: "Baillie O'Grady", // Username to display in the author segment.
   userEmail: "hello@baillieogrady.com", // Email used for RSS feed's author segment

@@ -1,138 +1,173 @@
-import React from "react"
-import { Link, StaticQuery } from "gatsby"
+import React, { useState } from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import Helmet from 'react-helmet'
 
-import instagram from "../images/instagram.svg"
-import github from "../images/github.svg"
-import mail from "../images/mail.svg"
-// import youtube from "../images/youtube.svg"
+import Logo from "../components/Logo"
 
-import icon from '../images/icon.png'
+import favicon from '../images/favicon.png'
 
-import "../styles/main.sass"
-// import "../styles/main.css"
+import "../styles/main.css"
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-            description
-            menuLinks {
-              name
-              link
-            }
-            social {
-              handle
-              youtube
-            }
+const Layout = ({ children, padding }) => {
+  const [burger, setBurger] = useState(false);
+
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+          description
+          menuLinks {
+            name
+            link
           }
         }
       }
-    `}
-    render={data => (
-      <div className="flex flex-column min-vh-100" role="document">
-        <Helmet>
-          <meta name="description" content={data.site.siteMetadata.description} />
-          <link rel="icon" href={icon} />
-        </Helmet>
-        <header className="w-100 bg-white sticky top-0 z-1 mt0 mt4-ns">
-          <div className="mw7 center ph3 flex flex-wrap justify-between items-center">
-            <Link
-              to="/"
-              className="no-underline lh-solid pv3 f3"
-            >
-              🧑🏼‍💻
-            </Link>
-            <nav>
-              <ul className="ma0 pa0">
-                {data.site.siteMetadata.menuLinks.map((link, i) => (
-                  <li
-                    key={link.name}
-                    className={`dib mb0 ${i > 0 ? "ml0 ml4" : ""}`}
+    }
+  `
+  )
+
+  function handleBurger(e) {
+    e.preventDefault();
+    setBurger(!burger);
+  }
+
+  return (
+    <div className="flex flex-col min-vh-100 relative" role="document">
+      <Helmet>
+        <meta name="description" content={data.site.siteMetadata.description} />
+        <link rel="shortcut icon" type="image/png" href={favicon} />
+      </Helmet>
+      <header className="sticky lg:absolute left-0 top-0 z-50 py-6 lg:py-brand-10 bg-white lg:bg-transparent w-full shadow-brand-xs lg:shadow-none">
+        <div className="flex justify-between items-center container">
+          <Logo />
+          <nav className="hidden lg:block">
+            <ul className="ma-0 pa-0">
+              {data.site.siteMetadata.menuLinks.map((link, i) => (
+                <li
+                  key={link.name}
+                  className={`inline-block ${i > 0 ? "ml-10" : ""}`}
+                >
+                  <Link
+                    to={`${link.link}`}
                   >
-                    <Link
-                      className={`no-underline f7 fw6 ttu gray tracked`}
-                      to={`${link.link}`}
-                    >
-                      {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <main className="flex-auto relative">{children}</main>
-        <footer className="pv3 pv4-ns">
-          <div className="mw7 center flex justify-between items-center ph3">
-            {/* <ul className="list pa0 ma0 f6">
-              <li className="dib mr4 w-auto-ns">
-                <a
-                  className="no-underline f7 fw6 fw4 ttu gray tracked fw5"
-                  href="https://ko-fi.com/baillieogrady"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ko-Fi
-                </a>
+                    {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
+                  </Link>
+                </li>
+              ))}
+              <li className="inline-block ml-10">
+                <Link to="/convert-your-designs" className="btn hover:bg-brand-primary-900 transition ease-in-out duration-200">Convert your designs</Link>
               </li>
-              <li className="dib mr4 w-auto-ns">
-                <Link
-                  className="no-underline f7 fw6 fw4 ttu gray tracked fw5"
-                  to="/contact"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul> */}
-            <ul className="pa0 ma0 lh-solid list">
-              <li className="dib ma0 mr4 w-auto-ns">
-                <a
-                  className="relative flex items-center justify-center hover-blue"
-                  href={`mailto:hello@baillieogrady.com`}
-                >
-                  <img src={mail} alt="Instagram" className="h1 w1" />
-                </a>
-              </li>
-              <li className="dib ma0 mr4 w-auto-ns">
-                <a
-                  className="relative flex items-center justify-center hover-blue"
-                  href={`https://instagram.com/${data.site.siteMetadata.social.handle}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={instagram} alt="Instagram" className="h1 w1" />
-                </a>
-              </li>
-              <li className="dib ma0 mr4 w-auto-ns">
-                <a
-                  className="relative flex items-center justify-center  hover-blue"
-                  href={`https://github.com/${data.site.siteMetadata.social.handle}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={github} alt="GitHub" className="h1 w1" />
-                </a>
-              </li>
-              {/* <li className="dib ma0 w-auto-ns">
-                <a
-                  className="relative flex items-center justify-center hover-red"
-                  href={`https://www.youtube.com/channel/${data.site.siteMetadata.social.youtube}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={youtube} alt="youtube" className="h1 w1" />
-                </a>
-              </li> */}
             </ul>
+          </nav>
+          <a href="#" className="lg:hidden text-brand-grey-400 hover:text-brand-grey-500 transiton duration-200 ease-in-out" onClick={handleBurger}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="32"
+              fill="none"
+              viewBox="0 0 34 32"
+            >
+              <rect width="33.646" height="32" fill="currentColor" rx="4"></rect>
+              <path
+                stroke="#28293D"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M11 13h12M11 18h12"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div className={`${burger ? "block lg:hidden" : "hidden lg:hidden"} absolute top-0 left-0 w-brand-mobile-full bg-white rounded shadow-brand-xs m-2 p-4 `}>
+          <div className="flex justify-between items-center mb-8">
+            <Logo />
+            <a href="#" className="lg:hidden text-brand-grey-400 hover:text-brand-grey-500 transiton duration-200 ease-in-out" onClick={handleBurger}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="32"
+                fill="none"
+                viewBox="0 0 34 32"
+              >
+                <rect width="33.646" height="32" fill="currentColor" rx="4"></rect>
+                <path
+                  stroke="#28293D"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 12l8.485 8.485M13 20.485L21.485 12"
+                ></path>
+              </svg>
+            </a>
           </div>
-        </footer>
-      </div>
-    )}
-  />
-)
+          <nav>
+            <ul className="ma-0 pa-0">
+              {data.site.siteMetadata.menuLinks.map((link, i) => (
+                <li
+                  key={link.name}
+                  className="mt-4"
+                >
+                  <Link
+                    to={`${link.link}`}
+                  >
+                    {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
+                  </Link>
+                </li>
+              ))}
+              <li className="block mt-8">
+                <Link to="/convert-your-designs" className="btn w-full hover:bg-brand-primary-900 transiton duration-200 ease-in-out">Convert your designs</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main className={`flex-auto relative ${padding ? "" : "lg:mt-32"}`}>
+        {children}
+      </main>
+      <footer className="bg-black text-white w-full pt-16 lg:pt-32 pb-8">
+        <div className="container">
+          <div className="flex flex-wrap justify-between -mx-6 lg:-mx-brand-8">
+            <div className="lg:w-4/12 px-6 lg:px-brand-8">
+              <Logo classes="text-white" />
+              <p className="text-brand-grey-400 mt-8 mb-20 lg:mb-0">
+                Over 4 years experience converting completely custom web designs to unique WordPress themes.
+              </p>
+            </div>
+            <div className="flex w-full lg:w-4/12 px-6 lg:px-brand-8">
+              <div className="w-1/2">
+                <p className="m-0 tracking-brand-widest font-bold">LINKS</p>
+                <nav className="mt-8">
+                  <Link to="/about" className="text-brand-grey-400 block pb-2">About</Link>
+                  <Link to="/themes" className="text-brand-grey-400 block pb-2">Themes</Link>
+                  <Link to="/blog" className="text-brand-grey-400 block pb-2">Blog</Link>
+                  <Link to="/contact" className="text-brand-grey-400 block">Contact</Link>
+                </nav>
+              </div>
+              <div className="w-1/2">
+                <p className="m-0 tracking-brand-widest font-bold">SOCIAL</p>
+                <ul className="list-none mt-8">
+                  <li>
+                    <a href="https://www.instagram.com/baillieogrady/" target="_blank" className="text-brand-grey-400 block pb-2">Instagram</a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/baillieogrady/" target="_blank" className="text-brand-grey-400 block pb-2">LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg" target="_blank" className="text-brand-grey-400 block pb-2">YouTube</a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/iambaillieogrady" target="_blank" className="text-brand-grey-400 block">Facebook</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p className="text-brand-grey-500 mt-20 mb-0">&copy; {new Date().getFullYear()}</p>
+        </div>
+      </footer>
+    </div >
+  )
+}
 
 export default Layout

@@ -30,44 +30,19 @@ module.exports = {
         link: '/themes'
       },
       {
-        name: 'pricing',
-        link: '/pricing'
+        name: 'blog',
+        link: '/blog'
       },
-      // {
-      //   name: 'blog',
-      //   link: '/blog'
-      // },
-      // {
-      //   name: 'contact',
-      //   link: '/contact'
-      // },
+      {
+        name: 'contact',
+        link: '/contact'
+      },
     ],
-    social: {
-      handle: `baillieogrady`,
-      youtube: `UCNfYodcO72M8CbCdR-pTnGg`
-    },
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "src/utils/typography.js"
-      },
-    },
-    // "gatsby-plugin-postcss",
+    "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`, `500`, `700`]
-          },
-        ],
-      },
-    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -230,5 +205,13 @@ module.exports = {
     },
     // custom
     'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
+    }
   ]
 };

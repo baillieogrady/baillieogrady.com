@@ -1,66 +1,34 @@
 import React from "react"
-import { graphql } from 'gatsby'
 import Helmet from "react-helmet"
+import SEO from '../components/SEO';
 
 import Layout from "../layout"
-import Intro from "../components/Intro"
-import Theme from '../components/Theme';
-import SEO from '../components/SEO';
+import Hero from '../components/Hero';
+import TwoColumn from '../components/TwoColumn';
 
 import config from '../../data/SiteConfig'
 
-const Themes = ({ data }) => {
-  const Themes = data.allMarkdownRemark.edges;
+const Themes = () => {
   return (
     <Layout>
       <Helmet title={`Themes - ${config.siteTitle}`} />
       <SEO />
-      <Intro
-        title="Themes"
-        text={`
-          <p>A collection of WordPress themes I've built based on custom designs.</p>
-          <p>See my process <a href="/building-a-wordpress-theme/">here</a>.</p>
-          `}
+      <Hero
+        text="Themes"
       />
-      <div className="posts mw7 center ph3 flex flex-wrap justify-between pb1 mb4">
-        {Themes.map((theme, i) => (
-          <div key={i} className={`mb4 mb5-ns w-100 w-50-ns ${i === 0 || i % 2 === 0 ? 'pr3-m pr3-l' : 'pl3-m pl3-l'}`}>
-            <Theme data={theme.node} />
-          </div>
-        ))}
-      </div>
+      <TwoColumn
+        classes="bg-brand-grey-200 relative z-10"
+        lineClass="bg-brand-primary-800"
+        lead={{ text: "CLIENT & OPEN SOURCE", class: "text-black" }}
+        heading={{ text: "", class: "" }}
+        text=""
+        cards="themes"
+      />
     </Layout>
   )
 }
 
 export default Themes
-
-export const query = graphql`
-  query ThemesQuery {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "theme"}}}) {
-      edges {
-        node {
-          html
-          frontmatter {
-            title
-            url
-            type
-            code
-            thumbnail {
-              childImageSharp {
-                fluid(maxWidth: 800){
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
-
-
 
 
 

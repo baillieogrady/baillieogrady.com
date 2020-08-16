@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../layout'
 import SEO from '../components/SEO'
+import Lead from '../components/Lead'
 import config from '../../data/SiteConfig'
 import { formatDate } from '../utils/global'
 
@@ -16,7 +17,6 @@ export default class PostTemplate extends Component {
   }
 
   render() {
-    // const { comments, error } = this.state
     const { slug } = this.props.pageContext
     const postNode = this.props.data.markdownRemark
     const post = postNode.frontmatter
@@ -35,38 +35,38 @@ export default class PostTemplate extends Component {
 
     const date = formatDate(post.date)
     return (
-      <Layout>
-        <Helmet>
-          <title>{`${post.title} – ${config.siteTitle}`}</title>
-        </Helmet>
+      <Layout padding={true}>
+        <Helmet title={`${post.title} – ${config.siteTitle}`} />
         <SEO postPath={slug} postNode={postNode} />
-        <div className="mw7 ph3 center flex items-start mb3 mb5-ns pt5">
-          <article className="w-100">
-            <header className="mb4 mb5-ns">
-              <h1 className="ma0" dangerouslySetInnerHTML={{ __html: post.title }} />
-              <time className="updated dib f7 mb3 ttu tracked mb4 silver">{date}</time>
-              {post.tags != undefined ? (
-                <ul className="list pa0 ma0">
-                  {post.tags.map(tag => (
-                    <li key={`${tag}`} className="dib bg-light-grey ma0 mr2">
-                      <Link to={`/tags/${tag}/`} className="dark-gray fw5 dib pv1 ph2 bg-near-white br1 f6 dim mid-gray">
-                        {tag}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
-            </header>
-            <div className="flex flex-column relative wysiwyg">
-              <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        <div className="py-16 lg:py-32 bg-brand-grey-200">
+          <div className="container lg:pt-32">
+            <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
+              <Lead text={{ content: 'BLOG', class: '' }} lineClass="bg-brand-primary-800" />
+              <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
+                {post.tags != undefined ? (
+                  <ul className="flex mb-6">
+                    {post.tags.map(tag => (
+                      <li key={`${tag}`} className="inline-block bg-light-grey mr-4">
+                        <Link to={`/tags/${tag}/`} className="bg-white shadow-brand-xs rounded py-2 px-3 inline-block text-xs uppercase font-medium">
+                          {tag}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="p-0 mb-6" />
+                <time>{date}</time>
+              </div>
             </div>
-          </article>
+          </div>
         </div>
-        {/* <div className="mw7 ph3 center">
-          <hr style={{ borderBottom: "1px solid #999" }} className="bn mv4 mv5-ns" />
-          <h3>Helpful?</h3>
-          <p>I really enjoy writing these articles and any support will only fuel me to create more. You can support me <a href="https://ko-fi.com/baillieogrady">here</a>.</p>
-        </div> */}
+        <div className="container">
+          <div className="-mx-6 lg:-mx-brand-4">
+            <div className="w-full lg:w-9/12 ml-auto mt-16 mb-32 px-6 lg:px-brand-4">
+              <div dangerouslySetInnerHTML={{ __html: postNode.html }} className="w-full lg:w-brand-76 wysiwyg" />
+            </div>
+          </div>
+        </div>
       </Layout>
     )
   }

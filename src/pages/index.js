@@ -1,123 +1,85 @@
 import React from "react"
 import Helmet from "react-helmet"
-import { Link } from "gatsby"
 
 import Layout from "../layout"
-import Intro from "../components/Intro"
-// import Theme from "../components/Theme"
 import SEO from "../components/SEO"
-
-// import { formatDate } from '../utils/global'
 import config from '../../data/SiteConfig'
 
-const Index = ({ data }) => {
-  // const themes = data.themes;
-  // const posts = data.posts;
+import Hero from "../components/Hero"
+import TwoColumn from "../components/TwoColumn"
+
+const Index = () => {
 
   return (
     <Layout>
-      <Helmet title={`${config.siteTitle} – Freelance WordPress Developer`} />
+      <Helmet
+        title={`${config.siteTitle} – Freelance WordPress Developer`}
+      />
       <SEO />
-      <div className="mw7 center absolute intro">
-        <Intro
-          title={`<a href="https://instagram.com/baillieogrady" class="dark-gray fw6">Hi, I'm Baillie</a>`}
-          text={`
-              <p class="pr4-ns">A freelance WordPress developer from Manchester, England. I convert custom web designs to <a href="/themes">WordPress themes</a>.
-              </p>
-              <p>
-                I document my code through my <a href="https://instagram.com/baillieogrady">Instagram</a>, <a href="https://www.youtube.com/channel/UCNfYodcO72M8CbCdR-pTnGg">YouTube</a>, <a href="https://github.com/baillieogrady">GitHub</a> and <a href="/blog">blog</a>.
-              </p>
-            `}
-          page="index"
-        />
-        <div className="mw7 ph3">
-          <Link to="/contact" className="white br2 tracked f7 fw7 ph3 pv2 no-underline  dim dib bg-green ttu">I'm available</Link>
-        </div>
-      </div>
-      {/* <section className="themes mb6">
-        <div className="mw7 center ph3">
-          <div className="mb4">
-            <h2 className="ma0">Themes</h2>
-          </div>
-          <div className="flex-ns justify-between flex-wrap">
-            {themes.edges.map((theme, i) => (
-              <div key={i} className={`w-100 w-50-m w-50-l pb3 ${i === 0 || i % 2 === 0 ? 'pr3-ns' : 'pl3-ns'}`}>
-                <Theme data={theme.node} button={false} page="index" />
-              </div>
-            ))}
-          </div>
-          <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim bg-blue" to="/themes">VIEW MORE</Link>
-        </div>
-      </section>gatsby
-      <section className="posts mb6">
-        <div className="mw7 center ph3">
-          <div className="mb4">
-            <h2 className="ma0">Blog</h2>
-          </div>
-          {posts.edges.map((post, i) => (
-            <article key={i} className="mb4">
-              <h3 className="ma0 f5 f4-l">
-                <Link to={`/${post.node.frontmatter.slug}`} className="hover-blue dark-gray">{post.node.frontmatter.title}</Link>
-              </h3>
-              <time className="updated dib f7 ttu tracked silver">{formatDate(post.node.frontmatter.date)}</time>
-            </article>
-          ))}
-          <div className="mt3">
-            <Link className="f7 fw6 pv2 ph3 ttu white tracked br2 dim  bg-blue" to="/blog">VIEW MORE</Link>
-          </div>
-        </div>
-      </section> */}
+      <Hero
+        text="<span class='block'>I convert</span> web designs to WordPress themes"
+        page="home"
+      />
+      <TwoColumn
+        classes="bg-brand-grey-200 relative z-10"
+        lineClass="bg-brand-primary-800"
+        lead={{ text: "PROBLEM", class: "text-black" }}
+        heading={{ text: "WordPress websites can be slow and ugly.", class: "" }}
+        text="<p>After updating over <strong>100</strong> custom WordPress themes, far too many of them use a plethora of redundant plugins, child themes and third party page builders. This leads to frustration for everyone involved.</p>
+        <ul class='lg:ml-2 list-inside mt-8'>
+          <li class='mb-2'><span>Slow page load times for you and your users</span></li>
+          <li class='mb-2'><span>Confusing and slow editing experience</span></li>
+          <li><span>Inconsistant styling and structure</span></li>
+        </ul>
+        "
+      />
+      <TwoColumn
+        classes=""
+        lineClass="bg-brand-primary-800"
+        lead={{ text: "SOLUTION", class: "text-black" }}
+        heading={{ text: "Less is more.", class: "" }}
+        text="
+        <p>Every website is unique and should be treated as such. Including only what is neccssary when building a WordPress theme ensures your websites performance and branding is never compromised.</p>
+        <p>What’s more, editing your website should be fun and intuitive. No one likes waiting to make simple text edits. Tools like <strong>ACF</strong> Pro allow me to extend WordPress natively to cater to your designs.</p>
+        "
+        btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-brand-primary-800 text-white hover:bg-brand-primary-900" }}
+      />
+      <TwoColumn
+        classes="bg-brand-grey-200"
+        lineClass="bg-brand-primary-800"
+        lead={{ text: "LATEST THEMES", class: "text-black" }}
+        heading={{ text: "Built completely from scratch.", class: "" }}
+        cards="themes"
+        page="home"
+      />
+      <TwoColumn
+        classes=""
+        lineClass="bg-brand-primary-800"
+        lead={{ text: "DESIGNS", class: "text-black" }}
+        heading={{ text: "Figma, Illustrator, Invision, Photoshop, Sketch, XD ...", class: "" }}
+        text="
+        <p>I love them all, I’ve converted over <strong>25</strong> unique designs from all the above programmes into unique WordPress themes.</p>
+        "
+        btn={{ url: "/building-a-wordpress-theme/", text: "View my process", classes: "bg-brand-primary-800 text-white hover:bg-brand-primary-900" }}
+        img={true}
+      />
+      <TwoColumn
+        classes="bg-brand-grey-200"
+        lineClass="bg-brand-primary-800"
+        lead={{ text: "TESTIMONIALS", class: "text-black" }}
+        heading={{ text: "What my clients say", class: "" }}
+        cards="testimonials"
+      />
+      <TwoColumn
+        classes="bg-brand-primary-900 text-white"
+        lineClass="bg-white"
+        lead={{ text: "HIRE ME", class: "text-white" }}
+        heading={{ text: "Let's work together", class: "text-white" }}
+        text="<p>I’m currently available to convert your designs to a simple to use, intuitive, WordPress theme.</p>"
+        btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-white text-brand-primary-800 hover:bg-gray-200" }}
+      />
     </Layout>
   )
 }
 
 export default Index
-
-export const query = graphql`
-  query IndexQuery {
-    posts: allMarkdownRemark(
-      limit: 4
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "post" } } }
-    ) {
-      edges {
-        node {
-          html
-          frontmatter {
-            title
-            url
-            type
-            template
-            slug
-            date
-          }
-        }
-      }
-    }
-    themes: allMarkdownRemark(
-      limit: 2
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { type: { eq: "theme" } } }
-    ) {
-      edges {
-        node {
-          html
-          frontmatter {
-            title 
-            url
-            type
-            slug
-            date
-            thumbnail {
-              childImageSharp {
-                fluid(maxWidth: 800){
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`

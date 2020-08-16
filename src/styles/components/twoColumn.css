@@ -1,0 +1,19 @@
+.two-column ul {
+    li {
+        @apply flex;
+
+        &::before {
+            @apply bg-no-repeat bg-center block w-4 h-4 mr-1 mt-brand-1/2;
+            content: '';
+            background-image: url('../images/svg/cross.svg');
+        }
+    }
+    span {
+        @apply relative -left-brand-05 top-0 inline-block -mt-1;
+    }
+}
+
+
+
+
+

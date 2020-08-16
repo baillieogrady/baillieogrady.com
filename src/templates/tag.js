@@ -4,19 +4,24 @@ import { graphql } from 'gatsby'
 import config from '../../data/SiteConfig'
 
 import Layout from '../layout'
-import PostListing from '../components/PostListing'
-import Intro from '../components/Intro'
+
+import Hero from '../components/Hero'
+import TagListing from '../components/TagListing'
+import SEO from '../components/SEO'
 
 export default class TagTemplate extends Component {
   render() {
     const { tag } = this.props.pageContext
-    const postEdges = this.props.data.allMarkdownRemark.edges
+    const postEdges = this.props.data
 
     return (
       <Layout>
         <Helmet title={`Posts tagged as "${tag}" – ${config.siteTitle}`} />
-        <Intro title={`Posts tagged as <u>"${tag}"</u>`} />
-        <PostListing postEdges={postEdges} />
+        <SEO />
+        <Hero
+          text={`Posts tagged as <u>"${tag}"</u>`}
+        />
+        <TagListing data={postEdges} heading={{ text: "" }} tag={tag} />
       </Layout>
     )
   }
@@ -32,18 +37,17 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          excerpt
+          frontmatter {
+            slug
+            title
+            tags
+            date
+            template
+          }
           fields {
             slug
             date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            categories
-            date
-            template
           }
         }
       }

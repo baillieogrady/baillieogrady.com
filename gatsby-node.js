@@ -42,6 +42,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const postPage = path.resolve("src/templates/post.js");
+  const themePage = path.resolve("src/templates/theme.js");
   // const page = path.resolve("src/templates/page.js");
   const tagPage = path.resolve("src/templates/tag.js");
   const categoryPage = path.resolve("src/templates/category.js");
@@ -162,4 +163,87 @@ exports.createPages = async ({ graphql, actions }) => {
   //     context: { category }
   //   });
   // });
+
+  const ThemesMarkdownQueryResult = await graphql(`
+    {
+      allMarkdownRemark(filter: {frontmatter: {template: {in: "theme"}}}) {
+        edges {
+          node {
+            frontmatter {
+              title
+              date
+            }
+            fields {
+              date
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  if (ThemesMarkdownQueryResult.errors) {
+    console.error(ThemesMarkdownQueryResult.errors);
+    throw ThemesMarkdownQueryResult.errors;
+  }
+
+  const themesEdges = ThemesMarkdownQueryResult.data.allMarkdownRemark.edges;
+
+  // Sort posts
+  themesEdges.sort((themeA, themeB) => {
+    const dateA = moment(
+      themeA.node.frontmatter.date,
+      siteConfig.dateFromFormat
+    );
+
+    const dateB = moment(
+      themeB.node.frontmatter.date,
+      siteConfig.dateFromFormat
+    );
+
+    if (dateA.isBefore(dateB)) return 1;
+    if (dateB.isBefore(dateA)) return -1;
+
+    return 0;
+  });
+
+  // Paging
+  // const { postsPerPage } = siteConfig;
+  // const pageCount = Math.ceil(themesEdges.length / postsPerPage);
+
+  // [...Array(pageCount)].forEach((_val, pageNum) => {
+  //   createPage({
+  //     path: pageNum === 0 ? `/` : `/${pageNum + 1}/`,
+  //     component: listingPage,
+  //     context: {
+  //       limit: postsPerPage,
+  //       skip: pageNum * postsPerPage,
+  //       pageCount,
+  //       currentPageNum: pageNum + 1
+  //     }
+  //   });
+  // });
+
+  // Theme page creating
+  themesEdges.forEach((edge, index) => {
+
+    // Create theme pages
+    const nextID = index + 1 < themesEdges.length ? index + 1 : 0;
+    const prevID = index - 1 >= 0 ? index - 1 : themesEdges.length - 1;
+    const nextEdge = themesEdges[nextID];
+    const prevEdge = themesEdges[prevID];
+
+    createPage({
+      path: edge.node.fields.slug,
+      component: themePage,
+      context: {
+        slug: edge.node.fields.slug,
+        nexttitle: nextEdge.node.frontmatter.title,
+        nextslug: nextEdge.node.fields.slug,
+        prevtitle: prevEdge.node.frontmatter.title,
+        prevslug: prevEdge.node.fields.slug
+      }
+    });
+  });
 };

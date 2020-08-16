@@ -19,12 +19,8 @@ Recently I made the shift to TailwindCSS for all my CSS and it's dramtically red
 
 ## The process
 
-1. Scan through the final designs extracting:
-    * Base styles
-    * Brand styles
-    * Grid system
-    * Unique content blocks.
-2. Clone the [custom-sage](https://github.com/baillieogrady/custom-sage) theme, create a local WordPress website [with docker](/docker-wordpress) and ensure WordPress is up to date.
+1. Scan through the final designs extracting base styles, GRid system & unique content blocks.
+2. Clone my [custom-sage](https://github.com/baillieogrady/custom-sage) theme, create a local WordPress website with [docker](/docker-wordpress) and ensure WordPress is up to date.
 3. Install [ACF Pro](https://www.advancedcustomfields.com/pro/) and ensure it's up to date.
 4. Configure **tailwind.config.js** to generate utility classes based on brand styles extracted from the designs in step 1.
 5. Create header & footer elements and implement global ACF options.
@@ -32,7 +28,7 @@ Recently I made the shift to TailwindCSS for all my CSS and it's dramtically red
 7. Iterate through each custom Gutenberg block and make them responsive.
 8. Test all blocks, including the header and footer, on all modern browsers including IE 11, Firefox, Chrome, Safari & Android.
 9. Optimise website to achieve < 2 seconds load time on each page. 
-10. Setup staging website for the client to experiment with their new theme & provide them with a handover document to give a run down of how the theme was made and how to use it, [example](https://handover.baillieogrady.com).
+10. Setup staging website for the client to experiment with their new theme & provide them with a handover document to give a run down of how the theme was made and how to use it.
 
-<!-- 
-I'm likely to update this post as time goes on but I hope this post provides a good insight into how one WordPress developer builds themes. -->
+
+I'm likely to update this post as time goes on but I hope this post provides a good insight into how one WordPress developer builds themes.

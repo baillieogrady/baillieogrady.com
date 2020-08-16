@@ -1,0 +1,7 @@
+.btn {
+    @apply bg-brand-primary-800 text-white py-3 px-6 inline-block rounded text-center;
+}
+
+.btn-link {
+    @apply uppercase text-brand-primary-800 font-bold text-sm leading-brand-tight tracking-brand-wider;
+}

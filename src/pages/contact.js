@@ -1,9 +1,11 @@
 import React from "react"
 import Helmet from "react-helmet"
+import SEO from "../components/SEO"
+
+import Hero from "../components/Hero"
+import TwoColumn from "../components/TwoColumn"
 
 import Layout from "../layout"
-import Intro from "../components/Intro"
-import SEO from "../components/SEO"
 
 import config from '../../data/SiteConfig'
 
@@ -13,32 +15,17 @@ const Contact = () => {
     <Layout>
       <Helmet title={`Contact - ${config.siteTitle}`} />
       <SEO />
-      <Intro
-        title="Contact"
+      <Hero
+        text="Contact"
       />
-      <section className="mb4 mb5-ns">
-        <div className="mw7 center ph3">
-          {/* <h2>Take your pick</h2> */}
-          <ul className="ma0">
-            {/* <li><a href="tel:07939818296">07939818296</a></li> */}
-            <li><a href="mailto:hello@baillieogrady.com">hello@baillieogrady.com</a></li>
-            <li><a href="https://www.instagram.com/baillieogrady/" rel="noopener">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/baillieogrady/" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://twitter.com/baillieogrady" rel="noopener">Twitter</a></li>
-            <li><a href="https://www.facebook.com/iambaillieogrady" rel="noopener">Facebook</a></li>
-          </ul>
-        </div>
-      </section>
-      {/* <section className="dn db-ns mb4 mb5-ns">
-        <div className="mw7 center ph3">
-          <h2>Crypto</h2>
-          <ul className="ma0">
-            <li><strong>BTC:</strong> 1AK4C5wMKvFmjNXMUdqNw5y5XY9piSNWn8</li>
-            <li><strong>ETH:</strong> 0x0f6765417988D19F5745823bF89C75826A63C045</li>
-            <li><strong>LTC:</strong> LafofH2bt4kZu95szSQic9cz4VTWXk8kEZ</li>
-          </ul>
-        </div>
-      </section> */}
+      <TwoColumn
+        classes="bg-brand-grey-200 relative z-10"
+        lineClass="bg-brand-primary-800"
+        lead={{ text: "LET'S CHAT", class: "text-black" }}
+        heading={{ text: "Response within 24 hours", class: "" }}
+        text=""
+        form="contact"
+      />
     </Layout>
   )
 }
