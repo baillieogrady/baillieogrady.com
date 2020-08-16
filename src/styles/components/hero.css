@@ -1,5 +1,5 @@
 .hero {
     .gatsby-image-wrapper {
-        @apply absolute !important;
+        @apply absolute hidden lg:display-inline !important;
     }
 }
