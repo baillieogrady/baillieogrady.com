@@ -63,7 +63,7 @@ export default class PostTemplate extends Component {
                                     }
                                     {post.download != undefined ?
                                         <li className="mr-8 inline-block">
-                                            <a href={post.download} target="_blank" className="py-6 inline-block">Download</a>
+                                            <a href={post.download} className="py-6 inline-block" download>Download</a>
                                         </li>
                                         : null
                                     }
