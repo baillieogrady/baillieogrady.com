@@ -2,7 +2,6 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-// import dream from '../images/dream.jpg'
 import icons_3 from '../images/icons_3.png'
 import Arrow from '../images/svg/arrow.inline.svg'
 

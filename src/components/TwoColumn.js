@@ -10,13 +10,17 @@ import BlogListing from './BlogListing';
 import Testimonials from './Testimonials';
 import ContactForm from './ContactForm';
 import ConvertForm from './ConvertForm';
+import Icons from './Icons';
 
-const TwoColumn = ({ lead, heading, text, btn, btnLink, classes, lineClass, cards, form, page, img }) => {
+const TwoColumn = ({ lead, heading, text, btn, btnLink, classes, lineClass, cards, form, page, img, icons }) => {
     return (
         <div className={classes}>
             <div className="two-column container py-16 lg:py-32 relative">
                 <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
                     <Lead text={{ content: lead.text, class: lead.class }} lineClass={lineClass} />
+                    {icons ?
+                        <Icons />
+                        : null}
                     {cards === undefined ?
                         <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
                             <h2 className={`mb-6 relative z-10 ${heading.class}`}>{heading.text}</h2>

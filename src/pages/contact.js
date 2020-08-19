@@ -21,6 +21,15 @@ const Contact = () => {
       <TwoColumn
         classes="bg-brand-grey-200 relative z-10"
         lineClass="bg-brand-primary-800"
+        lead={{ text: "DIRECT", class: "text-black" }}
+        heading={{ text: "", class: "" }}
+        text=""
+        icons={true}
+        form={false}
+      />
+      <TwoColumn
+        classes="relative z-10"
+        lineClass="bg-brand-primary-800"
         lead={{ text: "LET'S CHAT", class: "text-black" }}
         heading={{ text: "Response within 24 hours", class: "" }}
         text=""
