@@ -9,13 +9,14 @@ const ThemesListing = ({ heading, page }) => {
     <StaticQuery
       query={graphql`
         query ThemeListingQuery {
-          allMarkdownRemark(filter: {frontmatter: {template: {eq: "theme", }}}, limit: 999) {
+          allMarkdownRemark(filter: {frontmatter: {template: {eq: "theme", }}}, limit: 999, sort: { fields: [frontmatter___date], order: DESC }) {
             edges {
               node {
                 html
                 excerpt
                 frontmatter {
                   title
+                  date
                   slug
                   url
                   code

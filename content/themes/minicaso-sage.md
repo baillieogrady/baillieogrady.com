@@ -1,6 +1,6 @@
 ---
 title: 'Minicaso'
-date: 2019-11-07
+date: 2020-05-07
 template: 'theme'
 url: 'https://minicaso.com'
 code: 'https://github.com/baillieogrady/minicaso-sage'

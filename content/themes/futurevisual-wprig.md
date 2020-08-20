@@ -1,6 +1,6 @@
 ---
 title: 'Futurevisual'
-date: 2020-02-12
+date: 2020-08-15
 template: 'theme'
 code: null
 url: 'https://futurevisual.com'

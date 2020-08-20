@@ -35,7 +35,7 @@ const Hero = ({ text, page }) => {
                     : null
                 }
                 {page === 'home' ?
-                    <Img fixed={file.childImageSharp.fixed} alt="Swirling gradient" className="absolute right-0 top-0 shadow-brand-3xl hidden lg:block w-1/2" />
+                    <Img fixed={file.childImageSharp.fixed} alt="Swirling gradient" className="absolute right-0 top-0 shadow-brand-3xl hidden lg:block w-1/2 rounded" />
                     : null}
             </div>
         </div>
