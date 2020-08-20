@@ -84,7 +84,7 @@ img {
     }
 
     img {
-        @apply mb-8;
+        @apply mb-8 rounded shadow-brand-xs;
     }
 }
 

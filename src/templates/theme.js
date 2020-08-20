@@ -50,26 +50,26 @@ export default class PostTemplate extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="shadow-brand-xs sticky top-brand-80 lg:top-0 left-0 z-20">
+                <div className="shadow-brand-xs sticky top-brand-80 lg:top-0 left-0 z-20 bg-white">
                     <div className="container">
                         <div className="-mx-6 lg:-mx-brand-8">
                             <div className="w-full lg:w-9/12 ml-auto px-6 lg:px-brand-8">
                                 <ul className="text-black sticky top-0 z-10 bg-white">
                                     {post.url != undefined ?
                                         <li className="mr-8 inline-block">
-                                            <a href={post.url} target="_blank" className="py-6 inline-block">Visit</a>
+                                            <a href={post.url} target="_blank" className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out">Visit</a>
                                         </li>
                                         : null
                                     }
                                     {post.download != undefined ?
                                         <li className="mr-8 inline-block">
-                                            <a href={post.download} className="py-6 inline-block" download>Download</a>
+                                            <a href={post.download} className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out" download>Download</a>
                                         </li>
                                         : null
                                     }
                                     {post.code != undefined ?
                                         <li className="mr-8 inline-block">
-                                            <a href={post.code} target="_blank" className="py-6 inline-block">Code</a>
+                                            <a href={post.code} target="_blank" className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out">Code</a>
                                         </li>
                                         : null
                                     }
@@ -81,7 +81,7 @@ export default class PostTemplate extends Component {
                 <div className="container">
                     <div className="-mx-6 lg:-mx-brand-8">
                         <div className="w-full lg:w-9/12 ml-auto mb-32 px-6 lg:px-brand-8">
-                            <Img fluid={thumbnail} className="mt-16 rounded w-full lg:w-brand-76" />
+                            <Img fluid={thumbnail} className="mt-16 rounded w-full lg:w-brand-76 shadow-brand-xs" />
                             <div dangerouslySetInnerHTML={{ __html: postNode.html }} className="w-full lg:w-brand-76 mt-8 wysiwyg" />
                         </div>
                     </div>
