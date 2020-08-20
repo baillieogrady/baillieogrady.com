@@ -2,6 +2,7 @@
 date: 2019-11-27
 title: '10 Essential WordPress plugins'
 template: post
+type: 'post'
 slug: '10-essential-wordpress-plugins'
 categories:
   - 'code'

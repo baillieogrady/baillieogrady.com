@@ -1,4 +1,4 @@
----
+<!-- ---
 date: 2019-10-25
 title: 'How do you center content in css?'
 template: post
@@ -24,4 +24,4 @@ If you intend to absolutely position an element within a `position: relative;`�
 
 ## Margin
 
-Last but not least, margin. Applying `margin: 0 auto;` will center elements providing they have a width applied to them, like a container for instance.
+Last but not least, margin. Applying `margin: 0 auto;` will center elements providing they have a width applied to them, like a container for instance. -->
