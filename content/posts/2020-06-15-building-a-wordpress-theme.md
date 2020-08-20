@@ -19,15 +19,15 @@ Recently I made the shift to TailwindCSS for all my CSS and it's dramtically red
 
 ## The process
 
-1. Scan through the final designs extracting brand styles, Grid system & unique content blocks.
-2. Create a local WordPress website with [docker](/docker-wordpress) and clone my [custom-sage](https://github.com/baillieogrady/custom-sage) into the themes folder.
+1. Scan through the final designs extracting brand styles, a Grid system (optional) & unique content blocks.
+2. Create a local WordPress website with [docker](/docker-wordpress) and clone my [custom-sage](https://github.com/baillieogrady/custom-sage) starter theme into the themes folder.
 3. Install [ACF Pro](https://www.advancedcustomfields.com/pro/).
 4. Configure **tailwind.config.js** to generate utility classes based on brand styles extracted in step 1.
-5. Create header & footer elements and implement global ACF options.
+5. Create the header & footer blocks and implement global ACF options.
 6. Iterate through and create a custom Gutenberg block for each unique content block extracted in step 1.
 7. Iterate through each custom Gutenberg block and make them responsive.
 8. Test all blocks, including the header and footer on all modern browsers including Firefox, Chrome and Safari.
 9. Optimise website to achieve < 2 seconds load time on each page. 
-10. Setup a staging website for the client to experiment with their new theme & provide them with a brief handover document, lsiting all the custom Gutenberg blocks.
+10. Setup a staging website for the client to experiment with their new theme & provide them with a brief handover document, listing all the custom Gutenberg blocks.
 
 I'm likely to update this post as time goes on, but I hope this post provides a good insight into how one WordPress developer builds WordPress themes based on completely custom designs.
