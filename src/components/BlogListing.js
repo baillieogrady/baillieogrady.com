@@ -11,12 +11,13 @@ const BlogListing = ({ heading, postEdges }) => {
         <StaticQuery
             query={graphql`
                 query BlogListingQuery {
-                    allMarkdownRemark(filter: {frontmatter: {template: {eq: "post", }}}, limit: 9999) {
+                    allMarkdownRemark(filter: {frontmatter: {template: {eq: "post", }}}, limit: 9999, sort: { fields: [frontmatter___date], order: DESC }) {
                         edges {
                         node {
                             html
                             excerpt
                             frontmatter {
+                                date
                                 title
                                 slug
                             }
