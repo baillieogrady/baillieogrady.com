@@ -7,7 +7,7 @@ import Back from '../images/svg/back.inline.svg'
 const Lead = ({ text, lineClass }) => {
 
     return (
-        <div className={`w-full lg:w-3/12 px-6 lg:px-brand-8 text-xs lg:text-sm tracking-brand-widest mb-8`}>
+        <div className={`w-full lg:w-3/12 px-6 lg:px-brand-4 text-xs lg:text-sm tracking-brand-widest mb-8`}>
             {text.content === "BLOG" || text.content === "THEMES" ?
                 <Link to={`/${text.content.toLowerCase()}/`} className="inline-block">
                     <Back />

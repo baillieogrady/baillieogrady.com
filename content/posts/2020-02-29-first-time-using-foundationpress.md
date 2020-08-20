@@ -56,4 +56,4 @@ You’ll notice on the GitHub repo you can run the command `npm run package`, wh
 
 ## Conclusion
 
-If foundation is your front-end framework of choice, then I couldn’t recommend it more. Its simple and intuitive structure allows for a comfortable build and the ability to use modern tools. However, if you’re not interested in foundation and prefer it’s mighvty cousin Bootstrap, for instance, then maybe consider another starter theme or better still, replicate the theme structure and remove the foundation parts as mentioned earlier.
+If foundation is your front-end framework of choice, then I couldn’t recommend it more. Its simple and intuitive structure allows for a comfortable build and the ability to use modern tools. However, if you’re not interested in foundation and prefer it’s mighty cousin Bootstrap, for instance, then maybe consider another starter theme or better still, replicate the theme structure and remove the foundation parts as mentioned earlier.
