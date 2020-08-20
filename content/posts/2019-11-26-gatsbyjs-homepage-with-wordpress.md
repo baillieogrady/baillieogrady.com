@@ -2,9 +2,8 @@
 date: 2019-11-26
 title: 'GatsbyJS homepage with WordPress'
 template: post
+type: 'post'
 slug: 'gatsbyjs-homepage-with-wordpress'
-categories:
-  - 'code'
 tags:
   - 'wordpress'
   - 'gatsbyjs'

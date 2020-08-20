@@ -2,6 +2,7 @@
 date: 2019-12-07
 title: 'Custom Gutenberg blocks & ACF fields with roots sage'
 template: 'post'
+type: 'post'
 slug: 'custom-gutenberg-blocks-acf-fields-with-roots-sage'
 categories:
   - 'code'

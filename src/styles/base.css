@@ -79,12 +79,20 @@ img {
         @apply py-1 px-2 mb-8 !important;
     }
 
+    pre {
+        @apply mb-8;
+    }
+
     pre code {
         @apply mb-4 p-0 !important;
     }
 
     img {
         @apply mb-8 rounded shadow-brand-xs;
+    }
+
+    .gatsby-resp-iframe-wrapper {
+        @apply mb-8 rounded;
     }
 }
 

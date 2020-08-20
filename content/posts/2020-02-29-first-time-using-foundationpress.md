@@ -2,6 +2,7 @@
 date: 2020-02-29
 title: 'First time using Foundationpress'
 template: post
+type: 'post'
 slug: 'first-time-using-foundationpress'
 categories:
   - 'code'

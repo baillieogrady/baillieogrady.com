@@ -2,6 +2,7 @@
 date: 2019-10-04
 title: 'Docker & WordPress'
 template: 'post'
+type: 'post'
 slug: 'docker-wordpress'
 categories:
   - 'code'

@@ -33,6 +33,7 @@ module.exports = {
         'brand-grey-300': '#F2F2F5',
         'brand-grey-400': '#EBEBF0',
         'brand-grey-500': '#E3E4EB',
+        'brand-red-500': '#FF4539',
       },
       lineHeight: {
         'brand-tight': '1.2',

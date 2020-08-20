@@ -2,6 +2,7 @@
 date: 2020-01-13
 title: 'Simple Gulp Boilerplate'
 template: 'post'
+type: 'post'
 slug: 'simple-gulp-bolierplate'
 categories:
   - 'code'

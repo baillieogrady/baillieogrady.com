@@ -7,6 +7,7 @@ const Card = ({ type, theme, testimonial, post, classes }) => {
 
     return (
         <div className={`shadow-brand-xs bg-white rounded-brand-lg p-4 w-full md:w-brand-46 mb-8 lg:mb-16 relative transition duration-500 ease-in-out transform hover:scale-105`}>
+            {console.log(post)}
             <div className={`flex flex-col h-full ${type === "testimonial" ? "" : "justify-between"}`}>
                 {type === 'theme' ?
                     <React.Fragment>
@@ -37,7 +38,9 @@ const Card = ({ type, theme, testimonial, post, classes }) => {
                             <h3 className="mb-2">{post.frontmatter.title}</h3>
                             <p className="mb-4">{post.excerpt}</p>
                         </div>
-                        <Link to={`/${post.frontmatter.slug}/`} className="btn-link self-end hover:text-brand-primary-900 transition duration-200 ease-in-out">VIEW</Link>
+                        <Link to={`/${post.frontmatter.slug}/`} className={`btn-link ${post.frontmatter.type === 'video' ? "btn-link--red" : "WATCH"} self-end hover:text-brand-primary-900 transition duration-200 ease-in-out`}>
+                            {post.frontmatter.type === 'post' ? "VIEW" : "WATCH"}
+                        </Link>
                     </React.Fragment>
                     : null
                 }

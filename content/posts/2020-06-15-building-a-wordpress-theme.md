@@ -2,9 +2,8 @@
 date: 2020-06-15
 title: 'Building a WordPress theme'
 template: post
+type: 'post'
 slug: 'building-a-wordpress-theme'
-categories:
-  - 'code'
 tags:
   - 'wordpress'
 ---

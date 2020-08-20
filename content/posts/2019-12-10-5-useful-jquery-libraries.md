@@ -2,6 +2,7 @@
 date: 2019-12-10
 title: '5 useful jquery libraries'
 template: post
+type: 'post'
 slug: '5-useful-jquery-libraries'
 categories:
   - 'code'

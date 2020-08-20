@@ -4,4 +4,8 @@
 
 .btn-link {
     @apply uppercase text-brand-primary-800 font-bold text-sm leading-brand-tight tracking-brand-wider;
+
+    &--red {
+        @apply text-brand-red-500;
+    }
 }

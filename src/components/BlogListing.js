@@ -20,6 +20,7 @@ const BlogListing = ({ heading, postEdges }) => {
                                 date
                                 title
                                 slug
+                                type
                             }
                         }
                         }
