@@ -76,7 +76,7 @@ img {
     }
 
     code {
-        @apply py-1 px-2 !important;
+        @apply py-1 px-2 mb-8 !important;
     }
 
     pre code {
