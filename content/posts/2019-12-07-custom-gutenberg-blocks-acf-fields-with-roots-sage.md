@@ -12,7 +12,7 @@ tags:
 
 Roots sage should be a strong contender for building your custom WordPress themes, read more about this starter theme [here](https://roots.io/sage/).
 
-Roots sage makes it remarkably easy to add custom Gutenberg blocks with ACF fields. By installing just two more additional composer packages, adding cheeky blade comment to each block view file and creating a controller file for each block, we’re all set. Below I’ve listed the initial commands to run in the terminal in the theme root and the code to add to the relevant theme files.
+Roots sage makes it remarkably easy to add custom Gutenberg blocks with ACF fields. By installing just two additional composer packages, creating a new view file and controller file for each block, we’re all set. Below I’ve listed the initial commands to run in the terminal in the theme root and the code to add to the relevant theme files.
 
 **Commands**
 ------------
@@ -116,7 +116,7 @@ add_action('init', function () {
       @if(get_field('heading'))
         <div>
           <h1>
-            {{ the_field('heading', 'options') }}
+            {{ the_field('heading') }}
           </h1>
         </div>
       @endif
