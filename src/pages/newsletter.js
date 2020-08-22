@@ -23,7 +23,7 @@ const Newsletter = () => {
                 lineClass="bg-brand-primary-800"
                 lead={{ text: "JOIN", class: "text-black" }}
                 heading={{ text: "My weekly newsletter", class: "" }}
-                text="<p>Summarising all my weekly coding content including live code examples, blogs, YouTube tutorials and Instagram carousels.</p>"
+                text="<p>Summarizing all my weekly coding content including live code examples, blogs, YouTube tutorials and Instagram carousels.</p>"
                 form="newsletter"
             />
         </Layout>

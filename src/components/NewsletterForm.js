@@ -16,7 +16,7 @@ export default class MailChimpForm extends React.Component {
     }
     render() {
         return this.state.result !== null ? (
-            <p className={`text-green-500 font-medium`}>{this.state.result.msg}</p>
+            <p className={`text-green-500 font-medium text-xl`}>{this.state.result.msg}</p>
         ) : (
                 <form onSubmit={this._handleSubmit}>
                     <label className="text-xs hidden">Email*</label>

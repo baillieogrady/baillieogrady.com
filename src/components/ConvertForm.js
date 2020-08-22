@@ -58,13 +58,13 @@ export default class MyForm extends React.Component {
                         <label className="text-xs" htmlFor="message">Message*</label>
                         <textarea placeholder="Tell me a little about your WordPress project..." className="block rounded-lg shadow-brand-xs p-2 w-full h-48" id="message" name="message" />
                     </div>
-                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="text" name="_gotcha" style={{ 'display': 'none' }} />
                 </div>
                 <div className="mt-8 text-green-500 font-medium">
                     {status === "SUCCESS" ? <p className="text-xl">Message received, I'll be in touch soon!</p> : <div className="w-full lg:w-brand-46 mt-6">
                         <input type="submit" value="Get started" className="btn cursor-pointer hover:bg-brand-primary-900 transiton duration-200 ease-in-out" />
                     </div>}
-                    {status === "ERROR" && <p className="text-red-600">Ooops! There was an error.</p>}
+                    {status === "ERROR" && <p className="text-red-600 text-xl">Ooops! There was an error.</p>}
                 </div>
             </form>
 
