@@ -16,10 +16,10 @@ const Icons = () => {
                 <a href="mailto:hello@baillieogrady.com">
                     <Mail className="transition duration-500 ease-in-out transform hover:scale-110 mr-8 lg:mr-12" />
                 </a>
-                <a href="https://www.linkedin.com/in/baillieogrady/" target="_blank">
+                <a href="https://www.linkedin.com/in/baillieogrady" target="_blank">
                     <Linkedin className="transition duration-500 ease-in-out transform hover:scale-110 mr-8 lg:mr-12" />
                 </a>
-                <a href="https://www.instagram.com/baillieogrady/" target="_blank">
+                <a href="https://www.instagram.com/baillieogrady" target="_blank">
                     <Insta className="transition duration-500 ease-in-out transform hover:scale-110" />
                 </a>
             </div>

@@ -48,7 +48,7 @@ export default class PostTemplate extends Component {
                   <ul className="flex mb-6">
                     {post.tags.map(tag => (
                       <li key={`${tag}`} className="inline-block bg-light-grey mr-4">
-                        <Link to={`/tags/${tag}/`} className="bg-white shadow-brand-xs rounded py-2 px-3 inline-block text-xs uppercase font-medium">
+                        <Link to={`/tags/${tag}`} className="bg-white shadow-brand-xs rounded py-2 px-3 inline-block text-xs uppercase font-medium">
                           {tag}
                         </Link>
                       </li>

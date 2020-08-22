@@ -10,13 +10,13 @@ const Card = ({ type, theme, testimonial, post, classes }) => {
             <div className={`flex flex-col h-full ${type === "testimonial" ? "" : "justify-between"}`}>
                 {type === 'theme' ?
                     <React.Fragment>
-                        <Link to={`/${theme.frontmatter.slug}/`} className="absolute top-0 left-0 h-full w-full" />
+                        <Link to={`/${theme.frontmatter.slug}`} className="absolute top-0 left-0 h-full w-full" />
                         <div>
                             <Img fluid={theme.frontmatter.thumbnail.childImageSharp.fluid} className="rounded-lg mb-4 pointer-events-none max-w-full" />
                             <h3 className="mb-2">{theme.frontmatter.title}</h3>
                             <p className="mb-4">{theme.excerpt}</p>
                         </div>
-                        <Link to={`/${theme.frontmatter.slug}/`} className="btn-link self-end hover:text-brand-primary-900 transition duration-200 ease-in-out">VIEW</Link>
+                        <Link to={`/${theme.frontmatter.slug}`} className="btn-link self-end hover:text-brand-primary-900 transition duration-200 ease-in-out">VIEW</Link>
                     </React.Fragment>
                     : null
                 }
@@ -32,7 +32,7 @@ const Card = ({ type, theme, testimonial, post, classes }) => {
                 }
                 {type === 'post' ?
                     <React.Fragment>
-                        <Link to={`/${post.frontmatter.slug}/`} className="absolute top-0 left-0 h-full w-full" />
+                        <Link to={`/${post.frontmatter.slug}`} className="absolute top-0 left-0 h-full w-full" />
                         <div>
                             <h3 className="mb-2">{post.frontmatter.title}</h3>
                             <p className="mb-4">{post.excerpt}</p>
