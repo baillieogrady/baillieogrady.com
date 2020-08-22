@@ -35,6 +35,10 @@ img {
     @apply max-w-full; 
 }
 
+[aria-current="page"] {
+    @apply font-bold;
+}
+
 .wysiwyg {
     a {
         @apply text-brand-primary-800 transition duration-200 ease-in-out;
