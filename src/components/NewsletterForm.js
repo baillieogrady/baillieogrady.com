@@ -20,8 +20,8 @@ export default class MailChimpForm extends React.Component {
         ) : (
                 <form onSubmit={this._handleSubmit}>
                     <label className="text-xs hidden">Email*</label>
-                    <div className="flex items-center shadow-brand-xs  p-2 rounded-lg bg-white">
-                        <input type="email" placeholder="foo@bar.com" className="block rounded-lg h-10 pl-2 w-full text-black outline-none" name="email" id="email" onChange={this.handleChange} />
+                    <div className="flex items-center justify-between shadow-brand-xs p-2 rounded-lg bg-white w-full lg:w-2/3">
+                        <input type="email" placeholder="foo@bar.com" className="block rounded-lg h-10 pl-2 text-black outline-none flex-grow" name="email" id="email" onChange={this.handleChange} />
                         <input type="submit" value="Subscribe" className="btn py-2 px-4 hover:bg-brand-primary-900 cursor-pointer transition duration-200 ease-in-out" />
                     </div>
                 </form>

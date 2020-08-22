@@ -31,7 +31,7 @@ const Hero = ({ text, page }) => {
                 }
                 <h1 className={`relative z-10 w-full  ${page === "convert-your-designs" ? "md:w-8/12" : "md:w-7/12"} ${page === "home" ? "" : "py-16 lg:py-32"}`} dangerouslySetInnerHTML={{ __html: text }} />
                 {page === 'home' ?
-                    <Arrow className="mb-16 lg:mb-32 w-4 lg:w-8" />
+                    <Arrow className="mb-16 lg:mb-32 w-4 lg:w-8 animate-bounce" />
                     : null
                 }
                 {page === 'home' ?
