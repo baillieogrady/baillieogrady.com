@@ -29,7 +29,7 @@ export default class ContactForm extends React.Component {
                         <label className="text-xs">Message*</label>
                         <textarea placeholder="Tell me a little about your WordPress project..." className="block rounded-lg shadow-brand-xs p-2 w-full h-48 bg-brand-grey-200" name="message" id="message" />
                     </div>
-
+                    <input type="text" name="_gotcha" style="display:none" />
                 </div>
                 <div className="mt-8 text-green-500 font-medium">
                     {status === "SUCCESS" ? <p>Message received, I'll be in touch soon!</p> : <div className="w-full lg:w-brand-46 mt-6">

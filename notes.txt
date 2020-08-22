@@ -1,5 +1,7 @@
 - To do
 
+form - error handling
+
 -- ideas
 
 - UI
