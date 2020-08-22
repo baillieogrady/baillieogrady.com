@@ -1,5 +1,11 @@
 .btn {
-    @apply bg-brand-primary-800 text-white py-3 px-6 inline-block rounded text-center;
+    @apply bg-brand-primary-800 text-white py-3 px-6 inline-block rounded text-center text-sm;
+}
+
+@screen lg {
+    .btn { 
+        @apply text-base
+    }
 }
 
 .btn-link {

@@ -2,6 +2,10 @@ const urljoin = require("url-join");
 const path = require("path");
 const config = require("./data/SiteConfig");
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
@@ -211,7 +215,6 @@ module.exports = {
       }
     },
     // custom
-    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -219,6 +222,13 @@ module.exports = {
           include: /\.inline\.svg$/
         }
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://baillieogrady.us4.list-manage.com/subscribe/post?u=b2a5657c274fcc489afacf713&amp;id=c2f688d7af',
+        timeout: 3500,
+      },
+    },
   ]
 };

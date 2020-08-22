@@ -38,9 +38,9 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
+  copyright: "Copyright © 2020. Baillie O'Grady", // Copyright string for the footer of the website and RSS feed.
+  themeColor: "#3366FF", // Used for setting manifest and progress theme colors.
+  backgroundColor: "#fff" // Used for setting manifest background color.
 };
 
 // Validate

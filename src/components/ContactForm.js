@@ -31,7 +31,7 @@ export default class ContactForm extends React.Component {
                     </div>
 
                 </div>
-                <div className="mt-8 text-green-500 ">
+                <div className="mt-8 text-green-500 font-medium">
                     {status === "SUCCESS" ? <p>Message received, I'll be in touch soon!</p> : <div className="w-full lg:w-brand-46 mt-6">
                         <input type="submit" value="Send" className="btn hover:bg-brand-primary-900 cursor-pointer transition duration-200 ease-in-out" />
                     </div>}

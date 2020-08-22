@@ -64,6 +64,8 @@ module.exports = {
       },
       inset: {
         '-brand-05': '0.5rem',
+        '-brand-6': '-1.75rem',
+        'brand-5': '1.5rem',
         'brand-80': '5rem',
         'brand-50': '50%'
       },

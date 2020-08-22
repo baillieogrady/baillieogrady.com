@@ -60,7 +60,7 @@ export default class MyForm extends React.Component {
                     </div>
 
                 </div>
-                <div className="mt-8 text-green-500">
+                <div className="mt-8 text-green-500 font-medium">
                     {status === "SUCCESS" ? <p className="text-xl">Message received, I'll be in touch soon!</p> : <div className="w-full lg:w-brand-46 mt-6">
                         <input type="submit" value="Get started" className="btn cursor-pointer hover:bg-brand-primary-900 transiton duration-200 ease-in-out" />
                     </div>}

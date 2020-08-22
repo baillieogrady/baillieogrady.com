@@ -11,18 +11,22 @@ import Testimonials from './Testimonials';
 import ContactForm from './ContactForm';
 import ConvertForm from './ConvertForm';
 import Icons from './Icons';
+import News from '../images/svg/news.inline.svg'
+
+import NewsletterForm from "../components/NewsletterForm"
 
 const TwoColumn = ({ lead, heading, text, btn, btnLink, classes, lineClass, cards, form, page, img, icons }) => {
     return (
         <div className={classes}>
             <div className="two-column container py-16 lg:py-32 relative">
-                <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
+                {form === 'newsletter' ? <News className="absolute right-brand-5 lg:right-0 -top-brand-6" /> : null}
+                <div className="flex flex-wrap -mx-6 lg:-mx-brand-4 relative">
                     <Lead text={{ content: lead.text, class: lead.class }} lineClass={lineClass} />
                     {icons ?
                         <Icons />
                         : null}
                     {cards === undefined ?
-                        <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
+                        <div className="w-full lg: lg:w-7/12 px-6 lg:px-brand-4">
                             <h2 className={`mb-6 relative z-10 ${heading.class}`}>{heading.text}</h2>
                             <div dangerouslySetInnerHTML={{ __html: text }} className="realtive z-10" />
                             {!_.isEmpty(btn) ?
@@ -39,6 +43,11 @@ const TwoColumn = ({ lead, heading, text, btn, btnLink, classes, lineClass, card
                             }
                             {form === 'convert' ?
                                 <ConvertForm />
+                                : null
+                            }
+                            {form === 'newsletter' ?
+
+                                <NewsletterForm />
                                 : null
                             }
                         </div>
@@ -62,7 +71,7 @@ const TwoColumn = ({ lead, heading, text, btn, btnLink, classes, lineClass, card
                     }
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
