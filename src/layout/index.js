@@ -139,9 +139,10 @@ const Layout = ({ children, padding }) => {
                 <p className="m-0 tracking-brand-widest font-bold">LINKS</p>
                 <nav className="mt-8">
                   <Link to="/about/" className="text-brand-grey-400 block pb-2">About</Link>
+                  <Link to="/contact/" className="text-brand-grey-400 block pb-2">Contact</Link>
                   <Link to="/themes/" className="text-brand-grey-400 block pb-2">Themes</Link>
                   <Link to="/blog/" className="text-brand-grey-400 block pb-2">Blog</Link>
-                  <Link to="/contact/" className="text-brand-grey-400 block">Contact</Link>
+                  <Link to="/newsletter/" className="text-brand-grey-400 block">Newsletter</Link>
                 </nav>
               </div>
               <div className="w-1/2">
