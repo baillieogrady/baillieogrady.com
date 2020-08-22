@@ -43,7 +43,7 @@ export default class PostTemplate extends Component {
                     <div className="container lg:pt-32">
                         <div className="flex flex-wrap -mx-6 lg:-mx-brand-8">
                             <Lead text={{ content: 'THEMES', class: '' }} lineClass="bg-brand-primary-800" />
-                            <div className="w-full lg:w-7/12 px-6 lg:px-brand-8">
+                            <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
                                 <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="mb-3 lg:mb-6 p-0" />
                                 <time>{date}</time>
                             </div>
@@ -53,7 +53,7 @@ export default class PostTemplate extends Component {
                 <div className="shadow-brand-xs sticky top-brand-80 lg:top-0 left-0 z-20 bg-white">
                     <div className="container">
                         <div className="-mx-6 lg:-mx-brand-8">
-                            <div className="w-full lg:w-9/12 ml-auto px-6 lg:px-brand-8">
+                            <div className="w-full lg:w-9/12 ml-auto px-6 lg:px-brand-4">
                                 <ul className="text-black sticky top-0 z-10 bg-white">
                                     {post.url != undefined ?
                                         <li className="mr-8 inline-block">
@@ -80,7 +80,7 @@ export default class PostTemplate extends Component {
                 </div>
                 <div className="container">
                     <div className="-mx-6 lg:-mx-brand-8">
-                        <div className="w-full lg:w-9/12 ml-auto mb-32 px-6 lg:px-brand-8">
+                        <div className="w-full lg:w-9/12 ml-auto mb-32 px-6 lg:px-brand-4">
                             <Img fluid={thumbnail} className="mt-16 rounded w-full lg:w-brand-76 shadow-brand-xs" />
                             <div dangerouslySetInnerHTML={{ __html: postNode.html }} className="w-full lg:w-brand-76 mt-8 wysiwyg" />
                         </div>

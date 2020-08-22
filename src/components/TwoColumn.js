@@ -46,7 +46,6 @@ const TwoColumn = ({ lead, heading, text, btn, btnLink, classes, lineClass, card
                                 : null
                             }
                             {form === 'newsletter' ?
-
                                 <NewsletterForm />
                                 : null
                             }

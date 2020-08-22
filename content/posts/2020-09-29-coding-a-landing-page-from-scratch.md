@@ -3,10 +3,11 @@ date: 2020-03-09
 title: 'Coding a landing page from scratch'
 template: post
 type: 'video'
-slug: 'coding-a-landing-page-fron-scratch'
+slug: 'coding-a-landing-page-from-scratch'
 tags:
   - 'video'
-  - 'landing page'
+  - 'youtube'
+  - 'javascript'
 ---
 
 Below is a mini series of youtube videos I created, converting landing page web designs to code. I use basic HTML, CSS and JavaScript.

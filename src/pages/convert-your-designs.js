@@ -33,7 +33,7 @@ const ConvertYourDesigns = () => {
                 lead={{ text: "LET'S CHAT", class: "text-black" }}
                 heading={{ text: "Designs not ready?", class: "" }}
                 text="<p>Maybe you’re still debating the designs or just want some general help with your WordPress website. I’m happy to have a chat.</p>"
-                btn={{ url: "/contact", text: "Contact me", classes: "bg-brand-primary-800 text-white hover:bg-brand-primary-900" }}
+                btn={{ url: "/contact/", text: "Contact me", classes: "bg-brand-primary-800 text-white hover:bg-brand-primary-900" }}
             />
         </Layout>
     )

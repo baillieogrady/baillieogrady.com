@@ -6,6 +6,7 @@ type: 'video'
 slug: 'responsive-navigation-menu'
 tags:
   - 'video'
+  - 'youtube'
   - 'tailwindcss'
 ---
 

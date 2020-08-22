@@ -56,7 +56,7 @@ const Layout = ({ children, padding }) => {
                 </li>
               ))}
               <li className="inline-block ml-10">
-                <Link to="/convert-your-designs" className="btn hover:bg-brand-primary-900 transition ease-in-out duration-200">Convert your designs</Link>
+                <Link to="/convert-your-designs/" className="btn hover:bg-brand-primary-900 transition ease-in-out duration-200">Convert your designs</Link>
               </li>
             </ul>
           </nav>

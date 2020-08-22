@@ -11,7 +11,7 @@ const Hero = ({ text, page }) => {
     const { file } = useStaticQuery(
         graphql`
             query {
-                file(relativePath: { eq: "dream.jpg" }) {
+                file(relativePath: { eq: "cafe.jpg" }) {
                 childImageSharp {
                     # Specify the image processing specifications right in the query.
                     # Makes it trivial to update as your page's design changes.
@@ -35,7 +35,7 @@ const Hero = ({ text, page }) => {
                     : null
                 }
                 {page === 'home' ?
-                    <Img fixed={file.childImageSharp.fixed} alt="Swirling gradient" className="absolute right-0 top-0 shadow-brand-3xl hidden lg:block w-1/2 rounded" />
+                    <Img fixed={file.childImageSharp.fixed} alt="Swirling gradient" className="absolute right-0 top-0 shadow-lg hidden lg:block w-1/2 rounded object-cover object-center" />
                     : null}
             </div>
         </div>
