@@ -19,7 +19,7 @@ Below is a collection of website sliders I've coded from scratch based on design
 
 Clean responsive slider using the all famous slick carousel from Ken Wheeler. Combining fontawesome, slick and a little custom CSS allows you to create this responsive modern slider.
 
-## Fullsscreen minimal slider
+## Fullscreen minimal slider
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q8fAxTwWsWE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
