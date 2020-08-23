@@ -20,7 +20,7 @@ const TwoColumn = ({ lead, heading, text, btn, btnLink, classes, lineClass, card
         <div className={classes}>
             <div className="two-column container py-16 lg:py-32 relative">
                 {form === 'newsletter' ? <News className="absolute right-brand-5 lg:right-0 -top-brand-6" /> : null}
-                <div className="flex flex-wrap -mx-6 lg:-mx-brand-4 relative">
+                <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
                     <Lead text={{ content: lead.text, class: lead.class }} lineClass={lineClass} />
                     {icons ?
                         <Icons />
