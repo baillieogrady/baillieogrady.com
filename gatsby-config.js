@@ -74,6 +74,8 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          "gatsby-remark-embed-youtube",
+          "gatsby-remark-responsive-iframe",
           `gatsby-remark-prismjs`,
           {
             resolve: `gatsby-remark-relative-images`
