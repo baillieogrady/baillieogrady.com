@@ -79,7 +79,7 @@ export default class PostTemplate extends Component {
                     </div>
                 </div>
                 <div className="container">
-                    <div className="-mx-6 lg:-mx-brand-8">
+                    <div className="-mx-6 lg:-mx-brand-4">
                         <div className="w-full lg:w-9/12 ml-auto mb-32 px-6 lg:px-brand-4">
                             <Img fluid={thumbnail} className="mt-16 rounded w-full lg:w-brand-76 shadow-brand-xs" />
                             <div dangerouslySetInnerHTML={{ __html: postNode.html }} className="w-full lg:w-brand-76 mt-8 wysiwyg" />
