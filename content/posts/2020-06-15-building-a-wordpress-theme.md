@@ -27,6 +27,6 @@ Recently I made the shift to TailwindCSS for all my CSS and it's dramtically red
 7. Iterate through each custom Gutenberg block and make them responsive.
 8. Test all blocks, including the header and footer on all modern browsers including Firefox, Chrome and Safari.
 9. Optimise website to achieve < 2 seconds load time on each page. 
-10. Setup a staging website for the client to experiment with their new theme & provide them with a brief handover document, listing all the custom Gutenberg blocks.
+10. Setup a staging website for the client to experiment with their new theme & provide them with a brief handover document, listing all the custom Gutenberg blocks, example [here](https://handover.baillieogrady.com).
 
 I'm likely to update this post as time goes on, but I hope this post provides a good insight into how one WordPress developer builds WordPress themes based on completely custom designs.
