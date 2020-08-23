@@ -41,7 +41,7 @@ export default class PostTemplate extends Component {
         <SEO postPath={slug} postNode={postNode} />
         <div className="py-16 lg:py-32 bg-brand-grey-200">
           <div className="container lg:pt-32">
-            <div className="flex flex-wrap -mx-8 lg:-mx-brand-4">
+            <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
               <Lead text={{ content: 'BLOG', class: '' }} lineClass="bg-brand-primary-800" />
               <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
                 {post.tags != undefined ? (
