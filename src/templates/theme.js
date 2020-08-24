@@ -52,7 +52,7 @@ export default class PostTemplate extends Component {
                 </div>
                 <div className="shadow-brand-xs sticky top-brand-80 lg:top-0 left-0 z-20 bg-white">
                     <div className="container">
-                        <div className="-mx-6 lg:-mx-brand-8">
+                        <div className="-mx-6 lg:-mx-brand-4">
                             <div className="w-full lg:w-9/12 ml-auto px-6 lg:px-brand-4">
                                 <ul className="text-black sticky top-0 z-10 bg-white">
                                     {post.url != undefined ?
