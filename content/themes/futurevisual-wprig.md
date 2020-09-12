@@ -1,6 +1,7 @@
 ---
-title: 'Futurevisual'
-date: 2020-08-15
+title: 'Future visual'
+date: 2020-04-15
+order: 2
 template: 'theme'
 code: null
 url: 'https://futurevisual.com'
@@ -14,6 +15,6 @@ Despite the really short deadline, I explained to them my background working wit
 
 The most time consuming part of the project was building the [VISIONXR](https://www.futurevisual.com/visionxr/) page. I remember trying to match the designs exactly for the 'How it works' section.
 
-![How it works section on the VisionXR page](../images/how.png)
+![How it works section on the VisionXR page](../images/futurevisual-how.png)
 
 After hours of playing around with dotted borders, widths for each icon and then completely transforming layout for mobile, I finally accomplished the fully customisable icon section they really wanted.

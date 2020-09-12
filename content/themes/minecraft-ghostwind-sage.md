@@ -1,6 +1,7 @@
 ---
 title: 'Minecraft Ghostwind Sage'
 date: 2020-04-04
+order: 7
 template: 'theme'
 url: 'https://minecraft.baillieogrady.com/'
 code: 'https://github.com/baillieogrady/minecraft-ghostwind-sage'

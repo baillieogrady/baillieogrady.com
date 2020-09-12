@@ -1,6 +1,7 @@
 ---
 title: "Captain's cotton"
 date: 2020-07-31
+order: 3
 template: 'theme'
 url: 'https://captainscotton.com/'
 thumbnail: '../images/captainscotton.jpg'

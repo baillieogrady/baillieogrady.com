@@ -1,6 +1,7 @@
 ---
 title: 'Whale Sage'
 date: 2020-04-04
+order: 6
 template: 'theme'
 url: 'https://whale.baillieogrady.com/'
 code: 'https://github.com/baillieogrady/whale-sage'

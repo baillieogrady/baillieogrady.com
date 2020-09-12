@@ -57,19 +57,19 @@ export default class PostTemplate extends Component {
                                 <ul className="text-black sticky top-0 z-10 bg-white">
                                     {post.url != undefined ?
                                         <li className="mr-8 inline-block">
-                                            <a href={post.url} target="_blank" className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out">Visit</a>
+                                            <a href={post.url} target="_blank" className="py-6 inline-block text-brand-primary-800 transition duration-200 ease-in-out font-bold uppercase tracking-widest text-sm">Visit</a>
                                         </li>
                                         : null
                                     }
                                     {post.download != undefined ?
                                         <li className="mr-8 inline-block">
-                                            <a href={post.download} className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out" download>Download</a>
+                                            <a href={post.download} className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out font-bold uppercase tracking-widest text-sm" download>Download</a>
                                         </li>
                                         : null
                                     }
                                     {post.code != undefined ?
                                         <li className="mr-8 inline-block">
-                                            <a href={post.code} target="_blank" className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out">Code</a>
+                                            <a href={post.code} target="_blank" className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out font-bold uppercase tracking-widest text-sm">Code</a>
                                         </li>
                                         : null
                                     }
