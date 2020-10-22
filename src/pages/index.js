@@ -40,7 +40,7 @@ const Index = () => {
         heading={{ text: "Less is more.", class: "" }}
         text="
         <p>Every website is unique and should be treated as such. Including only what is necessary when building a WordPress theme ensures your websites performance and branding is never compromised.</p>
-        <p>What’s more, editing your website should be fun and intuitive. No one likes waiting to make simple text edits. Tools like <strong>ACF</strong> Pro allow me to extend WordPress natively to cater to your designs.</p>
+        <p>What’s more, editing your website should be fun and intuitive. No one likes waiting to make simple text edits. Plugins like <strong>ACF Pro</strong> allow me to extend WordPress natively to cater to your designs.</p>
         "
         btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-brand-primary-800 text-white hover:bg-brand-primary-900" }}
       />

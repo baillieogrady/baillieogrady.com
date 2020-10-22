@@ -22,7 +22,7 @@ Probably one of the most renowned libraries available, Slick provides out of the
 2\. isotope.js
 --------------
 
-A popular trend in web design is a filtering UI. Usually there’s a masonry grid of blog posts and at the top there will be filter buttons. Isotope allows you to filter these posts by attaching a click event listener to each of the buttons. Then, if the button shares the same class with any of the posts, once clicked, all the posts not matching that class, will fade away. I personally love this library, the built in fade away animation and thorough documentation makes implementing a filtering feature a breeze.
+A popular trend in web design is a filtering UI. Usually there’s a masonry grid of blog posts and at the top there will be filter buttons. Isotope allows you to filter these posts by attaching a click event listener to the button parent element. Then, when the button is pressed and shares the same class with any of the posts, all the posts not matching that class, will fade away. I personally love this library, the built in fade away animation and thorough documentation makes implementing a filtering feature a breeze.
 
 **Bonus:** you don’t have to use jQuery with this library, vanilla JavaScript is an option to initiate an instance.
 
