@@ -37,6 +37,7 @@ const Layout = ({ children, padding }) => {
       <Helmet>
         <meta name="description" content={data.site.siteMetadata.description} />
         <link rel="shortcut icon" type="image/png" href={favicon} />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet" />
       </Helmet>
       <header className="sticky lg:absolute left-0 top-0 z-50 py-6 lg:py-brand-10 bg-white lg:bg-transparent w-full shadow-brand-xs lg:shadow-none">
         <div className="flex justify-between items-center container">
