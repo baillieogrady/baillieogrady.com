@@ -20,6 +20,10 @@ function Faq() {
                 "text": "It really depends on the designs and the complexity of the UX. On average my turnover is around 2 weeks including testing and one round of amends."
             },
             {
+                "heading": "How much does it cost to create a WordPress theme?",
+                "text": "Again, this entirely depends on the scope of your project. I price based on unique content blocks and the complexity of the UX. The average price from all my projects is around <strong>£4,000</strong>."
+            },
+            {
                 "heading": "Arn’t WordPress websites really slow?",
                 "text": "Slow website speed is influenced by many factors. I recommend having a reliable hosting provider with < 500ms ttfb, a minimally coded theme with no redundant plugins and implemented optimisation like image lazy loading. On average my WordPress websites load in about 2 seconds with the faster ones loading in about <strong>1 second</strong>."
             }

@@ -18,7 +18,7 @@ import NewsletterForm from "../components/NewsletterForm"
 const TwoColumn = ({ lead, heading, text, btn, btnLink, classes, lineClass, cards, form, page, img, icons }) => {
     return (
         <div className={classes}>
-            <div className={`two-column container  relative ${cards === 'testimonials' ? "pt-16 lg:pt-32 pb-8 lg:pb-16":"py-16 lg:py-32"}`}>
+            <div className={`two-column container  relative ${(cards === 'testimonials' || cards === 'themes') ? "pt-16 lg:pt-32 pb-8 lg:pb-16":"py-16 lg:py-32"}`}>
                 {form === 'newsletter' ? <News className="absolute right-brand-5 lg:right-0 -top-brand-6" /> : null}
                 <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
                     <Lead text={{ content: lead.text, class: lead.class }} lineClass={lineClass} />
