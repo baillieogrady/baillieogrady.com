@@ -7,6 +7,7 @@ import config from '../../data/SiteConfig'
 
 import Hero from "../components/Hero"
 import TwoColumn from "../components/TwoColumn"
+import Faq from "../components/Faq"
 
 const Index = () => {
 
@@ -70,6 +71,7 @@ const Index = () => {
         heading={{ text: "What my clients say", class: "" }}
         cards="testimonials"
       />
+      <Faq/>
       <TwoColumn
         classes="bg-brand-primary-900 text-white"
         lineClass="bg-white"
