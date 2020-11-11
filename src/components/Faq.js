@@ -31,11 +31,9 @@ function Faq() {
             <div className="container py-16 lg:py-32 relative">
                 <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
                     <Lead text={{ content: "FREQUENTLY ASKED"}} lineClass="bg-brand-primary-800" />
-                    {console.log(data.content[1])}
                     <div className="w-full lg: lg:w-7/12 px-6 lg:px-brand-4">
                         <h2 className={`mb-16 relative z-10`}>FAQ</h2>
                         <ul>
-                            {console.log(data)}
                             {data.content.map((content, i) => {
                                 return <Accordion key={`accordion-${i}`} fields={content} />;
                             })}
