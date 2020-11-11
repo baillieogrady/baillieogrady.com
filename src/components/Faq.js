@@ -17,7 +17,7 @@ function Faq() {
             },
             {
                 "heading": "How long does it take to build a WordPress theme?",
-                "text": "It really depends on the designs and the complexity of the UX. On average my turnover is around 2 weeks including testing and one round of amends."
+                "text": "It really depends on the designs and the complexity of the UX. On average my turnaround time is 2 weeks, including testing and one round of amends."
             },
             {
                 "heading": "How much does it cost to create a WordPress theme?",
