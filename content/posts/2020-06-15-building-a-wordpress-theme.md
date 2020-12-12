@@ -8,25 +8,61 @@ tags:
   - 'wordpress'
 ---
 
-Below I've outlined the process I take when converting a custom design to a WordPress theme. With modern tools available like Roots Sage, TailwindCSS and Gutenberg, creating bespoke WordPress themes has not only become easier and quicker but also better for the user and Developer.
+Below I've outlined the process I take when building a WordPress theme from custom website designs. The majority of designs I receive from clients are either in Figma, Photoshop or Adobe XD.
 
-<!-- 
-Recently I made the shift to TailwindCSS for all my CSS and it's dramtically reduced my development time. The great thing about TailwindCSS is that there's no tradeoff in quality, you utilize the same utility classes based on the design system you configure in the tailwind.config.js file. In essence, it saves a lot of repetitive CSS tasks so you can focus on the more vital website aspects like optimisation and responsiveness. -->
+1\. **Analyse**
+---------------
 
-<!-- In terms of project management I usually use Trello. This really depends on the scope of the project, as most of my projects fall in the small - medium catergory, I find managing a trello board unnesseccary as it delays development time. However, if the client requires a way to gauge the project progress, I normally create a staging website and update it daily throughout the project build. -->
+After receiving the designs, I analyse them thoroughly, ensuring I grasp the clients entire vision and expectations. This avoids any tedious revisits and potentially time consuming amends later on in the build. I also ask many questions, some stupid, reminding myself never to assume design aspects, especially animations. Also, prior to this point, a quote and timeline has already been agreed.
+
+2\. **Plan**
+------------
+
+Next, I plan the entire build by creating an itemised list of all the tasks that need completing. Normally, I just use a apple notes checklist and tick off each task as I complete it. I refer to the designs when creating my plan with the main task categories being:
+
+- Prep
+- Coding
+- Test
+- Optimise
+- Documentation
+
+I'll iterate over each one in the next steps.
+
+3\. **Prep**
+------------
+
+At this stage I create a local version of the WordPress theme for development. I use Roots Sage and TailwindCSS for the foundation paired with the ACF Pro WordPress plugin, if needed. Also at this stage I run through the style guide extracting all the global styles inherited through the designs and implement them into the theme.
+
+4\. **Coding**
+--------------
+
+I normally split this stage into two distinct parts, global and blocks.
+
+Global is where I inspect the designs and code in the universal elements of the website such as the header and footer utilising ACF options. Blocks refers to the custom Gutenberg blocks I create based on the unique blocks of content given in the designs.
+
+After coding each distinct element from the designs at desktop size, I then iterate through each element and make them responsive. As I use TailwindCSS this part of the process quite quick.
+
+Next up is animations. Normally all animations are specified in the brief but they normally include subtle hover and fade in effects.
+
+Finally, after implementing the PHP and CSS I then implement the JavaScript for the interactive parts of the website such as the mobile menu, sliders and accordions.
+
+5\. **Test**
+------------
+
+Moving on, after the entire build, now's the time for testing. I test on all modern browsers including:
+
+- Chrome
+- Firefox
+- Safari
+- Edge
+
+6\. **Optimise**
+----------------
 
 
-## The process
+Once tested and everything is acting as expected, I move on to optimising the website, ensuring fast page load times and a smooth editing experience. For this I usually install the Autoptimize plugin, lazy load images and remove any redundancies such as unnecessary plugins used throughout development.
 
-1. Scan through the final designs extracting brand styles, a Grid system (optional) & unique content blocks.
-2. Create a local WordPress website with [docker](/docker-wordpress) and clone my [custom-sage](https://github.com/baillieogrady/custom-sage) starter theme into the themes folder.
-3. Install [ACF Pro](https://www.advancedcustomfields.com/pro/).
-4. Configure **tailwind.config.js** to generate utility classes based on brand styles extracted in step 1.
-5. Create the header & footer blocks and implement global ACF options.
-6. Iterate through and create a custom Gutenberg block for each unique content block extracted in step 1.
-7. Iterate through each custom Gutenberg block and make them responsive.
-8. Test all blocks, including the header and footer on all modern browsers including Firefox, Chrome and Safari.
-9. Optimise website to achieve < 2 seconds load time on each page. 
-10. Setup a staging website for the client to experiment with their new theme & provide them with a brief handover document, listing all the custom Gutenberg blocks, example [here](https://handover.baillieogrady.com).
+7\. **Documentation**
+---------------------
 
-I'm likely to update this post as time goes on, but I hope this post provides a good insight into how one WordPress developer builds WordPress themes based on completely custom designs.
+Arguably the most important part of the process is documentation. This is where I create a handover document detailing the build, providing a run down of how the theme was created with clear and concise instructions on how to use and populate the website using the theme.

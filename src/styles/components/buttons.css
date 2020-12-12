@@ -2,11 +2,15 @@
     @apply bg-brand-primary-800 text-white py-3 px-6 inline-block rounded text-center text-sm;
 }
 
-@screen lg {
-    .btn { 
-        @apply text-base
-    }
+.btn--text {
+    @apply bg-transparent font-bold text-sm p-0 tracking-brand-wider;
 }
+
+/* @screen lg {
+    .btn { 
+        @apply text-base;
+    }
+} */
 
 .btn-link {
     @apply uppercase text-brand-primary-800 font-bold text-sm leading-brand-tight tracking-brand-wider;
