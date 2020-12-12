@@ -49,12 +49,13 @@ Finally, after implementing the PHP and CSS I then implement the JavaScript for 
 5\. **Test**
 ------------
 
-Moving on, after the entire build, now's the time for testing. I test on all modern browsers including:
+Moving on, now's the time for testing. I test on all the following browsers, fixing any bugs as I go along:
 
 - Chrome
 - Firefox
 - Safari
 - Edge
+
 
 6\. **Optimise**
 ----------------
