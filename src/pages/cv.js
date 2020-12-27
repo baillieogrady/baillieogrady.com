@@ -13,7 +13,7 @@ import config from '../../data/SiteConfig'
 const Newsletter = () => {
     return (
         <Layout>
-            <Helmet title={`Newsletter - ${config.siteTitle}`} />
+            <Helmet title={`CV - ${config.siteTitle}`} />
             <SEO />
             {/* <Hero
                 text="Newsletter"
