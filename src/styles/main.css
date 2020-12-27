@@ -5,9 +5,15 @@
 @import "fonts";
 /*! purgecss end ignore  */
 
+/* components */
 @import "tailwindcss/components";
 
 /*! purgecss start ignore  */
+
+/* partials */
+@import "partials/select";
+
+/* components */
 @import "components/hero";
 @import "components/buttons";
 @import "components/header";
