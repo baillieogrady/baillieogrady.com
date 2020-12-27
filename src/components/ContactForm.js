@@ -19,15 +19,15 @@ export default class ContactForm extends React.Component {
                 <div className="flex flex-wrap justify-between">
                     <div className="w-full lg:w-brand-46 mt-6">
                         <label className="text-xs" htmlFor="name">Name*</label>
-                        <input type="text" placeholder="Joe Bloggs" className="block rounded-lg shadow-brand-xs h-10 pl-2 w-full mr-8 bg-brand-grey-200" name="name" id="name" />
+                        <input type="text" placeholder="Joe Bloggs" className="block rounded-lg shadow-brand-xs h-10 pl-2 w-full mr-8 bg-brand-grey-300" name="name" id="name" />
                     </div>
                     <div className="w-full lg:w-brand-46 mt-6">
                         <label className="text-xs">Email*</label>
-                        <input type="email" placeholder="joe.bloggs@gmail.com" className="block rounded-lg shadow-brand-xs h-10 pl-2 w-full bg-brand-grey-200" name="email" id="email" />
+                        <input type="email" placeholder="joe.bloggs@gmail.com" className="block rounded-lg shadow-brand-xs h-10 pl-2 w-full bg-brand-grey-300" name="email" id="email" />
                     </div>
                     <div className="w-full mt-6">
                         <label className="text-xs">Message*</label>
-                        <textarea placeholder="Tell me a little about your WordPress project..." className="block rounded-lg shadow-brand-xs p-2 w-full h-48 bg-brand-grey-200" name="message" id="message" />
+                        <textarea placeholder="Tell me a little about your WordPress project..." className="block rounded-lg shadow-brand-xs p-2 w-full h-48 bg-brand-grey-300" name="message" id="message" />
                     </div>
                     <input type="text" name="_gotcha" style={{ 'display': 'none' }} />
                 </div>

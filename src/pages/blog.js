@@ -17,7 +17,7 @@ const Blog = () => {
         text="Blog"
       />
       <TwoColumn
-        classes="bg-brand-grey-200 relative z-10"
+        classes="bg-brand-grey-300 relative z-10"
         lineClass="bg-brand-primary-800"
         lead={{ text: "BLOGGING MY JOURNEY", class: "text-black" }}
         heading={{ text: "", class: "" }}

@@ -6,7 +6,7 @@ import Lead from './Lead';
 const TagListing = ({ heading, data, tag }) => {
     return (
         <div>
-            <div className="two-column py-16 lg:py-32 relative bg-brand-grey-200">
+            <div className="two-column py-16 lg:py-32 relative bg-brand-grey-300">
                 <div className="container">
                     <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
                         <Lead text={{ content: tag.toUpperCase(), class: "" }} lineClass="bg-brand-primary-800" />

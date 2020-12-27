@@ -22,7 +22,7 @@ const Index = () => {
         page="home"
       />
       <TwoColumn
-        classes="bg-brand-grey-200 relative z-10"
+        classes="bg-brand-grey-300 relative z-10"
         lineClass="bg-brand-primary-800"
         lead={{ text: "PROBLEM", class: "text-black" }}
         heading={{ text: "WordPress websites can be slow and ugly.", class: "" }}
@@ -46,7 +46,7 @@ const Index = () => {
         btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-brand-primary-800 text-white hover:bg-brand-primary-900" }}
       />
       <TwoColumn
-        classes="bg-brand-grey-200"
+        classes="bg-brand-grey-300"
         lineClass="bg-brand-primary-800"
         lead={{ text: "LATEST THEMES", class: "text-black" }}
         heading={{ text: "Built completely from scratch.", class: "" }}
@@ -65,7 +65,7 @@ const Index = () => {
         img={true}
       />
       <TwoColumn
-        classes="bg-brand-grey-200"
+        classes="bg-brand-grey-300"
         lineClass="bg-brand-primary-800"
         lead={{ text: "TESTIMONIALS", class: "text-black" }}
         heading={{ text: "What my clients say", class: "" }}

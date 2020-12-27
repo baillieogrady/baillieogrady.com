@@ -13,7 +13,7 @@ function Accordion({ fields }) {
     }
 
     return (
-        <div className="bg-brand-grey-200 mb-4 rounded">
+        <div className="bg-brand-grey-300 mb-4 rounded">
             <a className={`flex justify-between items-start p-4 transition duration-200 ease-in-out lg:hover:bg-brand-primary-800 lg:hover:text-white rounded ${color}`} href="#" onClick={(e) => handleClick(e)}>
                 <span className="inline-block pr-3">{fields.heading}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" className="flex-shrink-0">

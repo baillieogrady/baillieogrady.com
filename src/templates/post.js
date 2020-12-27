@@ -39,7 +39,7 @@ export default class PostTemplate extends Component {
       <Layout padding={true}>
         <Helmet title={`${post.title} – ${config.siteTitle}`} />
         <SEO postPath={slug} postNode={postNode} />
-        <div className="py-16 lg:py-32 bg-brand-grey-200">
+        <div className="py-16 lg:py-32 bg-brand-grey-300">
           <div className="container lg:pt-32">
             <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
               <Lead text={{ content: 'BLOG', class: '' }} lineClass="bg-brand-primary-800" />
@@ -69,7 +69,7 @@ export default class PostTemplate extends Component {
           </div>
         </div>
         <TwoColumn
-          classes="bg-brand-grey-200 relative z-10"
+          classes="bg-brand-grey-300 relative z-10"
           lineClass="bg-brand-primary-800"
           lead={{ text: "JOIN", class: "text-black" }}
           heading={{ text: "Get that developer job", class: "" }}
