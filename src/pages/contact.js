@@ -27,14 +27,14 @@ const Contact = () => {
         icons={true}
         form={false}
       />
-      <TwoColumn
+      {/* <TwoColumn
         classes="relative z-10"
         lineClass="bg-brand-primary-800"
         lead={{ text: "LET'S CHAT", class: "text-black" }}
         heading={{ text: "Response within 24 hours", class: "" }}
         text=""
         form="contact"
-      />
+      /> */}
     </Layout>
   )
 }
