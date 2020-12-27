@@ -72,8 +72,8 @@ export default class PostTemplate extends Component {
           classes="bg-brand-grey-200 relative z-10"
           lineClass="bg-brand-primary-800"
           lead={{ text: "JOIN", class: "text-black" }}
-          heading={{ text: "My weekly newsletter", class: "" }}
-          text="<p>Summarizing all my weekly coding content including live code examples, blogs, YouTube tutorials and Instagram carousels.</p>"
+          heading={{ text: "Get that developer job", class: "" }}
+          text="<p>Get the exact CV template I used to attain two full time developer jobs and healthy freelance clients when you sign up to my newsletter.</p>"
           form="newsletter"
         />
       </Layout>
