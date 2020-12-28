@@ -71,6 +71,7 @@ module.exports = {
         'brand-50': '50%'
       },
       width: {
+        'brand-38': '38%',
         'brand-46': '46.060606%',
         'brand-76': '76.96969697%',
         'brand-mobile-full': 'calc(100% - 16px)'
