@@ -30,7 +30,7 @@ const Newsletter = () => {
             <SEO />
             <section class="flex items-center h-screen relative">
                 <div class="absolute left-0 top-0 lg:w-brand-38 hidden lg:block h-full">
-                    <Img fluid={file.childImageSharp.fluid} alt="Job Interview" className="object-cover object-center h-full"/>
+                    <Img fluid={file.childImageSharp.fluid} alt="Job Interview" className="object-cover object-center h-full rounded-tr shadow-brnad-xs"/>
                 </div>
                 <div class="container">
                     <div className="flex justify-end items-center">
