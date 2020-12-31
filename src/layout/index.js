@@ -143,7 +143,7 @@ const Layout = ({ children, padding }) => {
                   <Link to="/contact/" className="text-brand-grey-400 block pb-2">Contact</Link>
                   <Link to="/themes/" className="text-brand-grey-400 block pb-2">Themes</Link>
                   <Link to="/blog/" className="text-brand-grey-400 block pb-2">Blog</Link>
-                  <Link to="/newsletter/" className="text-brand-grey-400 block">Newsletter</Link>
+                  <Link to="/get-that-developer-job/" className="text-brand-grey-400 block">Get that developer job</Link>
                 </nav>
               </div>
               <div className="w-1/2">
