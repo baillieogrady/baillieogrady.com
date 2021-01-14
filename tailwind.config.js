@@ -6,8 +6,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'xs': '321px',
-      'sm': '375px',
+      'sm': '640px',
       'md': '768px',
       'lg': '1024px',
       'xl': '1140px',
@@ -41,6 +40,7 @@ module.exports = {
         'brand-7': '1.7'
       },
       fontSize: {
+        'brand-3xl': '2rem',
         'brand-4xl': '2.5rem'
       },
       letterSpacing: {
@@ -67,6 +67,7 @@ module.exports = {
         '-brand-05': '0.5rem',
         '-brand-6': '-1.75rem',
         'brand-5': '1.5rem',
+        'brand-64': '4rem',
         'brand-80': '5rem',
         'brand-50': '50%'
       },

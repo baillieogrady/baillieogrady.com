@@ -33,56 +33,79 @@ export default class PostTemplate extends Component {
             post.category_id = config.postDefaultCategoryID
         }
 
-
         const date = formatDate(post.date)
+
         return (
-            <Layout padding={true}>
+            <Layout padding={true} dark={true}>
                 <Helmet title={`${post.title} – ${config.siteTitle}`} />
                 <SEO postPath={slug} postNode={postNode} />
-                <div className="py-16 lg:py-32 bg-brand-grey-300">
+                <div className="py-16 lg:py-32 bg-black">
                     <div className="container lg:pt-32">
                         <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
-                            <Lead text={{ content: 'THEMES', class: '' }} lineClass="bg-brand-primary-800" />
+                            <Lead text={{ content: 'THEME', class: ''}} lineClass="bg-white" dark={true} />
                             <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
-                                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="mb-3 lg:mb-6 p-0" />
-                                <time>{date}</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="shadow-brand-xs sticky top-brand-80 lg:top-0 left-0 z-20 bg-white">
-                    <div className="container">
-                        <div className="-mx-6 lg:-mx-brand-4">
-                            <div className="w-full lg:w-9/12 ml-auto px-6 lg:px-brand-4">
-                                <ul className="text-black sticky top-0 z-10 bg-white">
-                                    {post.url != undefined ?
-                                        <li className="mr-8 inline-block">
-                                            <a href={post.url} target="_blank" className="py-6 inline-block text-brand-primary-800 transition duration-200 ease-in-out font-bold uppercase tracking-widest text-sm">Visit</a>
-                                        </li>
-                                        : null
-                                    }
-                                    {post.download != undefined ?
-                                        <li className="mr-8 inline-block">
-                                            <a href={post.download} className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out font-bold uppercase tracking-widest text-sm" download>Download</a>
-                                        </li>
-                                        : null
-                                    }
-                                    {post.code != undefined ?
-                                        <li className="mr-8 inline-block">
-                                            <a href={post.code} target="_blank" className="py-6 inline-block hover:text-brand-primary-800 transition duration-200 ease-in-out font-bold uppercase tracking-widest text-sm">Code</a>
-                                        </li>
-                                        : null
-                                    }
-                                </ul>
+                                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="mb-3 lg:mb-6 p-0 text-white" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="container">
                     <div className="-mx-6 lg:-mx-brand-4">
-                        <div className="w-full lg:w-9/12 ml-auto mb-32 px-6 lg:px-brand-4">
-                            <Img fluid={thumbnail} className="mt-16 rounded w-full lg:w-brand-76 shadow-brand-xs" />
-                            <div dangerouslySetInnerHTML={{ __html: postNode.html }} className="w-full lg:w-brand-76 mt-8 wysiwyg" />
+                        <div className="w-full mb-8 lg:mb-16 px-6 lg:px-brand-4 -mt-8 lg:-mt-16">
+                            <Img fluid={thumbnail} className="rounded w-full shadow-brand-xs" />
+                        </div>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="-mx-6 lg:-mx-brand-4">
+                        <div className="flex flex-wrap justify-between items-start">
+                            <div className="lg:w-7/12 mb-32 px-6 lg:px-brand-4 order-1 lg:order-0">
+                                <div dangerouslySetInnerHTML={{ __html: postNode.html }} className=" wysiwyg wysiwyg--alt" />
+                            </div>
+                            <div className="lg:w-4/12 px-6 lg:px-brand-4 lg:sticky lg:top-brand-64 order-0 lg:order-1 pb-16">
+                                {post.date !== undefined || null ? 
+                                <p>
+                                    <span className="block text-black font-bold">Last updated:</span>
+                                    {date}
+                                </p>
+                                : null}
+                                {post.length !== undefined && post.length !== null ? 
+                                <p>
+                                    <span className="block text-black font-bold">Project length:</span>
+                                    {post.length}
+                                </p>
+                                : null}
+                                {post.stack !== undefined && post.stack !== null ? 
+                                <p>
+                                    <span className="block text-black font-bold">Stack:</span>
+                                    {post.stack}
+                                </p>
+                                : null}
+                                {post.designs !== undefined && post.designs !== null ? 
+                                <p>
+                                    <span className="block text-black font-bold">Built from:</span>
+                                    {post.designs}
+                                </p>
+                                : null}
+                                {(post.visit !== undefined && post.visit !== null) ||
+                                 (post.buy !== undefined && post.buy !== null) || 
+                                 (post.code !== undefined && post.code !== null) ? 
+                                <div>
+                                    {post.visit !== undefined && post.visit !== null ? 
+                                        <a href={post.visit} target="_blank" className="btn">Visit</a>
+                                    : null }
+                                    {post.buy !== undefined && post.buy !== null ? 
+                                        <a href={post.buy} target="_blank" className="btn btn--ghost ml-3">Buy</a>
+                                    : null }
+                                    {post.code !== undefined && post.code !== null ? 
+                                        <a href={post.code} target="_blank" className="btn btn--ghost ml-3">Code</a>
+                                    : null }
+                                </div>
+                                : null}
+
+                                {console.log(post.code)}
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,7 +115,7 @@ export default class PostTemplate extends Component {
                     lead={{ text: "HIRE ME", class: "text-white" }}
                     heading={{ text: "Let's work together", class: "text-white" }}
                     text="<p>I’m currently available to convert your designs to a simple to use, intuitive, WordPress theme.</p>"
-                    btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-white text-brand-primary-800 hover:bg-gray-200" }}
+                    btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-white text-brand-primary-800 hover:bg-gray-200 border-white hover:border-white" }}
                 />
             </Layout>
         )
@@ -107,16 +130,19 @@ export const themeQuery = graphql`
       timeToRead
       excerpt
       frontmatter {
-        title
-        slug
-        date
         template
+        slug
+        title
+        date
+        length
+        stack
+        designs
+        visit
+        buy
         code
-        url
-        download
         thumbnail {
             childImageSharp {
-                fluid(maxWidth: 629, maxHeight: 440){
+                fluid(maxWidth: 1400, maxHeight: 900){
                     ...GatsbyImageSharpFluid_withWebp
                 }
             }

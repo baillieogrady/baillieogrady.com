@@ -8,7 +8,7 @@ import favicon from '../images/favicon.png'
 
 import "../styles/main.css"
 
-const Layout = ({ children, padding }) => {
+const Layout = ({ children, padding, dark }) => {
   const [burger, setBurger] = useState(false);
 
   const data = useStaticQuery(graphql`
@@ -41,7 +41,7 @@ const Layout = ({ children, padding }) => {
       </Helmet>
       <header className="sticky lg:absolute left-0 top-0 z-50 py-6 lg:py-brand-10 bg-white lg:bg-transparent w-full shadow-brand-xs lg:shadow-none">
         <div className="flex justify-between items-center container">
-          <Logo />
+          <Logo dark={dark} />
           <nav className="hidden lg:block">
             <ul className="ma-0 pa-0">
               {data.site.siteMetadata.menuLinks.map((link, i) => (
@@ -51,6 +51,7 @@ const Layout = ({ children, padding }) => {
                 >
                   <Link
                     to={`${link.link}`}
+                    className={dark ? "text-white" : ""}
                   >
                     {link.name.charAt(0).toUpperCase() + link.name.slice(1)}
                   </Link>
@@ -117,7 +118,7 @@ const Layout = ({ children, padding }) => {
                 </li>
               ))}
               <li className="block mt-8">
-                <Link to="/convert-your-designs" className="btn w-full hover:bg-brand-primary-900 transiton duration-200 ease-in-out">Convert your designs</Link>
+                <Link to="/convert-your-designs" className="btn w-full transiton duration-200 ease-in-out">Convert your designs</Link>
               </li>
             </ul>
           </nav>

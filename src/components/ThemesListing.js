@@ -9,17 +9,16 @@ const ThemesListing = ({ heading, page }) => {
     <StaticQuery
       query={graphql`
         query ThemeListingQuery {
-          allMarkdownRemark(filter: {frontmatter: {template: {eq: "theme", }}}, limit: 999, sort: { fields: [frontmatter___order], order: ASC }) {
+          allMarkdownRemark(filter: {frontmatter: {template: {eq: "theme", }}}, limit: 999, sort: { fields: [frontmatter___date], order: ASC }) {
             edges {
               node {
                 html
                 excerpt
                 frontmatter {
+                  template
                   title
                   date
                   slug
-                  url
-                  code
                   thumbnail {
                     childImageSharp {
                         fluid(maxWidth: 348, maxHeight: 256){

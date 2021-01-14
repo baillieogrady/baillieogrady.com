@@ -44,7 +44,7 @@ export default class PostTemplate extends Component {
             <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
               <Lead text={{ content: 'BLOG', class: '' }} lineClass="bg-brand-primary-800" />
               <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
-                {post.tags != undefined ? (
+                {/* {post.tags != undefined ? (
                   <ul className="flex mb-6">
                     {post.tags.map(tag => (
                       <li key={`${tag}`} className="inline-block bg-light-grey mr-4">
@@ -54,7 +54,7 @@ export default class PostTemplate extends Component {
                       </li>
                     ))}
                   </ul>
-                ) : null}
+                ) : null} */}
                 <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="p-0 mb-6" />
                 <time>{date}</time>
               </div>

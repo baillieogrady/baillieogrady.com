@@ -26,7 +26,7 @@ const Index = () => {
         lineClass="bg-brand-primary-800"
         lead={{ text: "PROBLEM", class: "text-black" }}
         heading={{ text: "WordPress websites can be slow and ugly.", class: "" }}
-        text="<p>After updating over <strong>100</strong> custom WordPress themes, far too many of them use a plethora of redundant plugins, child themes and third party page builders. This leads to frustration for everyone involved.</p>
+        text="<p>After updating a myriad of custom WordPress themes, far too many of them use a plethora of redundant plugins, child themes and third party page builders. This leads to frustration for everyone involved.</p>
         <ul class='lg:ml-2 list-inside mt-8'>
           <li class='mb-2'><span>Slow page load times for you and your users</span></li>
           <li class='mb-2'><span>Confusing and slow editing experience</span></li>
@@ -59,7 +59,7 @@ const Index = () => {
         lead={{ text: "DESIGNS", class: "text-black" }}
         heading={{ text: "Figma, Illustrator, Invision, Photoshop, Sketch, XD ...", class: "" }}
         text="
-        <p>I love them all, I’ve converted over <strong>25</strong> unique designs from all the above programmes into unique WordPress themes.</p>
+        <p>I love them all, I’ve converted many custom designs from all the above programmes into unique WordPress themes.</p>
         "
         btn={{ url: "/building-a-wordpress-theme", text: "View my process", classes: "bg-brand-primary-800 text-white hover:bg-brand-primary-900" }}
         img={true}
@@ -78,7 +78,7 @@ const Index = () => {
         lead={{ text: "HIRE ME", class: "text-white" }}
         heading={{ text: "Let's work together", class: "text-white" }}
         text="<p>I’m currently available to convert your designs to a simple to use, intuitive, WordPress theme.</p>"
-        btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-white text-brand-primary-800 hover:bg-gray-200" }}
+        btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-white text-brand-primary-800 hover:bg-gray-200 border-white hover:border-white" }}
       />
     </Layout>
   )

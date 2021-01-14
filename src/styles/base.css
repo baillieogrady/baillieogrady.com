@@ -1,3 +1,7 @@
+* {
+    @apply box-border;
+}
+
 body {
     @apply font-body leading-brand-7 text-brand-black-300;
 }
@@ -66,11 +70,11 @@ img {
     }
 
     h2 {
-        @apply text-3xl; 
+        @apply text-2xl; 
     }
 
     h3 {
-        @apply text-lg text-brand-black-300;
+        @apply text-lg;
     }
 
     h2,
@@ -98,6 +102,12 @@ img {
     .gatsby-resp-iframe-wrapper {
         @apply mb-8 rounded;
     }
+
+    &--alt {
+        h2 {
+            @apply mt-0;
+        }
+    }
 }
 
 /* responsive */
@@ -116,6 +126,16 @@ img {
     h4,
     h5,
     h6 {
-        @apply font-bold text-black;
+        @apply font-bold;
+    }
+
+    .wysiwyg {
+        h2 {
+            @apply text-brand-3xl; 
+        }
+
+        h3 {
+            @apply text-2xl;
+        }
     }
 }

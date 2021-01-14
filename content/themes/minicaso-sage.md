@@ -1,13 +1,13 @@
 ---
+template: 'theme'
+slug: 'minicaso-sage'
 title: 'Minicaso'
 date: 2020-05-07
-order: 4
-template: 'theme'
-url: 'https://minicaso.com'
+length: '1 Week'
+stack: 'Roots Sage & ACF Pro'
+visit: 'https://minicaso.com'
 code: 'https://github.com/baillieogrady/minicaso-sage'
-download: 'downloads/minicaso-sage.zip'
-thumbnail: '../images/minicaso.jpg'
-slug: 'minicaso-sage'
+thumbnail: '../images/themes/minicaso-sage/minicaso-sage.png'
 ---
 
 Minicaso is a e-commerce website that specialises in selling AirPods cases. They wanted a miminal website that has a simple and intuitive UX. Moreover, they did'nt have any intial designs so I designed and developed the whole website within 3 weeks.

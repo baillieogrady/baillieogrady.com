@@ -1,5 +1,17 @@
 .btn {
-    @apply bg-brand-primary-800 text-white py-3 px-6 inline-block rounded text-center text-sm;
+    @apply bg-brand-primary-800 text-white py-2 px-6 inline-block rounded text-center text-sm border-2 border-brand-primary-800 transition-colors duration-200 ease-in-out;
+
+    &:hover {
+        @apply bg-brand-primary-900 border-brand-primary-900;
+    }
+}
+
+.btn--ghost {
+    @apply bg-transparent text-brand-primary-800 border-2 border-brand-primary-800;
+
+    &:hover {
+        @apply border-brand-primary-700 text-brand-primary-700 bg-transparent;
+    }
 }
 
 .btn--text {

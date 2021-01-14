@@ -1,11 +1,14 @@
 ---
+template: 'theme'
 title: "Captain's cotton"
 date: 2020-07-31
-order: 3
-template: 'theme'
-url: 'https://captainscotton.com/'
-thumbnail: '../images/captainscotton.jpg'
+thumbnail: '../images/themes/captains-cotton-sage/captainscotton.png'
 slug: 'captains-cotton-sage'
+# sidebarå
+length: '2 days'
+designs: 'Figma designs'
+stack: 'Roots Sage, ACF Pro & TailwindCSS'
+visit: 'https://captainscotton.com/'
 ---
 
 [Captain's cotton](https://instagram.com/captainscotton) is a e-commerce website that sells handcrafted dog bandanas. They craft the bandanas from a variety of patterned fabrics, with each bandana being available in 4 different sizes. Major credit to [Natalie Potts](https://www.linkedin.com/in/natalie-potts-07b99b110/) for designing the logo.

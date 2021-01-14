@@ -3,16 +3,16 @@ import Img from "gatsby-image";
 import { Link } from 'gatsby';
 import _ from 'lodash';
 
-const Card = ({ type, theme, testimonial, post }) => {
+const Card = ({ type, theme, testimonial, post, link }) => {
 
     return (
         <div className={`shadow-brand-xs bg-white rounded-brand-lg p-4 w-full md:w-brand-46 mb-8 lg:mb-16 relative transition duration-500 ease-in-out transform hover:scale-105`}>
-            <div className={`flex flex-col h-full ${type === "testimonial" ? "" : "justify-between"}`}>
+            <div className={`flex flex-col h-full relative ${type === "testimonial" ? "" : "justify-between"}`}>
                 {type === 'theme' ?
                     <>
                         <Link to={`/${theme.frontmatter.slug}`} className="absolute top-0 left-0 h-full w-full" />
                         <div>
-                            <Img fluid={theme.frontmatter.thumbnail.childImageSharp.fluid} className="rounded-lg mb-4 pointer-events-none max-w-full" />
+                            <Img fluid={theme.frontmatter.thumbnail.childImageSharp.fluid} className="rounded-lg mb-4 pointer-events-none max-w-full shadow-brand-xs" />
                             <h3 className="mb-2">{theme.frontmatter.title}</h3>
                             <p className="mb-4">{theme.excerpt}</p>
                         </div>

@@ -17,7 +17,7 @@ function Accordion({ fields }) {
             <a className={`flex justify-between items-start p-4 transition duration-200 ease-in-out lg:hover:bg-brand-primary-800 lg:hover:text-white rounded ${color}`} href="#" onClick={(e) => handleClick(e)}>
                 <span className="inline-block pr-3">{fields.heading}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" className="flex-shrink-0">
-                    <rect width="27" height="27" rx="4" fill="#EBEBF0" />
+                    <rect width="27" height="27" rx="4" fill="#fff" />
                     <path d="M19.7277 13.364H6.99981" stroke="#28293D" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M13.3638 7L13.3638 19.7279" stroke="#28293D" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className={`${toggle === "hidden" ? "" : "hidden"}`} />
                 </svg>
