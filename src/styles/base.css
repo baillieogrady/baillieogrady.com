@@ -40,7 +40,7 @@ img {
 }
 
 [aria-current="page"] {
-    @apply font-bold;
+    @apply text-brand-primary-800;
 }
 
 .wysiwyg {
