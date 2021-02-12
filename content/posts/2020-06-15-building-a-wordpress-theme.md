@@ -31,12 +31,12 @@ I'll iterate over each one in the next steps.
 3\. **Prep**
 ------------
 
-At this stage I create a local version of the WordPress theme for development. I use Roots Sage and TailwindCSS for the foundation paired with the ACF Pro WordPress plugin, if needed. Also at this stage I run through the style guide extracting all the global styles inherited through the designs and implement them into the theme.
+At this stage I create a local version of the WordPress theme for development. I use the <a href="https://github.com/baillieogrady/custom-sage-10" target="_blank">Roots Sage 10 starter theme</a> and TailwindCSS for the foundation paired with the ACF Pro WordPress plugin, if needed. Also at this stage I run through the style guide extracting all the global styles inherited through the designs and implement them into the theme.
 
 4\. **Coding**
 --------------
 
-I normally split this stage into two distinct parts, global and blocks.
+I normally split the coding into two distinct parts, global and blocks. 
 
 Global is where I inspect the designs and code in the universal elements of the website such as the header and footer utilising ACF options. Blocks refers to the custom Gutenberg blocks I create based on the unique blocks of content given in the designs.
 

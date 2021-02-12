@@ -22,6 +22,8 @@ export default class PostTemplate extends Component {
     const postNode = this.props.data.markdownRemark
     const post = postNode.frontmatter
 
+    console.log(postNode);
+
     if (!post.id) {
       post.id = slug
     }
@@ -38,23 +40,13 @@ export default class PostTemplate extends Component {
     return (
       <Layout padding={true}>
         <Helmet title={`${post.title} – ${config.siteTitle}`} />
-        <SEO postPath={slug} postNode={postNode} />
+        <SEO postPath={slug} postNode={postNode} postSEO={true} />
         <div className="py-16 lg:py-32 bg-brand-grey-300">
           <div className="container lg:pt-32">
             <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
               <Lead text={{ content: 'BLOG', class: '' }} lineClass="bg-brand-primary-800" />
               <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
-                {/* {post.tags != undefined ? (
-                  <ul className="flex mb-6">
-                    {post.tags.map(tag => (
-                      <li key={`${tag}`} className="inline-block bg-light-grey mr-4">
-                        <Link to={`/tags/${tag}`} className="bg-white shadow-brand-xs rounded py-2 px-3 inline-block text-xs uppercase font-medium">
-                          {tag}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                ) : null} */}
+
                 <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="p-0 mb-6" />
                 <time>{date}</time>
               </div>
