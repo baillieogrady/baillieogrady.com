@@ -23,8 +23,3 @@ First in the series of coding landing pages from scratch is this minimal, sleek 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f_51ZaZsiKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 Simple and clean landing page concept , suitable for anyone wanting to showcase their photos. I coded the landing page with a mobile first approach ensuring it was fully responsive. Interactive elements include a minimal overlay menu using pure vanilla JavaScript, CSS animations and a slider using slick.js.
-
-##Code
-
-```html
-<div></div>
