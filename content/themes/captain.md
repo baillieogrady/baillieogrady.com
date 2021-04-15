@@ -2,10 +2,11 @@
 template: 'theme'
 title: 'Captain'
 date: 2020-12-29
-thumbnail: '../images/themes/captain/captain.png'
+
+thumbnail: '../images/themes/captain/captain-thumbnail.jpg'
+image: '../images/themes/captain/captain-image.png'
 slug: 'captain'
-# sidebar
-length: '2 weeks'
+
 stack: 'Roots Sage, ACF Pro & TailwindCSS'
 designs: 'Figma designs'
 visit: 'https://captain.baillieogrady.com'

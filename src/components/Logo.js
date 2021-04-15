@@ -6,7 +6,7 @@ const Logo = ({ classes, dark }) => {
     return (
         <Link
             to="/"
-            className={`tracking-brand-widest font-bold text-black ${classes} ${dark ? "lg:text-white":""}`}
+            className={`tracking-brand-widest font-bold text-black ${classes}`}
         >
             BAILLIE
         </Link>

@@ -1,23 +1,25 @@
 @import "tailwindcss/base";
 
 /*! purgecss start ignore  */
+
 @import "base";
 @import "fonts";
+
 /*! purgecss end ignore  */
 
-/* components */
 @import "tailwindcss/components";
 
 /*! purgecss start ignore  */
 
 /* partials */
 @import "partials/select";
+@import "partials/buttons";
 
 /* components */
-@import "components/hero";
-@import "components/buttons";
 @import "components/header";
 @import "components/twoColumn";
+
 /*! purgecss end ignore  */
+
 
 @import "tailwindcss/utilities";

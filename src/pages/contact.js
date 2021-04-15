@@ -19,13 +19,12 @@ const Contact = () => {
         text="Contact"
       />
       <TwoColumn
-        classes="bg-brand-grey-300 relative z-10"
-        lineClass="bg-brand-primary-800"
-        lead={{ text: "DIRECT", class: "text-black" }}
+        classes="bg-grey-100 relative z-10"
+        lineClass="bg-black"
+        lead={{ text: "GET IN TOUCH", class: "text-black" }}
         heading={{ text: "", class: "" }}
         text=""
-        icons={true}
-        form={false}
+        form="convert"
       />
       {/* <TwoColumn
         classes="relative z-10"

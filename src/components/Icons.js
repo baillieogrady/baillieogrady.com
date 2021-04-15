@@ -10,9 +10,6 @@ const Icons = () => {
     return (
         <div className={`w-full lg:w-3/12 px-6 lg:px-brand-8 text-xs lg:text-sm tracking-brand-widest`}>
             <div className="flex items-center">
-                <a href="tel:07939818296">
-                    <Phone className="transition duration-500 ease-in-out transform hover:scale-110 mr-8 lg:mr-12" />
-                </a>
                 <a href="mailto:hello@baillieogrady.com">
                     <Mail className="transition duration-500 ease-in-out transform hover:scale-110 mr-8 lg:mr-12" />
                 </a>

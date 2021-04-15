@@ -2,11 +2,12 @@
 template: 'theme'
 title: "Captain's cotton"
 date: 2020-07-31
-thumbnail: '../images/themes/captains-cotton-sage/captainscotton.png'
-slug: 'captains-cotton-sage'
-# sidebarå
-length: '2 days'
-designs: 'Figma designs'
+
+image: '../images/themes/captains-cotton-sage/captains-cotton-image.png'
+thumbnail: '../images/themes/captains-cotton-sage/captains-cotton-thumbnail.jpg'
+slug: 'captains-cotton'
+
+designs: 'Figma'
 stack: 'Roots Sage, ACF Pro & TailwindCSS'
 visit: 'https://captainscotton.com/'
 ---

@@ -30,15 +30,19 @@ module.exports = {
     siteUrl: `https://baillieogrady.com/`,
     menuLinks: [
       {
-        name: 'themes',
-        link: '/themes/'
+        name: 'ABOUT',
+        link: '/about/'
       },
       {
-        name: 'blog',
+        name: 'PORTFOLIO',
+        link: '/portfolio/'
+      },
+      {
+        name: 'BLOG',
         link: '/blog/'
       },
       {
-        name: 'contact',
+        name: 'CONTACT',
         link: '/contact/'
       },
     ],

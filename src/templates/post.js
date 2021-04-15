@@ -41,13 +41,12 @@ export default class PostTemplate extends Component {
       <Layout padding={true}>
         <Helmet title={`${post.title} – ${config.siteTitle}`} />
         <SEO postPath={slug} postNode={postNode} postSEO={true} />
-        <div className="py-16 lg:py-32 bg-brand-grey-300">
-          <div className="container lg:pt-32">
+        <div className="py-20 pt-20 lg:pt-32 bg-grey-100">
+          <div className="container">
             <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
-              <Lead text={{ content: 'BLOG', class: '' }} lineClass="bg-brand-primary-800" />
+              <Lead text={{ content: 'BLOG', class: '' }} lineClass="bg-black" />
               <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
-
-                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="p-0 mb-6" />
+                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="p-0 mb-6  lg:text-brand-4xl" />
                 <time>{date}</time>
               </div>
             </div>
@@ -55,19 +54,21 @@ export default class PostTemplate extends Component {
         </div>
         <div className="container">
           <div className="-mx-6 lg:-mx-brand-4">
-            <div className="w-full lg:w-9/12 ml-auto mt-16 mb-32 px-6 lg:px-brand-4">
+            <div className="w-full lg:w-9/12 ml-auto mt-16 mb-16 lg:mb-32 px-6 lg:px-brand-4">
               <div dangerouslySetInnerHTML={{ __html: postNode.html }} className="w-full lg:w-brand-76 wysiwyg" />
             </div>
           </div>
         </div>
+      <div className="bg-grey-100">
         <TwoColumn
-          classes="bg-brand-grey-300 relative z-10"
-          lineClass="bg-brand-primary-800"
-          lead={{ text: "JOIN", class: "text-black" }}
-          heading={{ text: "Get that developer job", class: "" }}
-          text="<p>Get the exact CV template I used to attain two full time developer jobs and healthy freelance clients when you sign up to my newsletter.</p>"
-          form="newsletter"
+          classes=""
+          lineClass="bg-black"
+          lead={{ text: "I'M AVAILABLE", class: "text-black" }}
+          heading={{ text: "Let's work together!", class: "" }}
+          text="<p>I’m currently available to convert your custom web designs to a simple to a highly optimised, intuitive WordPress theme.</p>"
+          btn={{ url: "/contact", text: "Hire me", classes: "bg-blue-100 text-white hover:bg-brand-primary-900" }}
         />
+      </div>
       </Layout>
     )
   }

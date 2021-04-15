@@ -33,9 +33,11 @@ const ThemesListing = ({ heading, page }) => {
         }
     `}
       render={data => (
-        <div className="w-full lg:w-9/12 px-6 lg:px-brand-4">
-          {heading.text.length > 0 ?
-            <h2 className="mb-16">{heading.text}</h2>
+        <div className="w-full px-6 lg:px-brand-4">
+          {page === 'home' ?
+            <>
+              <h2 className="mb-8 lg:mb-12">Latest work</h2>
+            </>
             : null
           }
           <div className="flex flex-wrap justify-between">

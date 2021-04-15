@@ -20,9 +20,6 @@ const Testimonials = ({ heading }) => {
                 <Card type="testimonial" testimonial={{
                     name: 'Chris Mazzini', position: 'WEB CONTRACTOR', text: '"Baillie was by far the best freelancer I’ve ever hired. He was fast, very professional and my site is absolutely perfect!"'
                 }} />
-                {/* <Card type="testimonial" testimonial={{
-                    name: 'Dominique Haingotiana', position: 'PIANIST COMPOSER', text: '"Baillie has helped me on several occasions with WordPress and WooCommerce in a very professional, reliable and timely manner. Thank you!"'
-                }} /> */}
             </div>
         </div>
     )

@@ -23,7 +23,7 @@ export default class PostTemplate extends Component {
         const { slug } = this.props.pageContext
         const postNode = this.props.data.markdownRemark
         const post = postNode.frontmatter
-        const thumbnail = post.thumbnail.childImageSharp.fluid
+        const image = post.image.childImageSharp.fluid
 
         if (!post.id) {
             post.id = slug
@@ -39,12 +39,12 @@ export default class PostTemplate extends Component {
             <Layout padding={true} dark={true}>
                 <Helmet title={`${post.title} – ${config.siteTitle}`} />
                 <SEO postPath={slug} postNode={postNode} />
-                <div className="py-16 lg:py-32 bg-black">
-                    <div className="container lg:pt-32">
+                <div className="py-20 lg:py-32 bg-grey-100">
+                    <div className="container">
                         <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
-                            <Lead text={{ content: 'THEME', class: ''}} lineClass="bg-white" dark={true} />
+                            <Lead text={{ content: 'WORDPRESS THEME', class: 'text-black'}} lineClass="bg-black" />
                             <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
-                                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="mb-3 lg:mb-6 p-0 text-white" />
+                                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="mb-3 lg:mb-6 p-0 lg:text-brand-4xl" />
                             </div>
                         </div>
                     </div>
@@ -52,29 +52,29 @@ export default class PostTemplate extends Component {
                 <div className="container">
                     <div className="-mx-6 lg:-mx-brand-4">
                         <div className="w-full mb-8 lg:mb-16 px-6 lg:px-brand-4 -mt-8 lg:-mt-16">
-                            <Img fluid={thumbnail} className="rounded w-full shadow-brand-xs" />
+                            <Img fluid={image} className="w-full shadow-sm lg:shadow-xl rounded-md lg:rounded-lg" />
                         </div>
                     </div>
                 </div>
                 <div className="container">
                     <div className="-mx-6 lg:-mx-brand-4">
                         <div className="flex flex-wrap justify-between items-start">
-                            <div className="lg:w-7/12 mb-32 px-6 lg:px-brand-4 order-1 lg:order-0">
+                            <div className="lg:w-7/12 mb-16 lg:mb-32 px-6 lg:px-brand-4 order-1 lg:order-0">
                                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} className=" wysiwyg wysiwyg--alt" />
                             </div>
                             <div className="lg:w-4/12 px-6 lg:px-brand-4 lg:sticky lg:top-brand-64 order-0 lg:order-1 pb-16">
-                                {post.date !== undefined || null ? 
+                                {/* {post.date !== undefined || null ? 
                                 <p>
                                     <span className="block text-black font-bold">Last updated:</span>
                                     {date}
                                 </p>
-                                : null}
-                                {post.length !== undefined && post.length !== null ? 
+                                : null} */}
+                                {/* {post.length !== undefined && post.length !== null ? 
                                 <p>
                                     <span className="block text-black font-bold">Project length:</span>
                                     {post.length}
                                 </p>
-                                : null}
+                                : null} */}
                                 {post.stack !== undefined && post.stack !== null ? 
                                 <p>
                                     <span className="block text-black font-bold">Stack:</span>
@@ -83,7 +83,7 @@ export default class PostTemplate extends Component {
                                 : null}
                                 {post.designs !== undefined && post.designs !== null ? 
                                 <p>
-                                    <span className="block text-black font-bold">Built from:</span>
+                                    <span className="block text-black font-bold">Designs:</span>
                                     {post.designs}
                                 </p>
                                 : null}
@@ -92,13 +92,13 @@ export default class PostTemplate extends Component {
                                  (post.code !== undefined && post.code !== null) ? 
                                 <div>
                                     {post.visit !== undefined && post.visit !== null ? 
-                                        <a href={post.visit} target="_blank" className="btn">Visit</a>
+                                        <a href={post.visit} target="_blank" className="btn mr-3">Visit</a>
                                     : null }
                                     {post.buy !== undefined && post.buy !== null ? 
-                                        <a href={post.buy} target="_blank" className="btn btn--ghost ml-3">Buy</a>
+                                        <a href={post.buy} target="_blank" className="btn btn--ghost mr-3">Buy</a>
                                     : null }
                                     {post.code !== undefined && post.code !== null ? 
-                                        <a href={post.code} target="_blank" className="btn btn--ghost ml-3">Code</a>
+                                        <a href={post.code} target="_blank" className="btn btn--ghost mr-3">Code</a>
                                     : null }
                                 </div>
                                 : null}
@@ -110,12 +110,12 @@ export default class PostTemplate extends Component {
                     </div>
                 </div>
                 <TwoColumn
-                    classes="bg-brand-primary-900 text-white"
-                    lineClass="bg-white"
-                    lead={{ text: "HIRE ME", class: "text-white" }}
-                    heading={{ text: "Let's work together", class: "text-white" }}
-                    text="<p>I’m currently available to convert your designs to a simple to use, intuitive, WordPress theme.</p>"
-                    btn={{ url: "/convert-your-designs", text: "Convert your designs", classes: "bg-white text-brand-primary-800 hover:bg-gray-200 border-white hover:border-white" }}
+                    classes="bg-grey-100"
+                    lineClass="bg-black"
+                    lead={{ text: "I'M AVAILABLE", class: "text-black" }}
+                    heading={{ text: "Let's work together!", class: "" }}
+                    text="<p>I’m currently available to convert your custom web designs to a simple to a highly optimised, intuitive WordPress theme.</p>"
+                    btn={{ url: "/contact", text: "Hire me", classes: "bg-blue-100 text-white hover:bg-brand-primary-900" }}
                 />
             </Layout>
         )
@@ -139,8 +139,14 @@ export const themeQuery = graphql`
         designs
         visit
         buy
-        code
         thumbnail {
+            childImageSharp {
+                fluid(maxWidth: 1400, maxHeight: 900){
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+        }
+        image {
             childImageSharp {
                 fluid(maxWidth: 1400, maxHeight: 900){
                     ...GatsbyImageSharpFluid_withWebp

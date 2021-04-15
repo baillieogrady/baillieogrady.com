@@ -20,51 +20,55 @@ export default class MyForm extends React.Component {
             <form
                 onSubmit={this.submitForm}
                 action="https://formspree.io/xpzynvpj"
-                method="POST"
-                className="mt-6">
+                method="POST">
                 <div className="flex flex-wrap justify-between">
-                    <div className="w-full lg:w-brand-46 mt-6">
+                    <div className="w-full lg:w-brand-46">
                         <label className="text-xs" htmlFor="name">Name*</label>
-                        <input type="text" placeholder="Joe Bloggs" required className="block rounded-lg shadow-brand-xs h-10 pl-2 w-full mr-8" id="name" name="name" />
+                        <input type="text" placeholder="Joe Bloggs" required className="block rounded  h-10 pl-2 w-full mr-8" id="name" name="name" />
                     </div>
-                    <div className="w-full lg:w-brand-46 mt-6">
+                    <div className="w-full lg:w-brand-46 mt-6 lg:mt-0">
                         <label className="text-xs" htmlFor="email">Email*</label>
-                        <input type="email" placeholder="joe.bloggs@gmail.com" required className="block rounded-lg shadow-brand-xs h-10 pl-2 w-full" name="email" id="email" />
+                        <input type="email" placeholder="joe.bloggs@gmail.com" required className="block rounded h-10 pl-2 w-full" name="email" id="email" />
                     </div>
                     <div className="w-full mt-6">
                         <label className="text-xs" htmlFor="budget">Budget*</label>
-                        <select className="select block rounded-lg shadow-brand-xs h-10 pl-2 w-full bg-white cursor-pointer appearance-none" required id="budget" name="budget">
-                            <option value="£2,000 - £4,000">£2,000 - £4,000</option>
-                            <option value="£3,000 - £6,000">£5,000 - £7,000</option>
-                            <option value="£7,000 - £10,000">£10,000 +</option>
+                        <select className="select block rounded  h-10 pl-2 w-full bg-white cursor-pointer appearance-none" required id="budget" name="budget">
+                            <option value="£0 - £3,000">£0 -  £3,000</option>
+                            <option value="£3,000 - £6,000">£3,000 - £6,000</option>
+                            <option value="£6,000 - £9,000">£6,000 - £9,000</option>
+                            <option value="£10,000+">£10,000 +</option>
                         </select>
                     </div>
                     <div className="w-full mt-6">
                         <label className="text-xs" htmlFor="designs">Designs*</label>
-                        <input type="url" required placeholder="Figma, Dropbox, Invision link ..." className="block rounded-lg shadow-brand-xs p-2 w-full bg-white" id="designs" name="designs" />
+                        <input type="url" required placeholder="Figma, Dropbox, Invision link ..." className="block rounded  p-2 w-full bg-white" id="designs" name="designs" />
                     </div>
-                    {/* <fieldset className="w-full border border-brand-grey-400 p-3 rounded-lg mt-6">
+                    {/* <fieldset className="w-full border border-brand-grey-400 p-3 rounded mt-6">
                         <legend className="text-xs" htmlFor="designs">Designs*</legend>
                         <div className="w-full">
                             <label className="text-xs hidden" for="designs">Designs*</label>
-                            <input type="file" placeholder="PSD, XD, Figma file..." className="block rounded-lg shadow-brand-xs p-2 w-full bg-white" id="designs" name="designs-files" />
+                            <input type="file" placeholder="PSD, XD, Figma file..." className="block rounded  p-2 w-full bg-white" id="designs" name="designs-files" />
                         </div>
                         <p className="m-0 text-center py-3 w-full text-black font-bold text-sm">OR</p>
                         <div className="w-full">
-                            <input type="url" placeholder="Figma, Dropbox, Invision link ..." className="block rounded-lg shadow-brand-xs p-2 w-full bg-white" name="designs-url" />
+                            <input type="url" placeholder="Figma, Dropbox, Invision link ..." className="block rounded  p-2 w-full bg-white" name="designs-url" />
                         </div>
                     </fieldset> */}
                     <div className="w-full mt-6">
                         <label className="text-xs" htmlFor="message">Message*</label>
-                        <textarea placeholder="Tell me a little about your WordPress project..." className="block rounded-lg shadow-brand-xs p-2 w-full h-48" id="message" name="message" />
+                        <textarea placeholder="Tell me a little about your WordPress project..." className="block rounded  p-2 w-full h-48" id="message" name="message" />
+                    </div>
+                    <div className="w-full mt-6">
+                        <label className="text-xs" htmlFor="how">How did you hear about me?</label>
+                        <input type="text" className="block rounded  p-2 w-full bg-white" id="how" name="how" />
                     </div>
                     <input type="text" name="_gotcha" style={{ 'display': 'none' }} />
                 </div>
                 <div className="mt-8 text-green-500 font-medium">
-                    {status === "SUCCESS" ? <p className="text-xl">Message received, I'll be in touch soon!</p> : <div className="w-full lg:w-brand-46 mt-6">
-                        <input type="submit" value="Get started" className="btn cursor-pointer hover:bg-brand-primary-900 transiton duration-200 ease-in-out" />
+                    {status === "SUCCESS" ? <p>Message received, I'll be in touch soon!</p> : <div className="w-full lg:w-brand-46 mt-6">
+                        <input type="submit" value="Submit" className="btn cursor-pointer hover:bg-brand-primary-900 transiton duration-200 ease-in-out" />
                     </div>}
-                    {status === "ERROR" && <p className="text-red-600 text-xl">Ooops! There was an error.</p>}
+                    {status === "ERROR" && <p className="text-red-600">Ooops! There was an error.</p>}
                 </div>
             </form>
 

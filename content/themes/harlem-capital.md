@@ -6,7 +6,8 @@ date: 2020-07-28
 length: '3 weeks'
 stack: 'Roots Sage & ACF Pro'
 visit: 'https://harlem.capital'
-thumbnail: '../images/themes/harlem-capital/harlem.png'
+image: '../images/themes/harlem-capital/harlem-image.jpg'
+thumbnail: '../images/themes/harlem-capital/harlem-thumbnail.jpg'
 ---
 
 Harlem Capital is a New York based early-stage venture capital firm focused on investing in minority and women founders in the United States. To further highlight their mission they issued a complete redesign of their website. The web designs were built and given to me in Figma and I had two weeks to convert them to the fully functional WordPress website that's live today.

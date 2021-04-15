@@ -3,7 +3,7 @@
 }
 
 body {
-    @apply font-body leading-brand-7 text-brand-black-300;
+    @apply font-body leading-brand-7 text-grey-200;
 }
 
 h1,
@@ -12,11 +12,11 @@ h3,
 h4,
 h5,
 h6 {
-    @apply font-bold leading-brand-tight text-black;
+    @apply font-bold leading-snug text-black;
 }
 
 h1 {
-    @apply text-brand-4xl py-16;
+    @apply text-brand-4xl py-16 leading-brand-tight;
 }
 
 h2 {
@@ -40,14 +40,14 @@ img {
 }
 
 [aria-current="page"] {
-    @apply text-brand-primary-800;
+    @apply text-blue-100;
 }
 
 .wysiwyg {
     a {
-        @apply text-brand-primary-800 transition duration-200 ease-in-out;
+        @apply text-blue-100 transition duration-200 ease-in-out;
         &:hover {
-            @apply text-brand-primary-900;
+            @apply text-blue-200;
         }
     }
     ul {

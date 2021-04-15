@@ -13,13 +13,13 @@ import config from '../../data/SiteConfig'
 const custom_404 = () => {
     return (
         <Layout>
-            <Helmet title={`Contact - ${config.siteTitle}`} />
+            <Helmet title={`$404 - ${config.siteTitle}`} />
             <SEO />
-            <Hero
+            {/* <Hero
                 text="404"
-            />
+            /> */}
             <TwoColumn
-                classes="bg-brand-grey-300 relative z-10"
+                classes="relative z-10"
                 lineClass="bg-brand-primary-800"
                 lead={{ text: "PAGE NOT FOUND", class: "text-black" }}
                 heading={{ text: "Please use the above navigation", class: "" }}

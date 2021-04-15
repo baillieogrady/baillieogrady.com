@@ -23,12 +23,20 @@ module.exports = {
     },
     extend: {
       colors: {
+        // 14/04/21
+        'black': '#06111B',
+        'grey-100': '#EEEEF3',
+        'grey-200': '#464555',
+        'blue-100':'#3366FF',
+        'blue-200':'#184AE0',
+        // old
         'brand-primary-700': '#6690FF',
         'brand-primary-800': '#3366FF',
         'brand-primary-900': '#254EDA',
         'brand-black-400': '#28293D',
         'brand-black-200': '#8E90A6',
         'brand-black-300': '#555770',
+        'brand-grey-100': '#f5f5f7',
         'brand-grey-200': '#FAFAFC',
         'brand-grey-300': '#F2F2F5',
         'brand-grey-400': '#EBEBF0',
@@ -64,6 +72,12 @@ module.exports = {
         'brand-3xl': '0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24)'
       },
       inset: {
+        '-12' : '-12px',
+        '12' : '12px',
+        '24' : '24px',
+        '-26' : '-26px',
+        '-28' : '-28px',
+        'brand-50': '50%',
         '-brand-05': '0.5rem',
         '-brand-6': '-1.75rem',
         'brand-5': '1.5rem',
@@ -75,10 +89,13 @@ module.exports = {
         'brand-38': '38%',
         'brand-46': '46.060606%',
         'brand-76': '76.96969697%',
-        'brand-mobile-full': 'calc(100% - 16px)'
+        'mobile': 'calc(100% - 24px)'
       },
       borderRadius: {
-        'brand-lg': '1rem'
+        'lg': '1rem'
+      },
+      minWidth: {
+        '334': '360px'
       }
 
     },
