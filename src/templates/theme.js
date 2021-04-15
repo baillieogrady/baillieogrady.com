@@ -44,7 +44,7 @@ export default class PostTemplate extends Component {
                         <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
                             <Lead text={{ content: 'WORDPRESS THEME', class: 'text-black'}} lineClass="bg-black" />
                             <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
-                                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="mb-3 lg:mb-6 p-0 lg:text-brand-4xl" />
+                                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="mb-3 lg:mb-6 p-0" />
                             </div>
                         </div>
                     </div>

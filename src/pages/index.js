@@ -42,7 +42,7 @@ const Index = () => {
         lineClass="bg-black"
         lead={{ text: "PROCESS", class: "text-black" }}
         heading={{ text: 'Figma, Illustrator, Invision, Photoshop, Sketch, XD ...', class: "" }}
-        text="<p>I love them all. I have over 5 years experinece converting custom web designs from a variety of desings software, to highly optimised WordPress themes.  <span class='block'>(Full disclosure, Figma is my favourite.)</span></p>"
+        text="<p>I love them all. I have over 5 years experience converting custom web designs from a plethora of design software, to highly optimised WordPress themes.  <span class='block'>(Full disclosure, Figma is my favourite.)</span></p>"
         btn={{ url: "/building-a-wordpress-theme", text: "View my process", classes: "bg-blue-100 text-white hover:bg-brand-primary-900" }}
       />
       <TwoColumn

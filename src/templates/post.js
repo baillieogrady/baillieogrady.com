@@ -46,7 +46,7 @@ export default class PostTemplate extends Component {
             <div className="flex flex-wrap -mx-6 lg:-mx-brand-4">
               <Lead text={{ content: 'BLOG', class: '' }} lineClass="bg-black" />
               <div className="w-full lg:w-7/12 px-6 lg:px-brand-4">
-                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="p-0 mb-6  lg:text-brand-4xl" />
+                <h1 dangerouslySetInnerHTML={{ __html: post.title }} className="p-0 mb-6" />
                 <time>{date}</time>
               </div>
             </div>
