@@ -4,7 +4,7 @@ title: 'Captain'
 date: 2020-12-29
 
 thumbnail: '../images/themes/captain/captain-thumbnail.jpg'
-image: '../images/themes/captain/captain-image.png'
+image: '../images/themes/captain/captain-image.jpg'
 slug: 'captain'
 
 stack: 'Roots Sage, ACF Pro & TailwindCSS'

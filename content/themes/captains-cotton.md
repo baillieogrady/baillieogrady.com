@@ -3,8 +3,8 @@ template: 'theme'
 title: "Captain's cotton"
 date: 2020-07-31
 
-image: '../images/themes/captains-cotton-sage/captains-cotton-image.png'
-thumbnail: '../images/themes/captains-cotton-sage/captains-cotton-thumbnail.jpg'
+image: '../images/themes/captains-cotton/captains-cotton-image.jpg'
+thumbnail: '../images/themes/captains-cotton/captains-cotton-thumbnail.jpg'
 slug: 'captains-cotton'
 
 designs: 'Figma'

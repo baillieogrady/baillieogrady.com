@@ -6,8 +6,8 @@ date: 2020-04-15
 length: '2 weeks'
 stack: 'Wprig & ACF Pro'
 visit: 'https://futurevisual.com'
-image: '../images/themes/futurevisual-wprig/futurevisual-image.png'
-thumbnail: '../images/themes/futurevisual-wprig/futurevisual-thumbnail.jpg'
+image: '../images/themes/future-visual/future-visual-image.jpg'
+thumbnail: '../images/themes/future-visual/future-visual-thumbnail.jpg'
 ---
 
 Future visual is a VR & AR studio based in Brighton, UK. After already having their web designs finalised, they needed someone transform them into a fully functional, optimised WordPress website in just 2 weeks. During this project I had the chance to work with a brand new WordPress starter theme, wprig, which influenced me to transition from Sass to PostCSS.
