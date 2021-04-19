@@ -42,7 +42,7 @@ Moving on, once you've uploaded the import file, let All-in-one do its thing. So
 
 **Note:** once you click this button, it'll override all existing data on the website you're importing into.
 
-Finally, after the import has completed it'll present a final **Finish** button which finalizes the process. What's more, as you're importing an entirely different website WordPress, when trying to visit anywhere on your dashboard now it'll ask you to log in. Don't panic, this'll be the login details from the website you're importing. I also recommend you to refresh your permalinks via settings -> permalinks then clicking the **Save changes** button located at the bottom of the page.
+Finally, after the import has completed it'll present a final **Finish** button which finalizes the process. Now, as you're importing an entirely different WordPress website, when trying to visit anywhere on your dashboard, it'll ask you to log in. Don't panic, this'll be the login details from the website you're importing. I also recommend to refresh your permalinks via settings -> permalinks then clicking the **Save changes** button located at the bottom of the page.
 
 ## Conclusion
 
