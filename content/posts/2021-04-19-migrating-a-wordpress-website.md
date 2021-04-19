@@ -12,7 +12,7 @@ tags:
 
 Migrating a WordPress website can be a daunting task. Recently I managed to migrate an 18 GB WordPress website to a staging server, in order to test a new theme I was building for a client. Although the process was quite slow, it cloned everything, flawlessly. 
 
-Of course there's a plethora of ways to accomplish this, FTP the files, export and import the database file etc... but my weapon of choice is the [All-in-one wp migration](https://wordpress.org/plugins/all-in-one-wp-migration/) plugin by [Servmask](https://servmask.com/). With this method, you don't have to mess around exporting and importing all the different components of a WordPress website, it does everything all at once, hence the name. The free version allows you to migrate a website up to a size of 512 MBs and the unlimited version, only $69, allows unlimited MBs. I'm yet to have a problem with this plugin, it does exactly what it says on the tin.
+Of course there's a plethora of ways to accomplish this, FTP the files, export and import the database file etc... but my weapon of choice is the [All-in-one wp migration](https://wordpress.org/plugins/all-in-one-wp-migration/) plugin by [Servmask](https://servmask.com/). With this method, you don't have to mess around exporting and importing all the different components of a WordPress website, it does everything all at once, hence the name. The free version allows you to migrate a website up to 512 MBs and the unlimited version, only $69, allows unlimited MBs. I'm yet to have a problem with this plugin, it does exactly what it says on the tin.
 
 ## Exporting
 
