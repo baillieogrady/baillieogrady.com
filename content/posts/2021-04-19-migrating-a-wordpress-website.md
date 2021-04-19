@@ -32,9 +32,9 @@ Next, once downloaded, switch to the website you'll be migrating to, install and
 
 Here you'll be able to drag and drop the export file you previously downloaded. Alternatively, click **IMPORT FROM** then **FILE** to select the file manually on your computer:
 
-**Note:** The maximun upload file size depends on your server configuration. To extend it to 512mb simply download, install and activate the free [All-in-One WP Migration Import](https://import.wp-migration.com/) plugin.
-
 ![All-in-one wp migration import edit screen](../images/posts/all-in-one-migration-import-edit-screen.png)
+
+**Note:** The maximun upload file size depends on your server configuration. To extend it to 512mb simply download, install and activate the free [All-in-One WP Migration Import](https://import.wp-migration.com/) plugin.
 
 Moving on, once you've uploaded the import file, let All-in-one do its thing. Sooner or later, depending on the size the import, it'll prompt you to proceed:
 
