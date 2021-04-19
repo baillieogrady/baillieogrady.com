@@ -20,7 +20,7 @@ Migrating with this plugin is remarkably simple. Firstly, head to the WordPress 
 
 ![All-in-one wp migration export option](../images/posts/all-in-one-migration-export.png)
 
-Once clicked, you should be greeted with a screen that enables you to execute a search and replace on the database and the ability to exclude certain parts of the website on export (neither is required). For simplicity, we'll export to a File by clicking the green **EXPORT TO** button then the **FILE** option. This should prompt you with an animating download button, click it:
+Once clicked, you should be greeted with a screen that enables you to execute a search and replace on the database, and the ability to exclude certain parts of the website on export (neither is required). For simplicity, we'll export to a File by clicking the green **EXPORT TO** button then the **FILE** option. This should prompt you with an animating download button, click it:
 
 ![All-in-one wp migration export edit screen](../images/posts/all-in-one-migration-export-edit-screen.png)
 
