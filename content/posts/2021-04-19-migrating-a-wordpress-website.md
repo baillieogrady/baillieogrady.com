@@ -16,7 +16,7 @@ Of course there's a plethora of ways to accomplish this, FTP the files, export a
 
 ## Exporting
 
-Migrating with this plugin is remarkably simple. Firstly, head to the WordPress website you'd to export. Once there, install and activate the [All-in-one wp migration](https://wordpress.org/plugins/all-in-one-wp-migration/) plugin then navigate to the export edit screen as demonstrated below:
+Migrating with this plugin is remarkably simple. Firstly, head to the WordPress website you'd like to export, install and activate the [All-in-one wp migration](https://wordpress.org/plugins/all-in-one-wp-migration/) plugin and navigate to the export edit screen as demonstrated below:
 
 ![All-in-one wp migration export option](../images/posts/all-in-one-migration-export.png)
 
