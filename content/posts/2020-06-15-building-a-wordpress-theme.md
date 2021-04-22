@@ -31,7 +31,7 @@ I'll iterate over each one in the next steps.
 3\. **Prep**
 ------------
 
-At this stage I create a local version of the WordPress theme for development. I use the <a href="https://github.com/baillieogrady/custom-sage-10" target="_blank">Roots Sage 10 starter theme</a> paired with TailwindCSS and ACF Pro, if needed. Additionally, I also scan through the desings and extract all the global styles and implement them into the theme via TailwindCSS.
+At this stage I create a local version of the WordPress theme for development. I use the <a href="https://github.com/baillieogrady/custom-sage-10" target="_blank">Roots Sage 10 starter theme</a> paired with TailwindCSS and ACF Pro, if needed. Additionally, I also extract all the global styles from the designs at this point, implementing them into the theme via TailwindCSS.
 
 
 4\. **Coding**
