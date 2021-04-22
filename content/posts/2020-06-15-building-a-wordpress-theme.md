@@ -13,12 +13,12 @@ Below I've outlined the process I take when building a WordPress theme from cust
 1\. **Analyse**
 ---------------
 
-After receiving the designs, I analyse them thoroughly, ensuring I grasp the clients entire vision and expectations. This avoids any tedious revisits and potentially time consuming amends later on in the build. I also ask many questions, some stupid, reminding myself never to assume design aspects, especially animations. Also, prior to this point, a quote and timeline has already been agreed.
+After receiving the designs, I analyse them thoroughly, ensuring I grasp the clients entire vision and expectations. This avoids any tedious revisits and potentially time consuming amends later on in the build. I also ask many questions, some stupid, reminding myself never to assume design aspects, especially animations. Based on this analysis, a quote and timeline for the project is determined.
 
 2\. **Plan**
 ------------
 
-Next, I plan the entire build by creating an itemised list of all the tasks that need completing. Normally, I just use a apple notes checklist and tick off each task as I complete it. I refer to the designs when creating my plan with the main task categories being:
+Next, I plan the entire build by creating an itemised list of all the tasks that need completing. Normally, I just use an apple notes checklist or trello for a more complex build. I refer to the designs when creating my plan with the main task categories being:
 
 - Prep
 - Coding
@@ -31,7 +31,8 @@ I'll iterate over each one in the next steps.
 3\. **Prep**
 ------------
 
-At this stage I create a local version of the WordPress theme for development. I use the <a href="https://github.com/baillieogrady/custom-sage-10" target="_blank">Roots Sage 10 starter theme</a> and TailwindCSS for the foundation paired with the ACF Pro WordPress plugin, if needed. Also at this stage I run through the style guide extracting all the global styles inherited through the designs and implement them into the theme.
+At this stage I create a local version of the WordPress theme for development. I use the <a href="https://github.com/baillieogrady/custom-sage-10" target="_blank">Roots Sage 10 starter theme</a> paired with TailwindCSS and ACF Pro, if needed. Additionally, I also scan through the desings and extract all the global styles and implement them into the theme via TailwindCSS.
+
 
 4\. **Coding**
 --------------
@@ -60,10 +61,9 @@ Moving on, now's the time for testing. I test on all the following browsers, fix
 6\. **Optimise**
 ----------------
 
-
-Once tested and everything is acting as expected, I move on to optimising the website, ensuring fast page load times and a smooth editing experience. For this I usually install the Autoptimize plugin, lazy load images and remove any redundancies such as unnecessary plugins used throughout development.
+Once tested and everything is acting as expected, I move on to optimising the website, ensuring fast page load times and a smooth editing experience for the client. For this I usually install the Autoptimize plugin, lazy load images and remove any redundancies such as unnecessary plugins used throughout development.
 
 7\. **Documentation**
 ---------------------
 
-Arguably the most important part of the process is documentation. This is where I create a handover document detailing the build, providing a run down of how the theme was created with clear and concise instructions on how to use and populate the website using the theme.
+Arguably the most important part of the process, documentation. This is where I create a handover document detailing the build, providing a run down of how the theme was created and provide clear and concise instructions on how to use and populate the website using the theme.
