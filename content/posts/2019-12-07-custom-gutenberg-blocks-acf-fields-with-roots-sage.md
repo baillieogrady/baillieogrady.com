@@ -132,4 +132,4 @@ add_action('init', function () {
 
 Once you’ve added the above, ensure you’re in your theme root and run **yarn build && yarn start** in your terminal, go to your WordPress backend and edit your pages or posts and notice there’s an extra **layout block** named **intro** that you can add via the block editor.
 
-![Custom Gutenberg block called intro](../images/Screenshot-2019-12-07-at-21.59.00.png)
+![Custom Gutenberg block called intro](../images/screenshot.png)
