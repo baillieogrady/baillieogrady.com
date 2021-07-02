@@ -59,7 +59,7 @@ const Index = () => {
         lineClass="bg-black"
         lead={{ text: "I'M AVAILABLE", class: "text-black" }}
         heading={{ text: "Let's work together!", class: "" }}
-        text="<p>I’m currently available to convert your custom web designs to a simple to a highly optimised, intuitive WordPress theme.</p>"
+        text="<p>I’m currently available to convert your custom web designs to a simple, highly optimised, intuitive WordPress theme.</p>"
         btn={{ url: "/contact", text: "Hire me", classes: "bg-blue-100 text-white hover:bg-brand-primary-900" }}
       />
     </Layout>
